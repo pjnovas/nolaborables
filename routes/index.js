@@ -2,7 +2,7 @@
 var fs = require('fs');
 
 exports.index = function(req, res){
-  res.render('index', { title: 'No Laborables' });
+  res.render('index', { title: 'no laborables' });
 };
 
 exports.getAño = function(req, res){

@@ -1,8 +1,34 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
 }
 
 a {
   color: #00B7FF;
+}
+
+.sidebar-nav {
+  padding: 9px 0;
+}
+
+.hero-unit {
+	padding: 20px;
+	margin-top: 10px;
+}
+
+.forkme {
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	border: 0; 
+	z-index:1040;
+}
+
+.copyright {
+	float:right; 
+	margin-right: 20px;
+	font-size: 10px
+	font-weight: bold;
 }

@@ -1,1 +1,39 @@
-h1= title
+div(class='row-fluid')
+	div(class='span9')
+		div(class='hero-unit')
+			p API pública y gratis para consultar los feriados en Argentina por año.
+		div(class='row-fluid')
+			div(class='span4')
+				h3 Año actual
+				a(href='http://nolaborables.com.ar/API/v1/actual') nolaborables.com.ar/API/v1/actual
+			div(class='span4')
+				h3 2011
+				a(href='http://nolaborables.com.ar/API/v1/2011') nolaborables.com.ar/API/v1/2011
+			div(class='span4')
+				h3 2013
+				a(href='http://nolaborables.com.ar/API/v1/2013') nolaborables.com.ar/API/v1/2013
+div(class='row-fluid')
+	div(class='span9')
+		div(class='hero-unit')
+			h3 Respuesta JSON
+			pre
+				code(class="json") [{ 
+					|  "dia": 9,
+					|  "mes": 7,
+					|  "motivo": "Día de la Independencia",
+					|  "tipo": "innamovible"
+					|},{
+					|  "dia": 17,
+					|  "mes": 8,
+					|  "motivo": "Paso a la Inmortalidad del General José de San Martín",
+					|  "tipo": "trasladable",
+					|  "traslado": 20
+					|},{
+					|  "dia": 5,
+					|  "mes": 4,
+					|  "motivo": "Jueves Santo Festividad Cristiana",
+					|  "tipo": "nolaborable" 
+					|}]
+div(class='row-fluid')
+	p Feriados extraídos del sitio del 
+		a(href='http://www.mininterior.gov.ar/asuntos_politicos_y_alectorales/dinap/feriados.php?idName=asuntos&idNameSubMenu=DiNAP&idNameSubMenuDer=DirNAPFeriados') Ministerio de la Nación

@@ -1,6 +1,26 @@
 !!!
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body!= body
+	head
+		title= title
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(name='description', content='Servicio REST Público de Feriados Argentinos')
+		meta(name='author', content='Pablo Novas')
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.min.css')
+		link(rel='stylesheet', href='/stylesheets/highlight/default.css')
+		script(type='text/javascript', src='javascripts/libs/highlight.pack.js')
+		script(type='text/javascript')
+			hljs.tabReplace = '  '; 
+			hljs.initHighlightingOnLoad();
+	body
+		div(class='navbar navbar-fixed-top')
+			div(class='navbar-inner')
+				div(class='container-fluid')
+					a(class='brand', href='#')= title
+		a(href='https://github.com/pjnovas')
+			img(src='https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png', class='forkme', alt='Fork me on GitHub')
+		div(class='container-fluid')!= body
+		footer
+			p(style='float:right; margin-right: 20px;') copyright &copy 2012 Pablo Novas
