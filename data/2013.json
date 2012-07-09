@@ -1,0 +1,94 @@
+[{
+	"dia": 11,
+	"mes": 2 ,
+	"motivo": "Carnaval",
+	"tipo": "innamovible"
+},{
+	"dia": 12,
+	"mes": 2 ,
+	"motivo": "Carnaval",
+	"tipo": "innamovible"
+},{
+	"dia": 29,
+	"mes": 3 ,
+	"motivo": "Viernes Santo",
+	"tipo": "innamovible"
+},{
+	"dia": 1,
+	"mes": 4 ,
+	"motivo": "Feriado Puente Turístico",
+	"tipo": "innamovible"
+},{
+	"dia": 2,
+	"mes": 4 ,
+	"motivo": "Día del Veterano y de los Caídos en la Guerra de Malvinas",
+	"tipo": "innamovible"
+},{
+	"dia": 21,
+	"mes": 6 ,
+	"motivo": "Feriado Puente Turístico",
+	"tipo": "trasladable"
+},{
+	"dia": 17,
+	"mes": 8 ,
+	"motivo": "Paso a la Inmortalidad del General José de San Martín",
+	"tipo": "trasladable",
+	"traslado": 19
+},{
+	"dia": 12,
+	"mes": 10 ,
+	"motivo": "Día del Respeto a la Diversidad Cultural",
+	"tipo": "trasladable",
+	"traslado": 14
+},{
+	"dia": 20,
+	"mes": 11 ,
+	"motivo": "Día de la Soberanía Nacional",
+	"tipo": "trasladable",
+	"traslado": 25
+},{
+	"dia": 28,
+	"mes": 3 ,
+	"motivo": "Jueves Santo Festividad Cristiana",
+	"tipo": "nolaborable" 
+},{
+	"dia": 25,
+	"mes": 3 ,
+	"motivo": "Pascuas Judías",
+	"tipo": "nolaborable" 
+},{
+	"dia": 26,
+	"mes": 3 ,
+	"motivo": "Pascuas Judías",
+	"tipo": "nolaborable" 
+},{
+	"dia": 27,
+	"mes": 3 ,
+	"motivo": "Pascuas Judías",
+	"tipo": "nolaborable" 
+},{
+	"dia": 31,
+	"mes": 3 ,
+	"motivo": "Pascuas Judías",
+	"tipo": "nolaborable" 
+},{
+	"dia": 1,
+	"mes": 4 ,
+	"motivo": "Pascuas Judías",
+	"tipo": "nolaborable" 
+},{
+	"dia": 2,
+	"mes": 4 ,
+	"motivo": "Pascuas Judías",
+	"tipo": "nolaborable" 
+},{
+	"dia": 4,
+	"mes": 9 ,
+	"motivo": "Año Nuevo Judío",
+	"tipo": "nolaborable" 
+},{
+	"dia": 13,
+	"mes": 9 ,
+	"motivo": "Día del Perdón",
+	"tipo": "nolaborable" 
+}]

@@ -1,0 +1,51 @@
+[{
+	"dia": 1,
+	"mes": 1 ,
+	"motivo": "Año Nuevo",
+	"tipo": "innamovible"
+},{
+	"dia": 24,
+	"mes": 3 ,
+	"motivo": "Día Nacional de la Memoria por la Verdad y la Justicia",
+	"tipo": "innamovible"
+},{
+	"dia": 2,
+	"mes": 4 ,
+	"motivo": "Día del Veterano y de los Caídos en la Guerra de Malvinas",
+	"tipo": "innamovible"
+},{
+	"dia": 24,
+	"mes": 4 ,
+	"motivo": "Día de acción por la tolerancia y el respeto entre los pueblos",
+	"tipo": "nolaborable" 
+},{
+	"dia": 1,
+	"mes": 5 ,
+	"motivo": "Día del Trabajador",
+	"tipo": "innamovible"
+},{
+	"dia": 25,
+	"mes": 5 ,
+	"motivo": "Día de la Revolución de Mayo",
+	"tipo": "innamovible"
+},{
+	"dia": 20,
+	"mes": 6 ,
+	"motivo": "Paso a la Inmortalidad del General Manuel Belgrano",
+	"tipo": "innamovible"
+},{
+	"dia": 9,
+	"mes": 7 ,
+	"motivo": "Día de la Independencia",
+	"tipo": "innamovible"
+},{
+	"dia": 8,
+	"mes": 12 ,
+	"motivo": "Inmaculada Concepción de María",
+	"tipo": "innamovible"
+},{
+	"dia": 25,
+	"mes": 12 ,
+	"motivo": "Navidad",
+	"tipo": "innamovible"
+}]
