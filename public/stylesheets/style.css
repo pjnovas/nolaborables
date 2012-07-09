@@ -1,12 +1,29 @@
 body {
   padding-top: 60px;
   padding-bottom: 40px;
-  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Averia Libre", "Lucida Grande", Helvetica, Arial, sans-serif;
   font-size: 14px;
+  background: url('/img/light_wool.png');
 }
 
-a {
-  color: #00B7FF;
+a:hover {
+  color: #FFA300;
+  text-decoration: none;
+}
+
+.navbar .brand {
+	font-family: 'Slackey', cursive;
+	text-shadow: 1px 1px 1px white;
+	color: #FFA300;
+	font-size: 24px;
+}
+
+.brandComAr {
+	margin-top: 13px;
+	display: inline-block;
+	font-size: 16px;
+	color: white;
+	margin-left: -10px;
 }
 
 .sidebar-nav {
@@ -15,7 +32,33 @@ a {
 
 .hero-unit {
 	padding: 20px;
-	margin-top: 10px;
+	margin: 0;
+	box-shadow: 2px 2px 2px #969696 inset;
+	background: url('/img/lil_fiber.png');
+}
+
+.hero-unit p {
+	margin: 0;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.hero-unit p span {
+	text-shadow: 0px 0px 2px #FFA300;
+}
+
+.hero-unit pre {
+	box-shadow: 2px 2px 2px #969696;
+	margin-top: 15px;
+}
+
+.row-fluid {
+	margin: 10px 0;
+}
+
+.centered-box {
+	text-align: center;
 }
 
 .forkme {
