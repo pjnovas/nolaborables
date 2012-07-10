@@ -1,6 +1,7 @@
 
 var fs = require('fs'),
-	ga = new require('ga');
+	GoogleAnalytics = require('ga'),
+	gacs = new GoogleAnalytics('UA-33270973-1', 'nolaborables.info');
 
 exports.index = function(req, res){
   res.render('index', { title: 'no laborables' });
@@ -23,7 +24,7 @@ function fileExist(error, fileName, exist, doesnot){
 };
 
 exports.getAño = function(req, res){
- 	ga.trackPage(req.url);
+ 	gacs.trackPage(req.url);
 
 	var año = parseInt(req.params.year, 10),
 		fijos = '../data/fijos.json';
