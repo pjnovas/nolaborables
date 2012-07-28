@@ -31,9 +31,9 @@ app.configure('production', function(){
 // Routes
 
 app.get('/', routes.index);
-app.get('/api/v1/proximo', routes.getNext);
-app.get('/api/v1/actual', routes.getYear);
-app.get('/api/v1/:year', routes.getYear);
+app.get('/api/v1/proximo', routes.next);
+app.get('/api/v1/actual', routes.year);
+app.get('/api/v1/:year', routes.year);
 
 var port = process.env.PORT || 3000;
 app.listen(port, function(){
