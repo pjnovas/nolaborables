@@ -118,4 +118,9 @@
 		"tipo": "religion",
 		"religion": "judaísmo" 
 	}
+},{
+	"dia": 24,
+	"mes": 9 ,
+	"motivo": "Bicentenario de la Batalla de Tucumán",
+	"tipo": "nolaborable"
 }]
