@@ -7,13 +7,21 @@ exports.index = function(req, res){
   res.render('index', { title: 'no laborables' });
 };
 
+exports.setActual = function(req, res, next){
+	gacs.trackPage(req.url);
+	req.params.year = (new Date()).getFullYear();
+	next();
+};
+
 exports.year = function(req, res){
  	gacs.trackPage(req.url);
 
 	var year = parseInt(req.params.year, 10);
 
-	if (isNaN(year)) 
-		year = (new Date()).getFullYear();
+	if (isNaN(year)) {
+		res.send("Petición mal formada, no se reconoce '" + year + "'", 400);
+		return;
+	}
 
 	holidays.getYear(year, function(err, data){
 

@@ -69,10 +69,22 @@ describe('API v1', function(){
       callByYear(2013, done);
     });
 
-    it('should return a 404 error if the year is not present', function(done){
+    it('should return a 404 (not found) error if the year is not present', function(done){
       callByYear404(2010, function(){
       	callByYear404(2014, done);	
       });
+    });
+
+    it('should return a 400 (bad request) error if the year is not numeric', function(done){
+      
+      makeRequest({ restUri: '/whatever' }, function (error, response, body) {
+	      if (error) throw new Error(error);
+				
+	      expect(response.statusCode).to.be(400);
+
+	      done();
+	    });
+
     });
 
   });

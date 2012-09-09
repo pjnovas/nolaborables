@@ -32,7 +32,7 @@ app.configure('production', function(){
 
 app.get('/', routes.index);
 app.get('/api/v1/proximo', routes.next);
-app.get('/api/v1/actual', routes.year);
+app.get('/api/v1/actual', routes.setActual, routes.year);
 app.get('/api/v1/:year', routes.year);
 
 var port = process.env.PORT || 3000;
