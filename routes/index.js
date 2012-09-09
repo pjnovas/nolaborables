@@ -8,14 +8,11 @@ exports.index = function(req, res){
 };
 
 exports.setActual = function(req, res, next){
-	gacs.trackPage(req.url);
 	req.params.year = (new Date()).getFullYear();
 	next();
 };
 
 exports.year = function(req, res, next){
- 	gacs.trackPage(req.url);
-
 	var year = parseInt(req.params.year, 10);
 
 	if (isNaN(year)) {
@@ -64,6 +61,8 @@ exports.filterNext = function(req, res, next){
 };
 
 exports.filter = function(req, res){
+	gacs.trackPage(req.url);
+	
 	var optionals = req.query["opcional"];
 	
 	if (optionals === undefined){

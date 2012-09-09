@@ -2,19 +2,19 @@
 API REST para exponer los feriados de Argentina
 
 ### En que está desarrollado
-Sitio web en NodeJS con Express y vistas en Jade
+Sitio web en NodeJS con Express y vistas en Jade. Tests con Mocha y Expect.js
 
 ### Como instalar
-
 Primero instalar NodeJS y luego instalar las dependecias con NPM
 
 ```bash
 npm install
 ```
 
-### Un poco mas de la implementación
+### Implementación
 Los feriados están en la carpeta ./data en formato JSON, con un 1 archivo por año y un archivo fijos.json 
 con los feriados que no cambian nunca
+
 #### Formato
 
 Array de dias:
@@ -26,8 +26,50 @@ Array de dias:
   "motivo": [string],
   "tipo": [string] // inamovible | trasladable | nolaborable
   "traslado": [number] //en caso de trasladable: el dia del traslado
+  "opcional": [object] // en caso de ser opcional: su detalle
 }
 ```
+
+Objeto opcional:
+
+```javascript
+// Religión
+{ 
+	"tipo": "religion", 
+	"religion": "judaísmo" 
+}
+
+// Origen
+{ 
+	"tipo": "origen", 
+	"origen": "armenia" 
+}
+```
+
+
+### Metodología de desarrollo
+Tests (BDD) en Mocha y Expect.js.
+
+####Para correr los tests instalar Mocha:
+
+```bash
+npm install -g mocha
+```
+
+####Para correrlos
+
+```bash
+make test
+```
+
+####Como contribuir
+1. Correr los tests: Verde
+2. Crear test para nueva funcionalidad
+3. Correr el test: Rojo
+4. Implementar codigo para la nueva funcionalidad
+5. Correr los tests: Verde
+6. git - Pull Request :)
+
 
 ## License 
 

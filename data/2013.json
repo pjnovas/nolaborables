@@ -53,7 +53,7 @@
 	"tipo": "nolaborable", 
 	"opcional": {
 		"tipo": "religion",
-		"religion": "judia" 
+		"religion": "judaísmo" 
 	}
 },{
 	"dia": 26,
@@ -62,7 +62,7 @@
 	"tipo": "nolaborable", 
 	"opcional": {
 		"tipo": "religion",
-		"religion": "judia" 
+		"religion": "judaísmo" 
 	} 
 },{
 	"dia": 27,
@@ -71,7 +71,7 @@
 	"tipo": "nolaborable", 
 	"opcional": {
 		"tipo": "religion",
-		"religion": "judia" 
+		"religion": "judaísmo" 
 	} 
 },{
 	"dia": 31,
@@ -80,7 +80,7 @@
 	"tipo": "nolaborable", 
 	"opcional": {
 		"tipo": "religion",
-		"religion": "judia" 
+		"religion": "judaísmo" 
 	} 
 },{
 	"dia": 1,
@@ -89,7 +89,7 @@
 	"tipo": "nolaborable", 
 	"opcional": {
 		"tipo": "religion",
-		"religion": "judia" 
+		"religion": "judaísmo" 
 	} 
 },{
 	"dia": 2,
@@ -98,7 +98,7 @@
 	"tipo": "nolaborable", 
 	"opcional": {
 		"tipo": "religion",
-		"religion": "judia" 
+		"religion": "judaísmo" 
 	} 
 },{
 	"dia": 4,
@@ -107,7 +107,7 @@
 	"tipo": "nolaborable", 
 	"opcional": {
 		"tipo": "religion",
-		"religion": "judia" 
+		"religion": "judaísmo" 
 	} 
 },{
 	"dia": 13,
@@ -116,6 +116,6 @@
 	"tipo": "nolaborable", 
 	"opcional": {
 		"tipo": "religion",
-		"religion": "judia" 
+		"religion": "judaísmo" 
 	} 
 }]

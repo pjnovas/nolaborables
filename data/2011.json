@@ -53,7 +53,7 @@
 	"tipo": "nolaborable",
 	"opcional": {
 		"tipo": "religion",
-		"religion": "judía" 
+		"religion": "judaísmo" 
 	}
 },{
 	"dia": 20,
@@ -62,7 +62,7 @@
 	"tipo": "nolaborable", 
 	"opcional": {
 		"tipo": "religion",
-		"religion": "judía" 
+		"religion": "judaísmo" 
 	}
 },{
 	"dia": 25,
@@ -71,7 +71,7 @@
 	"tipo": "nolaborable", 
 	"opcional": {
 		"tipo": "religion",
-		"religion": "judía" 
+		"religion": "judaísmo" 
 	}
 },{
 	"dia": 26,
@@ -80,7 +80,7 @@
 	"tipo": "nolaborable", 
 	"opcional": {
 		"tipo": "religion",
-		"religion": "judía" 
+		"religion": "judaísmo" 
 	}
 },{
 	"dia": 29,
@@ -89,7 +89,7 @@
 	"tipo": "nolaborable", 
 	"opcional": {
 		"tipo": "religion",
-		"religion": "judía" 
+		"religion": "judaísmo" 
 	}
 },{
 	"dia": 30,
@@ -98,7 +98,7 @@
 	"tipo": "nolaborable", 
 	"opcional": {
 		"tipo": "religion",
-		"religion": "judía" 
+		"religion": "judaísmo" 
 	}
 },{
 	"dia": 8,
@@ -107,6 +107,6 @@
 	"tipo": "nolaborable",
 	"opcional": {
 		"tipo": "religion",
-		"religion": "judía" 
+		"religion": "judaísmo" 
 	}
 }]

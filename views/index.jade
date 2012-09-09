@@ -26,26 +26,60 @@ div.row-fluid
 				a(href='http://nolaborables.info/API/v1/proximo') nolaborables.info/API/v1/proximo
 div.row-fluid
 	div.span12
-		div.hero-unit
-			h3 Respuesta JSON (ejemplo)
-			pre
-				code.json [{ 
-					|  "dia": 9,
-					|  "mes": 7,
-					|  "motivo": "Día de la Independencia",
-					|  "tipo": "innamovible"
-					|},{
-					|  "dia": 17,
-					|  "mes": 8,
-					|  "motivo": "Paso a la Inmortalidad del General José de San Martín",
-					|  "tipo": "trasladable",
-					|  "traslado": 20
-					|},{
-					|  "dia": 5,
-					|  "mes": 4,
-					|  "motivo": "Jueves Santo Festividad Cristiana",
-					|  "tipo": "nolaborable" 
-					|}]
+		h3 Respuesta JSON (ejemplo)
+		pre
+			code.json [{ 
+				|  "dia": 9,
+				|  "mes": 7,
+				|  "motivo": "Día de la Independencia",
+				|  "tipo": "innamovible"
+				|},{
+				|  "dia": 17,
+				|  "mes": 8,
+				|  "motivo": "Paso a la Inmortalidad del General José de San Martín",
+				|  "tipo": "trasladable",
+				|  "traslado": 20
+				|},{
+				|  "dia": 5,
+				|  "mes": 4,
+				|  "motivo": "Jueves Santo Festividad Cristiana",
+				|  "tipo": "nolaborable" 
+				|},{
+				|	"dia": 6,
+				|	"mes": 4 ,
+				|	"motivo": "Pascuas Judías",
+				|	"tipo": "nolaborable", 
+				|	"opcional": {
+				|		"tipo": "religion",
+				|		"religion": "judaísmo" 
+				|	}
+				|}]
+hr
 div.row-fluid
-	p Feriados extraídos del sitio del 
+	div.span12
+		h2 Filtros
+		div.margin
+			h3 Feriados Opcionales
+			p.margin Por defecto devuelve todos los feriados, incluidos los opcionales.
+			div.margin
+				p 
+					| Para excluir feriados opcionales agregar parámetro  
+					span.hl opcional=null
+					|  al query string 
+				code
+					p.margin.bold
+						span Año 2011 sin opcionales:&nbsp;
+						a(href='http://nolaborables.info/API/v1/2011?opcional=null') nolaborables.info/API/v1/2011
+							span.hl ?opcional=null
+					p.margin.bold
+						span Año actual sin opcionales:&nbsp;
+						a(href='http://nolaborables.info/API/v1/actual?opcional=null') nolaborables.info/API/v1/actual
+							span.hl ?opcional=null
+					p.margin.bold
+						span Pr&oacute;ximo NO opcional:&nbsp;
+						a(href='http://nolaborables.info/API/v1/proximo?opcional=null') nolaborables.info/API/v1/proximo
+							span.hl ?opcional=null
+hr
+div.row-fluid
+	p Feriados Nacionales extraídos del sitio del 
 		a(href='http://www.mininterior.gov.ar/asuntos_politicos_y_alectorales/dinap/feriados.php?idName=asuntos&idNameSubMenu=DiNAP&idNameSubMenuDer=DirNAPFeriados') Ministerio del Interior
