@@ -46,37 +46,42 @@ function getYearData(year, done) {
 
 }
 
-function getNextOne(done){
+function getNextOne(holidays, done){
   var actual = (new Date()).getFullYear();
-
-  getYearData(actual, function(err, data){
-    if (!err){
       
-      var currMonth = (new Date()).getMonth() + 1;
-      var currDay = (new Date()).getDate(); 
+  var currMonth = (new Date()).getMonth() + 1;
+  var currDay = (new Date()).getDate(); 
 
-      var holiday = {};
-      for(var i=0; i < data.length; i++){
-        if (currMonth == data[i].mes && data[i].dia > currDay
-          || data[i].mes > currMonth ){
+  var holiday = {};
+  for(var i=0; i < holidays.length; i++){
+    if (currMonth == holidays[i].mes && holidays[i].dia > currDay
+      || holidays[i].mes > currMonth ){
 
-          holiday = data[i];
-          break;
-        }
-      }
-
-      done(null, holiday);
+      holiday = holidays[i];
+      break;
     }
-    else {
-      done(err);
-    }
-  });
+  }
 
+  done(null, holiday);
 }
 
+function filterOptionals(optionals, holidays){
+  var newHolidays = [];
+  
+  if(optionals === 'null'){
+
+    for(var i=0; i< holidays.length; i++){
+      if (!holidays[i].opcional)
+        newHolidays.push(holidays[i]);
+    }
+  }
+
+  return newHolidays;
+}
 
 module.exports ={
   getYear: getYearData,
-  getNext: getNextOne
+  getNext: getNextOne,
+  filter: filterOptionals
 };
 

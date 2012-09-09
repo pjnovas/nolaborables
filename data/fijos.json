@@ -17,7 +17,11 @@
 	"dia": 24,
 	"mes": 4 ,
 	"motivo": "Día de acción por la tolerancia y el respeto entre los pueblos",
-	"tipo": "nolaborable" 
+	"tipo": "nolaborable",
+	"opcional": {
+		"tipo": "origen",
+		"origen": "armenia" 
+	}
 },{
 	"dia": 1,
 	"mes": 5 ,

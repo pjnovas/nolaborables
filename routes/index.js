@@ -13,7 +13,7 @@ exports.setActual = function(req, res, next){
 	next();
 };
 
-exports.year = function(req, res){
+exports.year = function(req, res, next){
  	gacs.trackPage(req.url);
 
 	var year = parseInt(req.params.year, 10);
@@ -26,7 +26,8 @@ exports.year = function(req, res){
 	holidays.getYear(year, function(err, data){
 
 		if (!err){
-			res.send(data);
+			req.holidays = data;
+			next();
 		}
 		else if(err === 'NOTFOUND' || err.message === 'NOTFOUND'){
 			res.send('No se encontró la información para el año ' + year, 404);
@@ -37,10 +38,10 @@ exports.year = function(req, res){
 	});
 };
 
-exports.next = function(req, res){
+exports.nextOne = function(req, res){
 	gacs.trackPage(req.url);
 
-	holidays.getNext(function(err, data){
+	holidays.getNext(req.holidays, function(err, data){
 
 		if (!err){
 			res.send(data);
@@ -52,7 +53,27 @@ exports.next = function(req, res){
 
 };
 
+exports.filterNext = function(req, res, next){
+	var optionals = req.query["opcional"];
+	
+	if (optionals !== undefined) {
+		req.holidays = holidays.filter(optionals, req.holidays);
+	}
 
+	next();
+};
+
+exports.filter = function(req, res){
+	var optionals = req.query["opcional"];
+	
+	if (optionals === undefined){
+		res.send(req.holidays);
+	} 
+	else {
+		req.holidays = holidays.filter(optionals, req.holidays);
+		res.send(req.holidays);
+	}
+};
 
 
 

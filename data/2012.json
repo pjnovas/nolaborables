@@ -50,40 +50,72 @@
 	"dia": 6,
 	"mes": 4 ,
 	"motivo": "Pascuas Judías",
-	"tipo": "nolaborable" 
+	"tipo": "nolaborable", 
+	"opcional": {
+		"tipo": "religion",
+		"religion": "judia" 
+	}
 },{
 	"dia": 7,
 	"mes": 4 ,
 	"motivo": "Pascuas Judías",
-	"tipo": "nolaborable" 
+	"tipo": "nolaborable", 
+	"opcional": {
+		"tipo": "religion",
+		"religion": "judia" 
+	}
 },{
 	"dia": 8,
 	"mes": 4 ,
 	"motivo": "Pascuas Judías",
-	"tipo": "nolaborable" 
+	"tipo": "nolaborable", 
+	"opcional": {
+		"tipo": "religion",
+		"religion": "judia" 
+	}
 },{
 	"dia": 12,
 	"mes": 4 ,
 	"motivo": "Pascuas Judías",
-	"tipo": "nolaborable" 
+	"tipo": "nolaborable", 
+	"opcional": {
+		"tipo": "religion",
+		"religion": "judia" 
+	}
 },{
 	"dia": 13,
 	"mes": 4 ,
 	"motivo": "Pascuas Judías",
-	"tipo": "nolaborable" 
+	"tipo": "nolaborable", 
+	"opcional": {
+		"tipo": "religion",
+		"religion": "judia" 
+	}
 },{
 	"dia": 14,
 	"mes": 4 ,
 	"motivo": "Pascuas Judías",
-	"tipo": "nolaborable" 
+	"tipo": "nolaborable", 
+	"opcional": {
+		"tipo": "religion",
+		"religion": "judia" 
+	}
 },{
 	"dia": 16,
 	"mes": 9 ,
 	"motivo": "Año Nuevo Judío",
-	"tipo": "nolaborable" 
+	"tipo": "nolaborable", 
+	"opcional": {
+		"tipo": "religion",
+		"religion": "judia" 
+	}
 },{
 	"dia": 25,
 	"mes": 9 ,
 	"motivo": "Día del Perdón",
-	"tipo": "nolaborable" 
+	"tipo": "nolaborable", 
+	"opcional": {
+		"tipo": "religion",
+		"religion": "judia" 
+	}
 }]

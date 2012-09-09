@@ -16,7 +16,7 @@ describe('API v1', function(){
 		var url = options.url || SERVER_URL + ':' + SERVER_PORT + SERVER_API_URL;
 			url += options.apiVersion || API_VERSION;
 			url += options.restUri || '',
-			url += options.queryString || '';
+			url += (options.queryString) ? '?' + options.queryString : '';
 
 		console.log('[%s]\r', url);
 
@@ -57,6 +57,35 @@ describe('API v1', function(){
 	    });
   	}
 
+  	function callByYearNoOptional(year, callback){
+  		makeRequest({ restUri: '/' + year, queryString: 'opcional=null' }, 
+  			function (error, response, body) {
+		      if (error) throw new Error(error);
+					
+		      expect(response.statusCode).to.be(200);
+
+		      var yearJson = require(DATA_PATH + year + '.json');
+		      var fijos = require(DATA_PATH + 'fijos.json');
+		      var holidays = fijos.concat(yearJson);
+
+		      var opcCount = 0;
+		      for(var i=0; i<holidays.length; i++){
+		      	if (holidays[i].opcional)
+		      		opcCount++;
+		      }
+
+		      var result = JSON.parse(body);
+		      
+					expect(holidays.length - opcCount).to.be(result.length);
+
+		      for(var i=0; i<result.length; i++){
+		      	expect(result[i].opcional).to.be(undefined);
+		      }
+
+		      callback();
+	    });
+    }
+
     it('should return every holiday for year 2011', function(done){
       callByYear(2011, done);
     });
@@ -69,13 +98,13 @@ describe('API v1', function(){
       callByYear(2013, done);
     });
 
-    it('should return a 404 (not found) error if the year is not present', function(done){
+    it('should return a 404 (not found) error if year is not present', function(done){
       callByYear404(2010, function(){
       	callByYear404(2014, done);	
       });
     });
 
-    it('should return a 400 (bad request) error if the year is not numeric', function(done){
+    it('should return a 400 (bad request) error if year is not numeric', function(done){
       
       makeRequest({ restUri: '/whatever' }, function (error, response, body) {
 	      if (error) throw new Error(error);
@@ -87,13 +116,23 @@ describe('API v1', function(){
 
     });
 
+    it("should NOT return optional holidays when filter 'opcional' is null", function(done){
+    	callByYearNoOptional(2011, function(){
+      	callByYearNoOptional(2012, function(){
+      		callByYearNoOptional(2013, function(){
+      			done();
+      		});
+      	});	
+      });
+    });
+
   });
 
   describe('#actual', function(){
+		var actualYear = new Date().getFullYear();
 
-    it('should return every holiday at the current year', function(done){
-			var actualYear = new Date().getFullYear();
-
+    it('should return every holiday at current year', function(done){
+			
 			makeRequest({ restUri: '/actual' }, function (error, response, body) {
 	      if (error) throw new Error(error);
 				
@@ -111,12 +150,43 @@ describe('API v1', function(){
 
     });
 
+    it("should NOT return optional holidays when filter 'opcional' is null for current year", function(done){
+
+			makeRequest({ restUri: '/actual', queryString: 'opcional=null' }, 
+  			function (error, response, body) {
+		      if (error) throw new Error(error);
+					
+		      expect(response.statusCode).to.be(200);
+
+		      var yearJson = require(DATA_PATH + actualYear + '.json');
+		      var fijos = require(DATA_PATH + 'fijos.json');
+		      var holidays = fijos.concat(yearJson);
+
+		      var opcCount = 0;
+		      for(var i=0; i<holidays.length; i++){
+		      	if (holidays[i].opcional)
+		      		opcCount++;
+		      }
+
+		      var result = JSON.parse(body);
+		      
+					expect(holidays.length - opcCount).to.be(result.length);
+
+		      for(var i=0; i<result.length; i++){
+		      	expect(result[i].opcional).to.be(undefined);
+		      }
+
+		      done();
+	    });
+
+    });
+
   });
 
   describe('#proximo', function(){
   	var currYear = new Date().getFullYear();
   	
-  	function getNextOne(){
+  	function getNextOne(optional){
   		var yearfl = require(DATA_PATH + currYear + '.json');
 	    var fijosfl = require(DATA_PATH + 'fijos.json');
 	    var holidays = fijosfl.concat(yearfl);
@@ -137,8 +207,12 @@ describe('API v1', function(){
         if (currMonth == holidays[i].mes && holidays[i].dia > currDay
           || holidays[i].mes > currMonth ){
 
-          holiday = holidays[i];
-          break;
+        	if(optional === 'null' && holidays[i].opcional)
+        		continue;
+        	else {
+	          holiday = holidays[i];
+	          break;
+          }
         }
       }
 
@@ -153,6 +227,28 @@ describe('API v1', function(){
 	      expect(response.statusCode).to.be(200);
 
 	      var nextone = getNextOne();
+	      var result = JSON.parse(body);
+
+	      expect(result).to.not.be.an('array');
+
+	      expect(result.dia).to.be(nextone.dia);
+	      expect(result.mes).to.be(nextone.mes);
+	      expect(result.motivo).to.be(nextone.motivo);
+	      expect(result.tipo).to.be(nextone.tipo);
+
+	      done();
+	    });
+
+    });
+
+    it("should return the next NOT optional holiday when filter 'opcional' is null", function(done){
+
+			makeRequest({ restUri: '/proximo', queryString: 'opcional=null' }, function (error, response, body) {
+	      if (error) throw new Error(error);
+				
+	      expect(response.statusCode).to.be(200);
+
+	      var nextone = getNextOne('null');
 	      var result = JSON.parse(body);
 
 	      expect(result).to.not.be.an('array');
