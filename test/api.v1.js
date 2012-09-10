@@ -58,7 +58,7 @@ describe('API v1', function(){
   	}
 
   	function callByYearNoOptional(year, callback){
-  		makeRequest({ restUri: '/' + year, queryString: 'opcional=null' }, 
+  		makeRequest({ restUri: '/' + year, queryString: 'excluir=opcional' }, 
   			function (error, response, body) {
 		      if (error) throw new Error(error);
 					
@@ -116,7 +116,7 @@ describe('API v1', function(){
 
     });
 
-    it("should NOT return optional holidays when filter 'opcional' is null", function(done){
+    it("should NOT return optional holidays when filter 'excluir' is opcional", function(done){
     	callByYearNoOptional(2011, function(){
       	callByYearNoOptional(2012, function(){
       		callByYearNoOptional(2013, function(){
@@ -150,9 +150,9 @@ describe('API v1', function(){
 
     });
 
-    it("should NOT return optional holidays when filter 'opcional' is null for current year", function(done){
+    it("should NOT return optional holidays when filter 'excluir' is opcional for current year", function(done){
 
-			makeRequest({ restUri: '/actual', queryString: 'opcional=null' }, 
+			makeRequest({ restUri: '/actual', queryString: 'excluir=opcional' }, 
   			function (error, response, body) {
 		      if (error) throw new Error(error);
 					
@@ -241,9 +241,9 @@ describe('API v1', function(){
 
     });
 
-    it("should return the next NOT optional holiday when filter 'opcional' is null", function(done){
+    it("should return the next NOT optional holiday when filter 'excluir' is opcional", function(done){
 
-			makeRequest({ restUri: '/proximo', queryString: 'opcional=null' }, function (error, response, body) {
+			makeRequest({ restUri: '/proximo', queryString: 'excluir=opcional' }, function (error, response, body) {
 	      if (error) throw new Error(error);
 				
 	      expect(response.statusCode).to.be(200);

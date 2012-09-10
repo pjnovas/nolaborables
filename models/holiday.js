@@ -65,10 +65,10 @@ function getNextOne(holidays, done){
   done(null, holiday);
 }
 
-function filterOptionals(optionals, holidays){
+function filterOptionals(exclude, holidays){
   var newHolidays = [];
   
-  if(optionals === 'null'){
+  if(exclude === 'opcional'){
 
     for(var i=0; i< holidays.length; i++){
       if (!holidays[i].opcional)

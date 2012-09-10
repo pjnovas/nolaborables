@@ -51,10 +51,10 @@ exports.nextOne = function(req, res){
 };
 
 exports.filterNext = function(req, res, next){
-	var optionals = req.query["opcional"];
+	var exclude = req.query["excluir"];
 	
-	if (optionals !== undefined) {
-		req.holidays = holidays.filter(optionals, req.holidays);
+	if (exclude !== undefined) {
+		req.holidays = holidays.filter(exclude, req.holidays);
 	}
 
 	next();
@@ -63,13 +63,13 @@ exports.filterNext = function(req, res, next){
 exports.filter = function(req, res){
 	gacs.trackPage(req.url);
 	
-	var optionals = req.query["opcional"];
+	var exclude = req.query["excluir"];
 	
-	if (optionals === undefined){
+	if (exclude === undefined){
 		res.send(req.holidays);
 	} 
 	else {
-		req.holidays = holidays.filter(optionals, req.holidays);
+		req.holidays = holidays.filter(exclude, req.holidays);
 		res.send(req.holidays);
 	}
 };
