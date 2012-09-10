@@ -1,85 +1,103 @@
 div.row-fluid
-	div.span12
-		div.hero-unit
-			p 
-				span API Rest  
-				|pública y gratuita para consultar los 
-				span feriados 
-				|en 
-				span Argentina
-		div.row-fluid
-			div.span4.centered-box
-				h3 2011
-				a(href='http://nolaborables.info/API/v1/2013') nolaborables.info/API/v1/2013
-			div.span4.centered-box
-				h3 2012
-				a(href='http://nolaborables.info/API/v1/2012') nolaborables.info/API/v1/2012
-			div.span4.centered-box
-				h3 2013
-				a(href='http://nolaborables.info/API/v1/2011') nolaborables.info/API/v1/2011
-		div.row-fluid
-			div.span6.centered-box
-				h3 Actual (año)
-				a(href='http://nolaborables.info/API/v1/actual') nolaborables.info/API/v1/actual
-			div.span6.centered-box
-				h3 Próximo Feriado
-				a(href='http://nolaborables.info/API/v1/proximo') nolaborables.info/API/v1/proximo
+  div.span12
+    div.hero-unit
+      p 
+        span API Rest  
+        |pública y gratuita para consultar los 
+        span feriados 
+        |en 
+        span Argentina
+    div.row-fluid
+      div.span4.centered-box
+        h3 2011
+        a(href='http://nolaborables.info/API/v1/2013') nolaborables.info/API/v1/2013
+      div.span4.centered-box
+        h3 2012
+        a(href='http://nolaborables.info/API/v1/2012') nolaborables.info/API/v1/2012
+      div.span4.centered-box
+        h3 2013
+        a(href='http://nolaborables.info/API/v1/2011') nolaborables.info/API/v1/2011
+    div.row-fluid
+      div.span6.centered-box
+        h3 Actual (año)
+        a(href='http://nolaborables.info/API/v1/actual') nolaborables.info/API/v1/actual
+      div.span6.centered-box
+        h3 Próximo Feriado
+        a(href='http://nolaborables.info/API/v1/proximo') nolaborables.info/API/v1/proximo
 div.row-fluid
-	div.span12
-		h3 Respuesta JSON (ejemplo)
-		pre
-			code.json [{ 
-				|  "dia": 9,
-				|  "mes": 7,
-				|  "motivo": "Día de la Independencia",
-				|  "tipo": "innamovible"
-				|},{
-				|  "dia": 17,
-				|  "mes": 8,
-				|  "motivo": "Paso a la Inmortalidad del General José de San Martín",
-				|  "tipo": "trasladable",
-				|  "traslado": 20
-				|},{
-				|  "dia": 5,
-				|  "mes": 4,
-				|  "motivo": "Jueves Santo Festividad Cristiana",
-				|  "tipo": "nolaborable" 
-				|},{
-				|	"dia": 6,
-				|	"mes": 4 ,
-				|	"motivo": "Pascuas Judías",
-				|	"tipo": "nolaborable", 
-				|	"opcional": {
-				|		"tipo": "religion",
-				|		"religion": "judaísmo" 
-				|	}
-				|}]
+  div.span12
+    h3 Respuesta JSON (ejemplo)
+    pre
+      code.json [{ 
+        |  "dia": 9,
+        |  "mes": 7,
+        |  "motivo": "Día de la Independencia",
+        |  "tipo": "innamovible"
+        |},{
+        |  "dia": 17,
+        |  "mes": 8,
+        |  "motivo": "Paso a la Inmortalidad del General José de San Martín",
+        |  "tipo": "trasladable",
+        |  "traslado": 20
+        |},{
+        |  "dia": 5,
+        |  "mes": 4,
+        |  "motivo": "Jueves Santo Festividad Cristiana",
+        |  "tipo": "nolaborable" 
+        |},{
+        | "dia": 6,
+        | "mes": 4 ,
+        | "motivo": "Pascuas Judías",
+        | "tipo": "nolaborable", 
+        | "opcional": {
+        |   "tipo": "religion",
+        |   "religion": "judaísmo" 
+        | }
+        |}]
 hr
 div.row-fluid
-	div.span12
-		h2 Filtros
-		div.margin
-			h3 Feriados Opcionales
-			p.margin Por defecto devuelve todos los feriados, incluidos los opcionales.
-			div.margin
-				p 
-					| Para excluir feriados opcionales agregar parámetro  
-					span.hl opcional=null
-					|  al query string 
-				code
-					p.margin.bold
-						span Año 2011 sin opcionales:&nbsp;
-						a(href='http://nolaborables.info/API/v1/2011?opcional=null') nolaborables.info/API/v1/2011
-							span.hl ?opcional=null
-					p.margin.bold
-						span Año actual sin opcionales:&nbsp;
-						a(href='http://nolaborables.info/API/v1/actual?opcional=null') nolaborables.info/API/v1/actual
-							span.hl ?opcional=null
-					p.margin.bold
-						span Pr&oacute;ximo NO opcional:&nbsp;
-						a(href='http://nolaborables.info/API/v1/proximo?opcional=null') nolaborables.info/API/v1/proximo
-							span.hl ?opcional=null
+  div.span12
+    h2 Filtros
+    div.margin
+      h3 Feriados Opcionales
+      p.margin Por defecto devuelve todos los feriados, incluidos los opcionales.
+      div.margin
+        p 
+          | Para excluir feriados opcionales agregar parámetro  
+          span.hl opcional=null
+          |  al query string 
+        code
+          p.margin.bold
+            span Año 2011 sin opcionales:&nbsp;
+            a(href='http://nolaborables.info/API/v1/2011?opcional=null') nolaborables.info/API/v1/2011
+              span.hl ?opcional=null
+          p.margin.bold
+            span Año actual sin opcionales:&nbsp;
+            a(href='http://nolaborables.info/API/v1/actual?opcional=null') nolaborables.info/API/v1/actual
+              span.hl ?opcional=null
+          p.margin.bold
+            span Pr&oacute;ximo NO opcional:&nbsp;
+            a(href='http://nolaborables.info/API/v1/proximo?opcional=null') nolaborables.info/API/v1/proximo
+              span.hl ?opcional=null
 hr
 div.row-fluid
-	p Feriados Nacionales extraídos del sitio del 
-		a(href='http://www.mininterior.gov.ar/asuntos_politicos_y_alectorales/dinap/feriados.php?idName=asuntos&idNameSubMenu=DiNAP&idNameSubMenuDer=DirNAPFeriados') Ministerio del Interior
+  div.span12
+    h2 Soporte JSONP 
+    div.margin
+      p El nombre del par&aacute;metro para la funci&oacute;n de retorno JSONP es 'callback',
+        | es decir, que la API puede ser llamada como:
+      pre
+        code.javascript "http://nolaborables.info/API/v1/actual?callback=foo"
+          | // donde 'foo' es el nombre de la funci&oacute;n de retorno
+      h3 Ejemplo de uso con jQuery
+      pre
+        code.javascript $.ajax({
+          |   url: "http://nolaborables.info/API/v1/actual",
+          |   dataType: 'jsonp'
+          | }).done(function(data) { 
+          |   console.dir(data);
+          | });
+hr
+div.row-fluid
+  p Feriados Nacionales extraídos del sitio del 
+    a(href='http://www.mininterior.gov.ar/asuntos_politicos_y_alectorales/dinap/feriados.php?idName=asuntos&idNameSubMenu=DiNAP&idNameSubMenuDer=DirNAPFeriados') Ministerio del Interior
