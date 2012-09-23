@@ -10,13 +10,13 @@ div.row-fluid
     div.row-fluid
       div.span4.centered-box
         h3 2011
-        a(href='http://nolaborables.info/API/v1/2013') nolaborables.info/API/v1/2013
+        a(href='http://nolaborables.info/API/v1/2011') nolaborables.info/API/v1/2011
       div.span4.centered-box
         h3 2012
         a(href='http://nolaborables.info/API/v1/2012') nolaborables.info/API/v1/2012
       div.span4.centered-box
         h3 2013
-        a(href='http://nolaborables.info/API/v1/2011') nolaborables.info/API/v1/2011
+        a(href='http://nolaborables.info/API/v1/2013') nolaborables.info/API/v1/2013
     div.row-fluid
       div.span6.centered-box
         h3 Actual (año)
@@ -89,13 +89,29 @@ div.row-fluid
       pre
         code.javascript "http://nolaborables.info/API/v1/actual?callback=foo"
           | // donde 'foo' es el nombre de la funci&oacute;n de retorno
+          | function foo(feriados) {
+          |   console.dir(feriados);
+          | }
       h3 Ejemplo de uso con jQuery
       pre
         code.javascript $.ajax({
           |   url: "http://nolaborables.info/API/v1/actual",
           |   dataType: 'jsonp'
-          | }).done(function(data) { 
-          |   console.dir(data);
+          | }).done(function(feriados) { 
+          |   console.dir(feriados);
+          | });
+hr
+div.row-fluid
+  div.span12
+    h2 Soporte CORS (Cross-Origin Resource Sharing) 
+    div.margin
+      p Ya se pude obtener los feriados desde cualquier Origen. (
+        a(href='http://caniuse.com/cors', target='_blank') soporte de exploradores
+        | )
+      h3 Ejemplo con jQuery
+      pre
+        code.javascript $.get('http://nolaborables.info/API/v1/actual', function(feriados){
+          |   console.dir(feriados);
           | });
 hr
 div.row-fluid
