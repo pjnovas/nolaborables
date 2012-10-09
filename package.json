@@ -2,7 +2,7 @@
   "name": "nolaborables",
   "description": "API pública y gratuita para consultar los feriados en Argentina.",
   "version": "0.1.4-3",
-  "private": true,
+  "private": false,
   "dependencies": {
     "express": "2.5.11",
     "jade": ">= 0.0.1",
@@ -19,7 +19,8 @@
     "www.nolaborables.info"
   ],
   "scripts": {
-    "start": "app.js"
+    "start": "app.js",
+    "test": "make test"
   },
   "engines": {
     "node": "0.8.x"

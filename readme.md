@@ -1,4 +1,4 @@
-## No Laborables
+## No Laborables [![Build Status](https://secure.travis-ci.org/pjnovas/nolaborables.png?branch=master)](http://travis-ci.org/pjnovas/nolaborables)
 API REST para exponer los feriados de Argentina
 
 ### En que está desarrollado
@@ -12,8 +12,7 @@ npm install
 ```
 
 ### Implementación
-Los feriados están en la carpeta ./data en formato JSON, con un 1 archivo por año y un archivo fijos.json 
-con los feriados que no cambian nunca
+Los feriados están en la carpeta ./data en formato JSON, con un 1 archivo por año y un archivo fijos.json con los feriados que no cambian nunca
 
 #### Formato
 
@@ -46,17 +45,10 @@ Objeto opcional:
 }
 ```
 
-
 ### Metodología de desarrollo
 Tests (BDD) en Mocha y Expect.js.
 
-####Para correr los tests instalar Mocha:
-
-```bash
-npm install -g mocha
-```
-
-####Para correrlos
+####Para correr los tests:
 
 ```bash
 make test
