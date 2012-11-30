@@ -9,6 +9,11 @@
 	"motivo": "Carnaval",
 	"tipo": "innamovible"
 },{
+	"dia": 20,
+	"mes": 2 ,
+	"motivo": "Bicentenario de la Batalla de Salta",
+	"tipo": "nolaborable"
+},{
 	"dia": 29,
 	"mes": 3 ,
 	"motivo": "Viernes Santo",
