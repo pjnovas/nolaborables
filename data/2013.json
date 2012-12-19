@@ -1,4 +1,9 @@
 [{
+	"dia": 31,
+	"mes": 1 ,
+	"motivo": "Año del Bicentenario de la Asamblea General Constituyente de 1813",
+	"tipo": "nolaborable"
+},{
 	"dia": 11,
 	"mes": 2 ,
 	"motivo": "Carnaval",
