@@ -36,10 +36,10 @@ exports.year = function(req, res, next){
 };
 
 exports.nextOne = function(req, res){
-	gacs.trackPage(req.url);
+	if (app.useGac) gacs.trackPage(req.url);
 
 	holidays.getNext(req.holidays, function(err, data){
-
+		
 		if (!err){
 			res.send(data);
 		}
@@ -61,7 +61,7 @@ exports.filterNext = function(req, res, next){
 };
 
 exports.filter = function(req, res){
-	gacs.trackPage(req.url);
+	if (app.useGac) gacs.trackPage(req.url);
 	
 	var exclude = req.query["excluir"];
 	

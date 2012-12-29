@@ -184,6 +184,13 @@ describe('API v1', function(){
   });
 
   describe('#proximo', function(){
+    var firstHoliday = {
+      "dia": 1,
+      "mes": 1 ,
+      "motivo": "Año Nuevo",
+      "tipo": "innamovible"
+    };
+
   	var currYear = new Date().getFullYear();
   	
   	function getNextOne(optional){
@@ -219,17 +226,20 @@ describe('API v1', function(){
       return holiday;
   	}
 
-    it('should return the next holiday', function(done){
-
+    it('should return the next holiday (Jan 1st if not found)', function(done){
+      
 			makeRequest({ restUri: '/proximo' }, function (error, response, body) {
 	      if (error) throw new Error(error);
 				
 	      expect(response.statusCode).to.be(200);
 
 	      var nextone = getNextOne();
+        if (!nextone.dia)
+          nextone = firstHoliday;
+
 	      var result = JSON.parse(body);
 
-	      expect(result).to.not.be.an('array');
+	      expect(result).to.be.an('object');
 
 	      expect(result.dia).to.be(nextone.dia);
 	      expect(result.mes).to.be(nextone.mes);
@@ -249,9 +259,12 @@ describe('API v1', function(){
 	      expect(response.statusCode).to.be(200);
 
 	      var nextone = getNextOne('null');
+        if (!nextone.dia)
+          nextone = firstHoliday;
+
 	      var result = JSON.parse(body);
 
-	      expect(result).to.not.be.an('array');
+	      expect(result).to.be.an('object');
 
 	      expect(result.dia).to.be(nextone.dia);
 	      expect(result.mes).to.be(nextone.mes);

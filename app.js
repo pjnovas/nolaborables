@@ -6,7 +6,7 @@
 var express = require('express')
   , routes = require('./routes');
 
-var app = module.exports = express.createServer();
+app = module.exports = express.createServer();
 
 // Configuration
 
@@ -24,10 +24,12 @@ app.configure(function(){
 
 app.configure('development', function(){
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
+  app.useGac = false;
 });
 
 app.configure('production', function(){
   app.use(express.errorHandler());
+  app.useGac = true;
 });
 
 function allowCORS(req, res, next) {

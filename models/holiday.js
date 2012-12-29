@@ -52,7 +52,7 @@ function getNextOne(holidays, done){
   var currMonth = (new Date()).getMonth() + 1;
   var currDay = (new Date()).getDate(); 
 
-  var holiday = {};
+  var holiday = null;
   for(var i=0; i < holidays.length; i++){
     if (currMonth == holidays[i].mes && holidays[i].dia > currDay
       || holidays[i].mes > currMonth ){
@@ -62,7 +62,15 @@ function getNextOne(holidays, done){
     }
   }
 
-  done(null, holiday);
+  if (!holiday) {
+    done(null, {
+      "dia": 1,
+      "mes": 1 ,
+      "motivo": "Año Nuevo",
+      "tipo": "innamovible"
+    });
+  }
+  else done(null, holiday);
 }
 
 function filterOptionals(exclude, holidays){
