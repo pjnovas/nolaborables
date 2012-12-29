@@ -1,7 +1,7 @@
 {
   "name": "nolaborables",
   "description": "API pública y gratuita para consultar los feriados en Argentina.",
-  "version": "0.1.4-5",
+  "version": "0.1.5",
   "private": false,
   "dependencies": {
     "express": "2.5.11",
