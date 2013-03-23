@@ -3,7 +3,7 @@ var expect = require('expect.js'),
   request = require('request');
 
 var SERVER_URL = 'http://localhost',
-  SERVER_PORT = 3000,
+  SERVER_PORT = 3100,
   SERVER_API_URL = "/API",
   API_VERSION = "/v1",
   DATA_PATH = '../data/';

@@ -8,21 +8,21 @@ function fileExist(error, fileName, exist, doesnot){
     else if(err.code == 'ENOENT') doesnot();
     else error(err);
   }
-  
+ 
   function getFileStatus(err, localPath){
     if (err) error(err);
     else fs.stat(localPath + fileName, validateStatus);
   }
   
-  fs.realpath('./', getFileStatus);
+  fs.realpath(__dirname + '/../', getFileStatus);
 };
 
 
 function getYearData(year, done) {
 
-  var file = '../data/' + year + '.json',
+  var file = __dirname + '/../data/' + year + '.json',
     path = '/data/' + year + '.json',
-    fijos = '../data/fijos.json';
+    fijos = __dirname + '/../data/fijos.json';
 
   function onExists(){
     var añofl = require(file);

@@ -46,11 +46,7 @@ app.get('/api/v1/proximo', routes.setActual, routes.year, routes.filterNext, rou
 app.get('/api/v1/actual', routes.setActual, routes.year, routes.filter);
 app.get('/api/v1/:year', routes.year, routes.filter);
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3100;
 app.listen(port, function(){
   console.log("NoLaborables server listening on port %d in %s mode", port, app.settings.env);
-});
-
-process.on("uncaughtException", function (err) { 
-  console.log('>>>>>> Unhandled Exception Ocurred: ' + err);
 });

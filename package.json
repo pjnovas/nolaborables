@@ -13,11 +13,6 @@
     "mocha": ">=1.4.2",
     "expect.js": ">=0.1.2"
   },
-  "subdomain": "nolaborables",
-  "domains": [
-    "nolaborables.info",
-    "www.nolaborables.info"
-  ],
   "scripts": {
     "start": "app.js",
     "test": "make test"
