@@ -98,9 +98,13 @@ describe('API v1', function(){
       callByYear(2013, done);
     });
 
+    it('should return every holiday for year 2014', function(done){
+      callByYear(2014, done);
+    });
+
     it('should return a 404 (not found) error if year is not present', function(done){
       callByYear404(2010, function(){
-      	callByYear404(2014, done);	
+      	callByYear404(2020, done);	
       });
     });
 
@@ -120,7 +124,9 @@ describe('API v1', function(){
     	callByYearNoOptional(2011, function(){
       	callByYearNoOptional(2012, function(){
       		callByYearNoOptional(2013, function(){
-      			done();
+            callByYearNoOptional(2014, function(){
+      			 done();
+             });
       		});
       	});	
       });
