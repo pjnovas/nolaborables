@@ -9,6 +9,15 @@
   "motivo": "Carnaval",
   "tipo": "innamovible"
 },{
+  "dia": 17,
+  "mes": 4 ,
+  "motivo": "Jueves Santo Festividad Cristiana",
+  "tipo": "nolaborable",
+  "opcional": {
+    "tipo": "religion",
+    "religion": "cristianismo" 
+  }
+},{
   "dia": 18,
   "mes": 4 ,
   "motivo": "Viernes Santo",
