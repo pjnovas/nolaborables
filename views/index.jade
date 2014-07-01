@@ -1,5 +1,9 @@
 div.row-fluid
   div.span12
+    div.hero-unit.error
+      p El dominio .info fue dado de baja en reemplazo por .com.ar 
+div.row-fluid
+  div.span12
     div.hero-unit
       p 
         span API Rest  
@@ -10,20 +14,20 @@ div.row-fluid
     div.row-fluid
       div.span4.centered-box
         h3 2012
-        a(href='http://nolaborables.info/API/v1/2012') nolaborables.info/API/v1/2012
+        a(href='http://nolaborables.com.ar/API/v1/2012') nolaborables.com.ar/API/v1/2012
       div.span4.centered-box
         h3 2013
-        a(href='http://nolaborables.info/API/v1/2013') nolaborables.info/API/v1/2013
+        a(href='http://nolaborables.com.ar/API/v1/2013') nolaborables.com.ar/API/v1/2013
       div.span4.centered-box
         h3 2014
-        a(href='http://nolaborables.info/API/v1/2014') nolaborables.info/API/v1/2014
+        a(href='http://nolaborables.com.ar/API/v1/2014') nolaborables.com.ar/API/v1/2014
     div.row-fluid
       div.span6.centered-box
         h3 Actual (año)
-        a(href='http://nolaborables.info/API/v1/actual') nolaborables.info/API/v1/actual
+        a(href='http://nolaborables.com.ar/API/v1/actual') nolaborables.com.ar/API/v1/actual
       div.span6.centered-box
         h3 Próximo Feriado
-        a(href='http://nolaborables.info/API/v1/proximo') nolaborables.info/API/v1/proximo
+        a(href='http://nolaborables.com.ar/API/v1/proximo') nolaborables.com.ar/API/v1/proximo
 div.row-fluid
   div.span12
     h3 Respuesta JSON (ejemplo)
@@ -69,15 +73,15 @@ div.row-fluid
         code
           p.margin.bold
             span Año 2011 sin opcionales:&nbsp;
-            a(href='http://nolaborables.info/API/v1/2011?excluir=opcional') nolaborables.info/API/v1/2011
+            a(href='http://nolaborables.com.ar/API/v1/2011?excluir=opcional') nolaborables.com.ar/API/v1/2011
               span.hl ?excluir=opcional
           p.margin.bold
             span Año actual sin opcionales:&nbsp;
-            a(href='http://nolaborables.info/API/v1/actual?excluir=opcional') nolaborables.info/API/v1/actual
+            a(href='http://nolaborables.com.ar/API/v1/actual?excluir=opcional') nolaborables.com.ar/API/v1/actual
               span.hl ?excluir=opcional
           p.margin.bold
             span Pr&oacute;ximo NO opcional:&nbsp;
-            a(href='http://nolaborables.info/API/v1/proximo?excluir=opcional') nolaborables.info/API/v1/proximo
+            a(href='http://nolaborables.com.ar/API/v1/proximo?excluir=opcional') nolaborables.com.ar/API/v1/proximo
               span.hl ?excluir=opcional
 hr
 div.row-fluid
@@ -87,7 +91,7 @@ div.row-fluid
       p El nombre del par&aacute;metro para la funci&oacute;n de retorno JSONP es 'callback',
         | es decir, que la API puede ser llamada como:
       pre
-        code.javascript "http://nolaborables.info/API/v1/actual?callback=foo"
+        code.javascript "http://nolaborables.com.ar/API/v1/actual?callback=foo"
           | // donde 'foo' es el nombre de la funci&oacute;n de retorno
           | function foo(feriados) {
           |   console.dir(feriados);
@@ -95,7 +99,7 @@ div.row-fluid
       h3 Ejemplo de uso con jQuery
       pre
         code.javascript $.ajax({
-          |   url: "http://nolaborables.info/API/v1/actual",
+          |   url: "http://nolaborables.com.ar/API/v1/actual",
           |   dataType: 'jsonp'
           | }).done(function(feriados) { 
           |   console.dir(feriados);
@@ -110,7 +114,7 @@ div.row-fluid
         | )
       h3 Ejemplo con jQuery
       pre
-        code.javascript $.get('http://nolaborables.info/API/v1/actual', function(feriados){
+        code.javascript $.get('http://nolaborables.com.ar/API/v1/actual', function(feriados){
           |   console.dir(feriados);
           | });
 hr

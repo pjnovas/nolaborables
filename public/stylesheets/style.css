@@ -37,6 +37,15 @@ a:hover {
 	background: url('/img/lil_fiber.png');
 }
 
+.hero-unit.error{
+	padding: 10px;
+	box-shadow: none;
+	background: rgb(255, 202, 202);
+	border: 2px solid rgb(185, 0, 0);
+	max-width: 600px;
+	margin: 0 auto 20px auto;
+}
+
 .hero-unit p {
 	margin: 0;
 	font-size: 20px;

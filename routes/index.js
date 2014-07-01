@@ -1,7 +1,7 @@
 
 var holidays = require('../models/holiday.js'),
 	GoogleAnalytics = require('ga'),
-	gacs = new GoogleAnalytics('UA-33270973-1', 'nolaborables.info');
+	gacs = new GoogleAnalytics('UA-33270973-1', 'nolaborables.icom.ar');
 
 exports.index = function(req, res){
   res.render('index', { title: 'no laborables' });
