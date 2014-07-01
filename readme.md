@@ -1,6 +1,11 @@
 ## No Laborables [![Build Status](https://secure.travis-ci.org/pjnovas/nolaborables.png?branch=master)](http://travis-ci.org/pjnovas/nolaborables)
 API REST para exponer los feriados de Argentina
 
+---
+**El Dominio .INFO fue dado de baja en reemplazo por .COM.AR**
+
+---
+
 ### En que está desarrollado
 Sitio web en NodeJS con Express y vistas en Jade. Tests con Mocha y Expect.js
 
