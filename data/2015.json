@@ -1,52 +1,48 @@
 [{
-  "dia": 3,
-  "mes": 3 ,
-  "motivo": "Carnaval",
-  "tipo": "innamovible"
-},{
-  "dia": 4,
-  "mes": 3 ,
+  "dia": 16,
+  "mes": 2 ,
   "motivo": "Carnaval",
   "tipo": "innamovible"
 },{
   "dia": 17,
-  "mes": 4 ,
-  "motivo": "Jueves Santo Festividad Cristiana",
-  "tipo": "nolaborable",
-  "opcional": {
-    "tipo": "religion",
-    "religion": "cristianismo" 
-  }
-},{
-  "dia": 18,
-  "mes": 4 ,
-  "motivo": "Viernes Santo",
+  "mes": 2 ,
+  "motivo": "Carnaval",
   "tipo": "innamovible"
 },{
-  "dia": 2,
-  "mes": 5 ,
+  "dia": 23,
+  "mes": 3 ,
   "motivo": "Feriado Puente Turístico",
+  "tipo": "innamovible"
+},{
+  "dia": 3,
+  "mes": 4 ,
+  "motivo": "Viernes Santo",
   "tipo": "innamovible"
 },{
   "dia": 17,
   "mes": 8 ,
   "motivo": "Paso a la Inmortalidad del General José de San Martín",
   "tipo": "trasladable",
-  "traslado": 18
+  "traslado": 17
 },{
   "dia": 12,
-  "mes": 10 ,
+  "mes": 10,
   "motivo": "Día del Respeto a la Diversidad Cultural",
   "tipo": "trasladable",
-  "traslado": 13
+  "traslado": 12
 },{
   "dia": 20,
-  "mes": 11 ,
+  "mes": 11,
   "motivo": "Día de la Soberanía Nacional",
   "tipo": "trasladable",
-  "traslado": 24
+  "traslado": 23
 },{
-  "dia": 14,
+  "dia": 7,
+  "mes": 12,
+  "motivo": "Feriado Puente Turístico",
+  "tipo": "innamovible"
+},{
+  "dia": 4,
   "mes": 4 ,
   "motivo": "Pascuas Judías",
   "tipo": "nolaborable", 
@@ -55,52 +51,43 @@
     "religion": "judaísmo" 
   }
 },{
+  "dia": 5,
+  "mes": 4 ,
+  "motivo": "Pascuas Judías",
+  "tipo": "nolaborable", 
+  "opcional": {
+    "tipo": "religion",
+    "religion": "judaísmo" 
+  } 
+},{
+  "dia": 9,
+  "mes": 4 ,
+  "motivo": "Pascuas Judías",
+  "tipo": "nolaborable", 
+  "opcional": {
+    "tipo": "religion",
+    "religion": "judaísmo" 
+  } 
+},{
+  "dia": 10,
+  "mes": 4 ,
+  "motivo": "Pascuas Judías",
+  "tipo": "nolaborable", 
+  "opcional": {
+    "tipo": "religion",
+    "religion": "judaísmo" 
+  } 
+},{
+  "dia": 11,
+  "mes": 4 ,
+  "motivo": "Pascuas Judías",
+  "tipo": "nolaborable", 
+  "opcional": {
+    "tipo": "religion",
+    "religion": "judaísmo" 
+  } 
+},{
   "dia": 15,
-  "mes": 4 ,
-  "motivo": "Pascuas Judías",
-  "tipo": "nolaborable", 
-  "opcional": {
-    "tipo": "religion",
-    "religion": "judaísmo" 
-  } 
-},{
-  "dia": 16,
-  "mes": 4 ,
-  "motivo": "Pascuas Judías",
-  "tipo": "nolaborable", 
-  "opcional": {
-    "tipo": "religion",
-    "religion": "judaísmo" 
-  } 
-},{
-  "dia": 20,
-  "mes": 4 ,
-  "motivo": "Pascuas Judías",
-  "tipo": "nolaborable", 
-  "opcional": {
-    "tipo": "religion",
-    "religion": "judaísmo" 
-  } 
-},{
-  "dia": 21,
-  "mes": 4 ,
-  "motivo": "Pascuas Judías",
-  "tipo": "nolaborable", 
-  "opcional": {
-    "tipo": "religion",
-    "religion": "judaísmo" 
-  } 
-},{
-  "dia": 22,
-  "mes": 4 ,
-  "motivo": "Pascuas Judías",
-  "tipo": "nolaborable", 
-  "opcional": {
-    "tipo": "religion",
-    "religion": "judaísmo" 
-  } 
-},{
-  "dia": 24,
   "mes": 9 ,
   "motivo": "Año Nuevo Judío",
   "tipo": "nolaborable", 
@@ -109,8 +96,12 @@
     "religion": "judaísmo" 
   } 
 },{
-  "dia": 26,
-  "mes": 12 ,
-  "motivo": "Feriado Puente Turístico",
-  "tipo": "innamovible"
+  "dia": 23,
+  "mes": 9 ,
+  "motivo": "Día del Perdón",
+  "tipo": "nolaborable",
+  "opcional": {
+    "tipo": "religion",
+    "religion": "judaísmo" 
+  } 
 }]

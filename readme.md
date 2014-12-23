@@ -10,10 +10,11 @@ API REST para exponer los feriados de Argentina
 Sitio web en NodeJS con Express y vistas en Jade. Tests con Mocha y Expect.js
 
 ### Como instalar
-Primero instalar NodeJS y luego instalar las dependecias con NPM
+Primero instalar NodeJS (v. 0.10) y luego instalar las dependecias con NPM e iniciar el servicio web
 
 ```bash
-npm install
+npm install --production
+npm start
 ```
 
 ### Implementación
@@ -53,13 +54,22 @@ Objeto opcional:
 ### Metodología de desarrollo
 Tests (BDD) en Mocha y Expect.js.
 
-####Para correr los tests:
+#### Instalar Grunt
 
 ```bash
-make test
+npm install grunt-cli -g
 ```
 
-####Como contribuir
+#### Para correr los tests:
+
+```bash
+npm install
+npm test
+o
+grunt
+```
+
+#### Como contribuir
 1. Correr los tests: Verde
 2. Crear test para nueva funcionalidad
 3. Correr el test: Rojo
