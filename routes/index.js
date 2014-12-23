@@ -23,7 +23,6 @@ exports.year = function(req, res, next){
 	holidays.getYear(year, function(err, data){
 
 		if (!err){
-			console.log(data);
 			req.holidays = data;
 			next();
 		}
