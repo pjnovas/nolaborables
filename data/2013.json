@@ -7,12 +7,12 @@
 	"dia": 11,
 	"mes": 2 ,
 	"motivo": "Carnaval",
-	"tipo": "innamovible"
+	"tipo": "inamovible"
 },{
 	"dia": 12,
 	"mes": 2 ,
 	"motivo": "Carnaval",
-	"tipo": "innamovible"
+	"tipo": "inamovible"
 },{
 	"dia": 20,
 	"mes": 2 ,
@@ -22,12 +22,12 @@
 	"dia": 29,
 	"mes": 3 ,
 	"motivo": "Viernes Santo",
-	"tipo": "innamovible"
+	"tipo": "inamovible"
 },{
 	"dia": 1,
 	"mes": 4 ,
 	"motivo": "Feriado Puente Turístico",
-	"tipo": "innamovible"
+	"tipo": "inamovible"
 },{
 	"dia": 21,
 	"mes": 6 ,
