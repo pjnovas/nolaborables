@@ -186,7 +186,7 @@ describe('API v1', function(){
       "dia": 1,
       "mes": 1 ,
       "motivo": "Año Nuevo",
-      "tipo": "innamovible"
+      "tipo": "inamovible"
     };
 
     var currYear = new Date().getFullYear();
