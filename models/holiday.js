@@ -67,7 +67,7 @@ function getNextOne(holidays, done){
       "dia": 1,
       "mes": 1 ,
       "motivo": "Año Nuevo",
-      "tipo": "innamovible"
+      "tipo": "inamovible"
     });
   }
   else done(null, holiday);
