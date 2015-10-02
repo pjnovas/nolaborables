@@ -1,4 +1,4 @@
-!!!
+doctype
 html
 	head
 		title= title
@@ -12,10 +12,12 @@ html
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		link(href='http://fonts.googleapis.com/css?family=Slackey', rel='stylesheet', type='text/css')
 		script(type='text/javascript', src='javascripts/libs/highlight.pack.js')
-		script(type='text/javascript')
-			hljs.tabReplace = '  '; 
+
+		script.
+			hljs.tabReplace = '  ';
 			hljs.initHighlightingOnLoad();
-		script(type='text/javascript')
+
+		script.
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-33270973-1']);
 			_gaq.push(['_trackPageview']);
@@ -24,11 +26,12 @@ html
 				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
+
 	body
 		div.navbar.navbar-fixed-top
 			div.navbar-inner
 				div.container-fluid
-					a.brand(href='#')= title 
+					a.brand(href='#')= title
 					span.brandComAr .com.ar
 		a(href='https://github.com/pjnovas/nolaborables')
 			img.forkme(src='https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png', alt='Fork me on GitHub')
