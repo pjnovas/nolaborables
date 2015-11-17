@@ -33,8 +33,8 @@ app.configure('production', function(){
 });
 
 function allowCORS(req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*'); 
-  res.header('Access-Control-Allow-Methods', 'GET'); 
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET');
   res.header('Access-Control-Allow-Headers', 'Content-Type');
   next();
 }
@@ -42,9 +42,9 @@ function allowCORS(req, res, next) {
 // Routes
 
 app.get('/', routes.index);
-app.get('/api/v1/proximo', routes.setActual, routes.year, routes.filterNext, routes.nextOne);
-app.get('/api/v1/actual', routes.setActual, routes.year, routes.filter);
-app.get('/api/v1/:year', routes.year, routes.filter);
+app.get('/api/v1/proximo', routes.setActual, routes.year, routes.track("next"), routes.filterNext, routes.nextOne);
+app.get('/api/v1/actual', routes.setActual, routes.year, routes.track("actual"), routes.filter);
+app.get('/api/v1/:year', routes.year, routes.track("year"), routes.filter);
 
 var port = process.env.PORT || 3100;
 app.listen(port, function(){

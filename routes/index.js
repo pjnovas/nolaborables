@@ -1,7 +1,12 @@
 
 var holidays = require('../models/holiday.js'),
-	GoogleAnalytics = require('ga'),
-	gacs = new GoogleAnalytics('UA-33270973-1', 'nolaborables.com.ar');
+	NA = require('nodealytics');
+
+var gaReady = false;
+NA.initialize('UA-33270973-1', 'nolaborables.com.ar', function(){
+	gaReady = true;
+	console.log("GA Ready");
+});
 
 exports.index = function(req, res){
   res.render('index', { title: 'no laborables' });
@@ -36,10 +41,8 @@ exports.year = function(req, res, next){
 };
 
 exports.nextOne = function(req, res){
-	if (app.useGac) gacs.trackPage(req.url);
-
 	holidays.getNext(req.holidays, function(err, data){
-		
+
 		if (!err){
 			res.send(data);
 		}
@@ -52,7 +55,7 @@ exports.nextOne = function(req, res){
 
 exports.filterNext = function(req, res, next){
 	var exclude = req.query["excluir"];
-	
+
 	if (exclude !== undefined) {
 		req.holidays = holidays.filter(exclude, req.holidays);
 	}
@@ -61,18 +64,20 @@ exports.filterNext = function(req, res, next){
 };
 
 exports.filter = function(req, res){
-	if (app.useGac) gacs.trackPage(req.url);
-	
 	var exclude = req.query["excluir"];
-	
+
 	if (exclude === undefined){
 		res.send(req.holidays);
-	} 
+	}
 	else {
 		req.holidays = holidays.filter(exclude, req.holidays);
 		res.send(req.holidays);
 	}
 };
 
-
-
+exports.track = function(type){
+	return function(req, res, next){
+		if (app.useGac) NA.trackPage('Tracker: ' + type, req.url, function(){ console.log('tracked %s', type); });
+		next();
+	};
+};
