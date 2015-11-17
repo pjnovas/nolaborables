@@ -2,8 +2,7 @@
 API REST para exponer los feriados de Argentina
 
 ---
-**El Dominio .INFO fue dado de baja en reemplazo por .COM.AR**
-
+**Nuevo tipo de feriado `puente`**
 ---
 
 ### En que está desarrollado
@@ -29,7 +28,7 @@ Array de dias:
   "dia": [number],
   "mes": [number],
   "motivo": [string],
-  "tipo": [string] // inamovible | trasladable | nolaborable
+  "tipo": [string] // inamovible | trasladable | nolaborable | puente
   "traslado": [number] //en caso de trasladable: el dia del traslado
   "opcional": [object] // en caso de ser opcional: su detalle
 }
@@ -39,15 +38,15 @@ Objeto opcional:
 
 ```javascript
 // Religión
-{ 
-	"tipo": "religion", 
-	"religion": "judaísmo" 
+{
+	"tipo": "religion",
+	"religion": "judaísmo"
 }
 
 // Origen
-{ 
-	"tipo": "origen", 
-	"origen": "armenia" 
+{
+	"tipo": "origen",
+	"origen": "armenia"
 }
 ```
 
@@ -78,7 +77,7 @@ grunt
 6. git - Pull Request :)
 
 
-## License 
+## License
 
 (The MIT License)
 
@@ -102,6 +101,3 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-

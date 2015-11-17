@@ -46,6 +46,15 @@ a:hover {
 	margin: 0 auto 20px auto;
 }
 
+.hero-unit.warning{
+	padding: 10px;
+	box-shadow: none;
+  background: rgb(252, 255, 202);
+  border: 2px solid rgb(174, 185, 0);
+	max-width: 600px;
+	margin: 0 auto 20px auto;
+}
+
 .hero-unit p {
 	margin: 0;
 	font-size: 20px;
@@ -71,15 +80,15 @@ a:hover {
 }
 
 .forkme {
-	position: absolute; 
-	top: 0; 
-	right: 0; 
-	border: 0; 
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
 	z-index:1040;
 }
 
 .copyright {
-	float:right; 
+	float:right;
 	margin-right: 20px;
 	font-size: 10px
 	font-weight: bold;
