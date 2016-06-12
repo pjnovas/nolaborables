@@ -9,7 +9,7 @@ API REST para exponer los feriados de Argentina
 Sitio web en NodeJS con Express y vistas en Jade. Tests con Mocha y Expect.js
 
 ### Como instalar
-Primero instalar NodeJS (v. 0.10) y luego instalar las dependecias con NPM e iniciar el servicio web
+Primero instalar NodeJS (v4.0+) y luego instalar las dependecias con NPM e iniciar el servicio web
 
 ```bash
 npm install --production
