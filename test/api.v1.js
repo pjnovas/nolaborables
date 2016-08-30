@@ -34,7 +34,7 @@ describe('API v1', function(){
     function callByYear(year, callback){
       makeRequest({ restUri: '/' + year }, function (error, response, body) {
         if (error) throw new Error(error);
-        
+
         expect(response.statusCode).to.be(200);
 
         var yearJson = require(DATA_PATH + year + '.json');
@@ -47,28 +47,33 @@ describe('API v1', function(){
       });
     }
 
-    function callByYear404(year, callback){
+    function callByYearFuture(year, callback){
       makeRequest({ restUri: '/' + year }, function (error, response, body) {
         if (error) throw new Error(error);
-        
-        expect(response.statusCode).to.be(404);
 
+        expect(response.statusCode).to.be(200);
+
+        var fijos = require(DATA_PATH + 'fijos.json');
+
+        var result = JSON.parse(body);
+
+        expect(fijos.length).to.be(result.length);
         callback();
       });
     }
 
     function callByYearNoOptional(year, callback){
-      makeRequest({ restUri: '/' + year, queryString: 'excluir=opcional' }, 
+      makeRequest({ restUri: '/' + year, queryString: 'excluir=opcional' },
         function (error, response, body) {
           if (error) throw new Error(error);
-          
+
           expect(response.statusCode).to.be(200);
 
           var yearJson = require(DATA_PATH + year + '.json');
           var fijos = require(DATA_PATH + 'fijos.json');
           var holidays = fijos.concat(yearJson);
           var result = JSON.parse(body);
-          
+
           for(var i=0; i<result.length; i++){
             expect(result[i].opcional).to.be(undefined);
           }
@@ -92,23 +97,24 @@ describe('API v1', function(){
     it('should return every holiday for year 2014', function(done){
       callByYear(2014, done);
     });
-/*
-// I have no idea why this doesn't work ... so will try again next year (2015)
+
     it('should return every holiday for year 2015', function(done){
       callByYear(2015, done);
     });
-*/
-    it('should return a 404 (not found) error if year is not present', function(done){
-      callByYear404(2010, function(){
-        callByYear404(2020, done);  
-      });
+
+    it('should return every holiday for year 2016', function(done){
+      callByYear(2016, done);
+    });
+
+    it('should return fixed holiday for next year', function(done){
+      callByYearFuture(new Date().getFullYear() + 1, done);
     });
 
     it('should return a 400 (bad request) error if year is not numeric', function(done){
-      
+
       makeRequest({ restUri: '/whatever' }, function (error, response, body) {
         if (error) throw new Error(error);
-        
+
         expect(response.statusCode).to.be(400);
 
         done();
@@ -122,8 +128,8 @@ describe('API v1', function(){
       for(var i=2011; i<=2015; i++){
         testCalls.push(
           (function(i){
-            return function(done){ 
-              callByYearNoOptional(i, done); 
+            return function(done){
+              callByYearNoOptional(i, done);
             };
           })(i)
         );
@@ -138,10 +144,10 @@ describe('API v1', function(){
     var actualYear = new Date().getFullYear();
 
     it('should return every holiday at current year', function(done){
-      
+
       makeRequest({ restUri: '/actual' }, function (error, response, body) {
         if (error) throw new Error(error);
-        
+
         expect(response.statusCode).to.be(200);
 
         var actualYearJson = require(DATA_PATH + actualYear + '.json');
@@ -158,10 +164,10 @@ describe('API v1', function(){
 
     it("should NOT return optional holidays when filter 'excluir' is opcional for current year", function(done){
 
-      makeRequest({ restUri: '/actual', queryString: 'excluir=opcional' }, 
+      makeRequest({ restUri: '/actual', queryString: 'excluir=opcional' },
         function (error, response, body) {
           if (error) throw new Error(error);
-          
+
           expect(response.statusCode).to.be(200);
 
           var yearJson = require(DATA_PATH + actualYear + '.json');
@@ -169,7 +175,7 @@ describe('API v1', function(){
           var holidays = fijos.concat(yearJson);
 
           var result = JSON.parse(body);
-          
+
           for(var i=0; i<result.length; i++){
             expect(result[i].opcional).to.be(undefined);
           }
@@ -190,13 +196,13 @@ describe('API v1', function(){
     };
 
     var currYear = new Date().getFullYear();
-    
+
     function getNextOne(optional){
       var yearfl = require(DATA_PATH + currYear + '.json');
       var fijosfl = require(DATA_PATH + 'fijos.json');
       var holidays = fijosfl.concat(yearfl);
 
-      holidays.sort(function(a, b) { 
+      holidays.sort(function(a, b) {
         var r = parseInt(a.mes) - parseInt(b.mes);
         if (r === 0) {
           r = parseInt(a.dia) - parseInt(b.dia);
@@ -205,7 +211,7 @@ describe('API v1', function(){
       });
 
       var currMonth = (new Date()).getMonth() + 1;
-      var currDay = (new Date()).getDate(); 
+      var currDay = (new Date()).getDate();
 
       var holiday = {};
       for(var i=0; i < holidays.length; i++){
@@ -225,10 +231,10 @@ describe('API v1', function(){
     }
 
     it('should return the next holiday (Jan 1st if not found)', function(done){
-      
+
       makeRequest({ restUri: '/proximo' }, function (error, response, body) {
         if (error) throw new Error(error);
-        
+
         expect(response.statusCode).to.be(200);
 
         var nextone = getNextOne();
@@ -253,7 +259,7 @@ describe('API v1', function(){
 
       makeRequest({ restUri: '/proximo', queryString: 'excluir=opcional' }, function (error, response, body) {
         if (error) throw new Error(error);
-        
+
         expect(response.statusCode).to.be(200);
 
         var nextone = getNextOne('null');

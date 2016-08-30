@@ -2,18 +2,18 @@
 var fs = require('fs');
 
 function fileExist(error, fileName, exist, doesnot){
-  
+
   function validateStatus(err, stat) {
-    if(err == null) exist();     
+    if(err == null) exist();
     else if(err.code == 'ENOENT') doesnot();
     else error(err);
   }
- 
+
   function getFileStatus(err, localPath){
     if (err) error(err);
     else fs.stat(localPath + fileName, validateStatus);
   }
-  
+
   fs.realpath(__dirname + '/../', getFileStatus);
 };
 
@@ -24,33 +24,41 @@ function getYearData(year, done) {
     path = '/data/' + year + '.json',
     fijos = __dirname + '/../data/fijos.json';
 
+  function holidaysCompare(a, b) {
+    var r = parseInt(a.mes) - parseInt(b.mes);
+    if (r === 0) {
+      r = parseInt(a.dia) - parseInt(b.dia);
+    }
+    return r;
+  }
+
   function onExists(){
     var añofl = require(file);
     var fijosfl = require(fijos);
     var holidays = fijosfl.concat(añofl);
 
-    holidays.sort(function(a, b) { 
-      var r = parseInt(a.mes) - parseInt(b.mes);
-      if (r === 0) {
-        r = parseInt(a.dia) - parseInt(b.dia);
-      }
-      return r;
-    });
+    holidays.sort(holidaysCompare);
 
     done(null, holidays);
   }
 
-  fileExist(done, path, onExists, function(){
-    done(new Error('NOTFOUND'));
-  });
+  function onExistsOnlyFixed() {
+    var holidays = require(fijos);
+
+    holidays.sort(holidaysCompare);
+
+    done(null, holidays);
+  }
+
+  fileExist(done, path, onExists, onExistsOnlyFixed);
 
 }
 
 function getNextOne(holidays, done){
   var actual = (new Date()).getFullYear();
-      
+
   var currMonth = (new Date()).getMonth() + 1;
-  var currDay = (new Date()).getDate(); 
+  var currDay = (new Date()).getDate();
 
   var holiday = null;
   for(var i=0; i < holidays.length; i++){
@@ -75,7 +83,7 @@ function getNextOne(holidays, done){
 
 function filterOptionals(exclude, holidays){
   var newHolidays = [];
-  
+
   if(exclude === 'opcional'){
 
     for(var i=0; i< holidays.length; i++){
@@ -92,4 +100,3 @@ module.exports ={
   getNext: getNextOne,
   filter: filterOptionals
 };
-
