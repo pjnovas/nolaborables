@@ -76,6 +76,9 @@ grunt
 5. Correr los tests: Verde
 6. git - Pull Request :)
 
+## Contribuidores ( Gracias! )
+* Bruno Cascio [@brunocascio](https://github.com/brunocascio)
+* Tomás Boccardo [@tomasboccardo](https://github.com/tomasboccardo)
 
 ## License
 
