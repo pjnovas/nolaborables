@@ -1,0 +1,39 @@
+[{
+  "mes": "enero",
+  "31": "bicentenario-asamblea-gral"
+},{
+  "mes": "febrero",
+  "11,12": "carnaval",
+  "20": "bicentenario-salta"
+},{
+  "mes": "marzo",
+  "28": "jueves-santo",
+  "29": "viernes-santo",
+  "25,26,27,31": "pascuas-judias"
+},{
+  "mes": "abril",
+  "01": "puente-turistico",
+  "01,02": "pascuas-judias"
+},{
+  "mes": "mayo"
+},{
+  "mes": "junio",
+  "21": "puente-turistico"
+},{
+  "mes": "julio"
+},{
+  "mes": "agosto",
+  "19": "san-martin"
+},{
+  "mes": "septiembre",
+  "04": "año-nuevo-judio",
+  "13": "dia-perdon-judio"
+},{
+  "mes": "octubre",
+  "14": "diversidad"
+},{
+  "mes": "noviembre",
+  "25": "soberania-nacional"
+},{
+  "mes": "diciembre"
+}]

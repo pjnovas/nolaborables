@@ -1,0 +1,37 @@
+[{
+  "mes": "enero"
+},{
+  "mes": "febrero",
+  "20,21": "carnaval",
+  "27": "bicentenario-bandera"
+},{
+  "mes": "marzo"
+},{
+  "mes": "abril",
+  "05": "jueves-santo",
+  "06": "viernes-santo",
+  "07,08,12,13,14": "pascuas-judias"
+},{
+  "mes": "mayo"
+},{
+  "mes": "junio"
+},{
+  "mes": "julio"
+},{
+  "mes": "agosto",
+  "20": "san-martin"
+},{
+  "mes": "septiembre",
+  "16": "año-nuevo-judio",
+  "24": "bicentenario-tucuman",
+  "25": "dia-perdon-judio"
+},{
+  "mes": "octubre",
+  "08": "diversidad"
+},{
+  "mes": "noviembre",
+  "26": "soberania-nacional"
+},{
+  "mes": "diciembre",
+  "24": "puente-turistico"
+}]

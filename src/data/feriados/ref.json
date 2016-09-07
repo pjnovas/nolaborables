@@ -1,0 +1,115 @@
+[{
+  "año-nuevo": {
+    "motivo": "Año Nuevo",
+    "tipo": "inamovible"
+  },
+  "memoria-verdad-justicia": {
+    "motivo": "Día Nacional de la Memoria por la Verdad y la Justicia",
+    "tipo": "inamovible"
+  },
+  "veteranos-malvinas": {
+    "motivo": "Día del Veterano y de los Caídos en la Guerra de Malvinas",
+    "tipo": "inamovible"
+  },
+  "armenia": {
+    "motivo": "Día de acción por la tolerancia y el respeto entre los pueblos",
+    "tipo": "nolaborable",
+    "opcional": "origen",
+    "origen": "armenia"
+  },
+  "trabajador": {
+    "motivo": "Día del Trabajador",
+  	"tipo": "inamovible"
+  },
+  "revolucion-mayo": {
+    "motivo": "Día de la Revolución de Mayo",
+  	"tipo": "inamovible"
+  },
+  "belgrano": {
+    "motivo": "Paso a la Inmortalidad del General Manuel Belgrano",
+  	"tipo": "inamovible"
+  },
+  "independencia": {
+    "motivo": "Día de la Independencia",
+  	"tipo": "inamovible"
+  },
+  "inmaculada-maria": {
+    "motivo": "Inmaculada Concepción de María",
+    "tipo": "inamovible"
+  },
+  "navidad": {
+    "motivo": "Navidad",
+  	"tipo": "inamovible"
+  },
+  "carnaval": {
+    "motivo": "Carnaval",
+  	"tipo": "inamovible"
+  },
+  "puente-turistico": {
+    "motivo": "Feriado Puente Turístico",
+  	"tipo": "puente"
+  },
+  "jueves-santo": {
+    "motivo": "Jueves Santo Festividad Cristiana",
+  	"tipo": "nolaborable",
+    "opcional": "religion",
+    "religion": "cristianismo"
+  },
+  "viernes-santo": {
+    "motivo": "Viernes Santo Festividad Cristiana",
+  	"tipo": "inamovible"
+  },
+  "pascuas-judias": {
+  	"motivo": "Pascuas Judías",
+  	"tipo": "nolaborable",
+  	"opcional": "religion",
+  	"religion": "judaísmo"
+  },
+  "san-martin": {
+    "motivo": "Paso a la Inmortalidad del General José de San Martín",
+  	"tipo": "trasladable",
+  	"original": "17-09"
+  },
+  "año-nuevo-judio": {
+    "motivo": "Año Nuevo Judío",
+  	"tipo": "nolaborable",
+    "opcional": "religion",
+  	"religion": "judaísmo"
+  },
+  "dia-perdon-judio": {
+    "motivo": "Día del Perdón",
+  	"tipo": "nolaborable",
+    "opcional": "religion",
+  	"religion": "judaísmo"
+  },
+  "diversidad": {
+    "motivo": "Día del Respeto a la Diversidad Cultural",
+  	"tipo": "trasladable",
+    "original": "12-10"
+  },
+  "soberania-nacional": {
+    "motivo": "Día de la Soberanía Nacional",
+  	"tipo": "trasladable",
+    "original": "20-11"
+  },
+  "bicentenario-bandera": {
+    "motivo": "Día del Bicentenario de la Creación y Primera Jura de la Bandera Argentina",
+  	"tipo": "inamovible"
+  },
+  "bicentenario-tucuman": {
+    "motivo": "Bicentenario de la Batalla de Tucumán",
+  	"tipo": "nolaborable"
+  },
+  "bicentenario-asamblea-gral": {
+    "motivo": "Año del Bicentenario de la Asamblea General Constituyente de 1813",
+  	"tipo": "nolaborable"
+  },
+  "bicentenario-salta": {
+    "motivo": "Bicentenario de la Batalla de Salta",
+  	"tipo": "nolaborable"
+  },
+  "martin-guemes": {
+    "motivo": "Paso a la Inmortalidad del Gral. Don Martín Güemes",
+    "tipo": "nolaborable"
+  }
+}]
