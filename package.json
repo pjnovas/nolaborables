@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
+    "babel-runtime": "^6.11.6",
     "boom": "^3.2.2",
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
