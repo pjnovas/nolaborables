@@ -40,22 +40,22 @@ describe('#holidaysV1', () => {
     }];
 
     let expected = [
-      { dia: 1, mes: 1, code: 'code01'},
-      { dia: 1, mes: 1, code: 'code02'},
+      { dia: 1, mes: 1, id: 'code01'},
+      { dia: 1, mes: 1, id: 'code02'},
 
-      { dia: 3, mes: 2, code: 'code03'},
-      { dia: 12, mes: 2, code: 'code04'},
+      { dia: 3, mes: 2, id: 'code03'},
+      { dia: 12, mes: 2, id: 'code04'},
 
-      { dia: 22, mes: 3, code: 'code05'},
+      { dia: 22, mes: 3, id: 'code05'},
 
-      { dia: 5, mes: 4, code: 'code06'},
-      { dia: 6, mes: 4, code: 'code06'},
-      { dia: 7, mes: 4, code: 'code06'},
+      { dia: 5, mes: 4, id: 'code06'},
+      { dia: 6, mes: 4, id: 'code06'},
+      { dia: 7, mes: 4, id: 'code06'},
 
-      { dia: 5, mes: 5, code: 'code08'},
-      { dia: 6, mes: 5, code: 'code07'},
-      { dia: 6, mes: 5, code: 'code08'},
-      { dia: 7, mes: 5, code: 'code08'}
+      { dia: 5, mes: 5, id: 'code08'},
+      { dia: 6, mes: 5, id: 'code07'},
+      { dia: 6, mes: 5, id: 'code08'},
+      { dia: 7, mes: 5, id: 'code08'}
     ];
 
     let result = holidaysV1(base, holidays);

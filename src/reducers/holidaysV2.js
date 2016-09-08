@@ -14,17 +14,17 @@ export default function(yearA, yearB) {
       days.reduce( (rMonth, day) => {
 
         if (month[day]){
-          rMonth[day] = { code: month[day] };
+          rMonth[day] = { id: month[day] };
         }
 
         if (holidays[mIdx] && holidays[mIdx][day]){
-          let code = holidays[mIdx][day];
+          let id = holidays[mIdx][day];
 
           if (rMonth[day]){
-            rMonth[day] = [rMonth[day], { code }];
+            rMonth[day] = [rMonth[day], { id }];
           }
           else {
-            rMonth[day] = { code };
+            rMonth[day] = { id };
           }
         }
 

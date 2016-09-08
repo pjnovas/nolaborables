@@ -10,8 +10,8 @@ const sortDays = year => {
     }
 
     if (r === 0){
-      if(a.code < b.code) r = -1;
-      if(a.code > b.code) r = 1;
+      if(a.id < b.id) r = -1;
+      if(a.id > b.id) r = 1;
     }
     return r;
   });
@@ -34,11 +34,11 @@ export default function(yearA, yearB) {
       };
 
       if (month[day]){
-        result.push({ ..._day, code: month[day] });
+        result.push({ ..._day, id: month[day] });
       }
 
       if (holidays[mIdx] && holidays[mIdx][day]){
-        result.push({ ..._day, code: holidays[mIdx][day] });
+        result.push({ ..._day, id: holidays[mIdx][day] });
       }
     });
 

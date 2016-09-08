@@ -39,20 +39,20 @@ describe('#holidaysV2', () => {
     }];
 
     let expected = [{
-      '01': [{ code: 'code01' }, { code: 'code02' }]
+      '01': [{ id: 'code01' }, { id: 'code02' }]
     }, {
-      '03': { code: 'code03' },
-      '12': { code: 'code04' }
+      '03': { id: 'code03' },
+      '12': { id: 'code04' }
     }, {
-      '22': { code: 'code05' }
+      '22': { id: 'code05' }
     }, {
-      '05': { code: 'code06' },
-      '06': { code: 'code06' },
-      '07': { code: 'code06' }
+      '05': { id: 'code06' },
+      '06': { id: 'code06' },
+      '07': { id: 'code06' }
     }, {
-      '05': { code: 'code08' },
-      '06': [{ code: 'code07' }, { code: 'code08' }],
-      '07': { code: 'code08' }
+      '05': { id: 'code08' },
+      '06': [{ id: 'code07' }, { id: 'code08' }],
+      '07': { id: 'code08' }
     }];
 
     let result = holidaysV2(base, holidays);

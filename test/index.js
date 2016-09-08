@@ -1,1 +1,2 @@
 require('./reducers');
+require('./loaders');
