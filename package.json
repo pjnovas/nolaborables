@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "NODE_ENV=test ./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover ./node_modules/.bin/_mocha",
+    "test": "NODE_ENV=test ./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover _mocha",
     "travis": "NODE_ENV=test ./node_modules/.bin/babel-node ./node_modules/.bin/_mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pjnovas/nolaborables.git"
   },
   "license": "BSD-2-Clause",
   "author": "Pablo Novas <pjnovas@gmail.com>",
