@@ -19,11 +19,11 @@ const sortDays = year => {
 
 export default function(yearA, yearB) {
   let base = spreadDays(yearA);
-  let holidays = spreadDays(yearB);
+  let holidays = yearB ? spreadDays(yearB) : [];
 
   let year = base.reduce( (result, month, mIdx) => {
 
-    let days = _.union(Object.keys(month), Object.keys(holidays[mIdx]));
+    let days = _.union(Object.keys(month), Object.keys(holidays[mIdx] || {}));
     days = _.without(days, 'mes');
 
     days.forEach( day => {

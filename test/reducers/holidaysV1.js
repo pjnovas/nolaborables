@@ -6,7 +6,7 @@ const expect = chai.expect;
 
 describe('#holidaysV1', () => {
 
-  it('must translate an year for Version 1 of the API', () => {
+  it('must reduce an year for Version 1 of the API', () => {
     let base = [{
       'mes': 'enero',
       '01': 'code02'
@@ -59,6 +59,27 @@ describe('#holidaysV1', () => {
     ];
 
     let result = holidaysV1(base, holidays);
+    expect(result).to.be.an('array');
+    expect(result.length).to.be.equal(expected.length);
+
+    expect(_.isEqual(result, expected)).to.be.true;
+  });
+
+  it('must allow to reduce only one year', () => {
+    let base = [{
+      'mes': 'enero',
+      '01': 'code02'
+    }, {
+      'mes': 'febrero',
+      '03': 'code03'
+    }];
+
+    let expected = [
+      { dia: 1, mes: 1, id: 'code02'},
+      { dia: 3, mes: 2, id: 'code03'}
+    ];
+
+    let result = holidaysV1(base);
     expect(result).to.be.an('array');
     expect(result.length).to.be.equal(expected.length);
 

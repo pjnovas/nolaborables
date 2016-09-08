@@ -9,8 +9,6 @@ let {
   HOST
 } = process.env;
 
-NODE_ENV = NODE_ENV || 'development';
-
 server.connection({
   port: PORT || 1337,
   host: HOST || '0.0.0.0',
@@ -19,9 +17,7 @@ server.connection({
 
 server.register([
   require('blipp')
-], err => {
-  if (err) { return console.log(err); }
-
+], () => {
   server.route(require('./routes'));
 
   server.start(() => {
