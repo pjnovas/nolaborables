@@ -3,4 +3,5 @@ node_js:
   - 4.5.0
 before_script:
   - npm install
-script: npm run travis
+script: npm test
+after_success: npm run coverage

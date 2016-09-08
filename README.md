@@ -1,4 +1,4 @@
-## No Laborables [![Build Status](https://secure.travis-ci.org/pjnovas/nolaborables.png?branch=feature-v2)](http://travis-ci.org/pjnovas/nolaborables)
+## No Laborables [![Build Status](https://secure.travis-ci.org/pjnovas/nolaborables.png?branch=feature-v2)](http://travis-ci.org/pjnovas/nolaborables) [![Coverage Status](https://coveralls.io/repos/github/pjnovas/nolaborables/badge.svg?branch=feature-v2)](https://coveralls.io/github/pjnovas/nolaborables?branch=feature-v2)
 API REST para exponer los feriados de Argentina
 
 ---

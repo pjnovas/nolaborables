@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "NODE_ENV=test ./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover _mocha",
-    "travis": "NODE_ENV=test ./node_modules/.bin/babel-node ./node_modules/.bin/_mocha"
+    "test": "NODE_ENV=test node_modules/.bin/nyc --require babel-core/register node_modules/.bin/mocha",
+    "report": "node_modules/.bin/nyc report --reporter=lcov",
+    "coverage": "node_modules/.bin/nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -15,7 +16,7 @@
   "license": "BSD-2-Clause",
   "author": "Pablo Novas <pjnovas@gmail.com>",
   "engines": {
-    "node": "4.x.x"
+    "node": "4.5.x"
   },
   "dependencies": {
     "babel-core": "^6.13.2",
@@ -33,15 +34,12 @@
     "lodash": "^4.15.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.14.0",
     "babel-eslint": "^6.1.2",
-    "babel-runtime": "^6.11.6",
     "boom": "^3.2.2",
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
     "eslint": "^3.2.2",
-    "isparta": "^4.0.0",
-    "istanbul": "^0.4.4",
-    "mocha": "^3.0.2"
+    "mocha": "^3.0.2",
+    "nyc": "^8.1.0"
   }
 }
