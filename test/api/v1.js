@@ -53,7 +53,53 @@ describe('/api/v1/', () => {
       await tryYear(nextYear, expected);
     });
 
-    it('must NOT return optional holidays when filter "excluir" is opcional');
+    it('must NOT return optional holidays when filter "excluir" is opcional', done => {
+      const year = 2016;
+
+      const plain = reducer(fijos, holidays[`h${year}`]);
+      const result = loader(plain, ref);
+
+      const expected = result.filter( holiday => !holiday.opcional);
+
+      chai
+        .request(server.listener)
+        .get(`${baseURL}/${year}?excluir=opcional`)
+        .end((err, res) => {
+          expect(res.status).to.be.equal(200);
+          expect(res.body).to.be.an('array');
+          expect(_.isEqual(res.body, expected)).to.be.true;
+          done();
+        });
+    });
+
+  });
+
+  describe('GET /actual', () => {
+    const actualYear = new Date().getFullYear();
+
+    it('must return holidays for the current year', async () => {
+      const plain = reducer(fijos, holidays[`h${actualYear}`]);
+      const expected = loader(plain, ref);
+
+      await tryYear('actual', expected);
+    });
+
+    it('must NOT return optional holidays when filter "excluir" is opcional', done => {
+      const plain = reducer(fijos, holidays[`h${actualYear}`]);
+      const result = loader(plain, ref);
+
+      const expected = result.filter( holiday => !holiday.opcional);
+
+      chai
+        .request(server.listener)
+        .get(`${baseURL}/actual?excluir=opcional`)
+        .end((err, res) => {
+          expect(res.status).to.be.equal(200);
+          expect(res.body).to.be.an('array');
+          expect(_.isEqual(res.body, expected)).to.be.true;
+          done();
+        });
+    });
 
   });
 
