@@ -1,5 +1,4 @@
 import Joi from 'joi';
-import Boom from 'boom';
 import chain from './chain';
 
 import { holidaysV1 as reducer } from '../reducers';
@@ -7,11 +6,12 @@ import { holidaysV1 as loader } from '../loaders';
 
 import holidays, { fijos, ref } from '../data/holidays';
 
-/*
-exports.next = {
-  handler: (req, reply) => reply().code(204)
+const query = { excluir: Joi.any().only('opcional') };
+
+const setThisYear = (request, reply) => {
+  request.year = new Date().getFullYear();
+  reply.next();
 };
-*/
 
 const setHolidays = (request, reply) => {
   let plain = reducer(fijos, holidays[`h${request.year}`]);
@@ -23,7 +23,6 @@ const excludeOptionals = (request, reply) => {
   if (request.query.excluir === 'opcional'){
     request.holidays = request.holidays.filter( holiday => !holiday.opcional);
   }
-
   reply.next();
 };
 
@@ -32,9 +31,7 @@ exports.year = {
     params: {
       year: Joi.number().min(2011).required()
     },
-    query: {
-      excluir: Joi.any().only('opcional')
-    }
+    query
   },
   handler: chain(
     (request, reply) => {
@@ -43,23 +40,45 @@ exports.year = {
     },
     setHolidays,
     excludeOptionals,
-    (request, reply) => reply(request.holidays).code(200)
+    (request, reply) => reply(request.holidays)
   )
 };
 
 exports.current = {
-  validate: {
-    query: {
-      excluir: Joi.any().only('opcional')
-    }
-  },
+  validate: { query },
   handler: chain(
-    (request, reply) => {
-      request.year = new Date().getFullYear();
-      reply.next();
-    },
+    setThisYear,
     setHolidays,
     excludeOptionals,
-    (request, reply) => reply(request.holidays).code(200)
+    (request, reply) => reply(request.holidays)
+  )
+};
+
+exports.next = {
+  validate: { query },
+  handler: chain(
+    setThisYear,
+    setHolidays,
+    excludeOptionals,
+    (request, reply) => {
+      const today = {
+        day: (new Date()).getDate(),
+        month: (new Date()).getMonth() + 1
+      };
+
+      let holiday;
+      request.holidays.some( h => {
+        if (h.mes === today.month && h.dia > today.day || h.mes > today.month){
+          holiday = h;
+          return true;
+        }
+      });
+
+      if (!holiday){
+        holiday = request.holidays[0];
+      }
+
+      reply(holiday);
+    }
   )
 };

@@ -31,17 +31,20 @@
     "hapi-next": "^0.7.0",
     "install": "^0.8.1",
     "joi": "^9.0.4",
-    "lodash": "^4.15.0"
+    "lodash": "^4.15.0",
+    "boom": "^3.2.2"
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
     "babel-runtime": "^6.11.6",
-    "boom": "^3.2.2",
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
     "coveralls": "^2.11.12",
     "eslint": "^3.2.2",
     "mocha": "^3.0.2",
-    "nyc": "^8.1.0"
+    "nyc": "^8.1.0",
+    "sinon": "^1.17.5",
+    "sinon-chai": "^2.8.0",
+    "moment": "^2.14.1"
   }
 }
