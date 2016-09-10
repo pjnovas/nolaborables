@@ -32,7 +32,8 @@
     "install": "^0.8.1",
     "joi": "^9.0.4",
     "lodash": "^4.15.0",
-    "boom": "^3.2.2"
+    "boom": "^3.2.2",
+    "moment": "^2.14.1"
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
@@ -44,7 +45,6 @@
     "mocha": "^3.0.2",
     "nyc": "^8.1.0",
     "sinon": "^1.17.5",
-    "sinon-chai": "^2.8.0",
-    "moment": "^2.14.1"
+    "sinon-chai": "^2.8.0"
   }
 }
