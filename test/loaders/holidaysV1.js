@@ -1,7 +1,7 @@
 import chai from 'chai';
 import _ from 'lodash';
 
-import { holidaysV1 } from '../../src/loaders';
+import { holidaysV1 } from 'lib/loaders';
 const expect = chai.expect;
 
 describe('#holidaysV1', () => {

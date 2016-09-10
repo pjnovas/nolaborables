@@ -6,12 +6,12 @@ import sinonChai from 'sinon-chai';
 import _ from 'lodash';
 import moment from 'moment';
 
-import { holidaysV1 as reducer } from '../../src/reducers';
-import { holidaysV1 as loader } from '../../src/loaders';
+import { holidaysV1 as reducer } from 'lib/reducers';
+import { holidaysV1 as loader } from 'lib/loaders';
 
-import holidays, { fijos, ref } from '../../src/data/holidays';
+import holidays, { fijos, ref } from 'lib/data/holidays';
 
-import server from '../../src/index';
+import server from 'lib/index';
 
 const expect = chai.expect;
 chai.use(sinonChai);

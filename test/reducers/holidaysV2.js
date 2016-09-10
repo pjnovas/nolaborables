@@ -1,6 +1,6 @@
 import chai from 'chai';
 import _ from 'lodash';
-import { holidaysV2 } from '../../src/reducers';
+import { holidaysV2 } from 'lib/reducers';
 const expect = chai.expect;
 
 describe('#holidaysV2', () => {

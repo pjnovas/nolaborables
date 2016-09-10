@@ -4,8 +4,8 @@
   "description": "API pública y gratuita para consultar los feriados y días festivos.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "NODE_ENV=test node_modules/.bin/nyc --require babel-core/register node_modules/.bin/mocha",
+    "start": "NODE_PATH=. node index.js",
+    "test": "NODE_PATH=. NODE_ENV=test node_modules/.bin/nyc --require babel-core/register node_modules/.bin/mocha",
     "report": "node_modules/.bin/nyc report --reporter=lcov",
     "coverage": "node_modules/.bin/nyc report --reporter=text-lcov | coveralls"
   },
