@@ -1,14 +1,15 @@
 import chai from 'chai';
 import _ from 'lodash';
-import { monthly } from 'lib/reducers';
+
+import { list } from 'lib/reducers';
 const expect = chai.expect;
 
-describe('#monthly', () => {
+describe('#list', () => {
 
-  it('must translate an year for Version 2 of the API Monthly', () => {
+  it('must reduce an year for Version 2 of the API as a LIST', () => {
     let base = [{
       'mes': 'enero',
-      '01': 'code01'
+      '01': 'code02'
     }, {
       'mes': 'febrero',
       '03': 'code03'
@@ -23,7 +24,7 @@ describe('#monthly', () => {
 
     let holidays = [{
       'mes': 'enero',
-      '01': 'code02'
+      '01': 'code01'
     }, {
       'mes': 'febrero',
       '12': 'code04'
@@ -38,24 +39,26 @@ describe('#monthly', () => {
       '05,06,07': 'code08'
     }];
 
-    let expected = [{
-      '1': [{ id: 'code01' }, { id: 'code02' }]
-    }, {
-      '3': { id: 'code03' },
-      '12': { id: 'code04' }
-    }, {
-      '22': { id: 'code05' }
-    }, {
-      '5': { id: 'code06' },
-      '6': { id: 'code06' },
-      '7': { id: 'code06' }
-    }, {
-      '5': { id: 'code08' },
-      '6': [{ id: 'code07' }, { id: 'code08' }],
-      '7': { id: 'code08' }
-    }];
+    let expected = [
+      { dia: 1, mes: 1, id: 'code01'},
+      { dia: 1, mes: 1, id: 'code02'},
 
-    let result = monthly(base, holidays);
+      { dia: 3, mes: 2, id: 'code03'},
+      { dia: 12, mes: 2, id: 'code04'},
+
+      { dia: 22, mes: 3, id: 'code05'},
+
+      { dia: 5, mes: 4, id: 'code06'},
+      { dia: 6, mes: 4, id: 'code06'},
+      { dia: 7, mes: 4, id: 'code06'},
+
+      { dia: 5, mes: 5, id: 'code08'},
+      { dia: 6, mes: 5, id: 'code07'},
+      { dia: 6, mes: 5, id: 'code08'},
+      { dia: 7, mes: 5, id: 'code08'}
+    ];
+
+    let result = list(base, holidays);
     expect(result).to.be.an('array');
     expect(result.length).to.be.equal(expected.length);
 
@@ -71,13 +74,12 @@ describe('#monthly', () => {
       '03': 'code03'
     }];
 
-    let expected = [{
-      '1': { id: 'code02' }
-    }, {
-      '3': { id: 'code03' }
-    }];
+    let expected = [
+      { dia: 1, mes: 1, id: 'code02'},
+      { dia: 3, mes: 2, id: 'code03'}
+    ];
 
-    let result = monthly(base);
+    let result = list(base);
     expect(result).to.be.an('array');
     expect(result.length).to.be.equal(expected.length);
 

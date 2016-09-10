@@ -5,7 +5,7 @@ const expect = chai.expect;
 
 describe('#monthly', () => {
 
-  it('must load data of an year for Version 2 of the API', () => {
+  it('must load data of an year for Version 2 of the API Monthly', () => {
     let refs = {
       'code01': {
         'motivo': 'Feriado 1',

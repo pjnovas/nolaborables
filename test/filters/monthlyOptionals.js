@@ -6,7 +6,7 @@ const expect = chai.expect;
 
 describe('#monthlyOptionals', () => {
 
-  it('must remove optional holidays for Version 2 of the API', () => {
+  it('must remove optional holidays for Version 2 of the API Monthly', () => {
 
     let refs = {
       'code06': {
