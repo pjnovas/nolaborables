@@ -1,10 +1,10 @@
 import chai from 'chai';
 import _ from 'lodash';
 
-import { optionalsV2 } from 'lib/filters';
+import { monthlyOptionals } from 'lib/filters';
 const expect = chai.expect;
 
-describe('#optionalsV2', () => {
+describe('#monthlyOptionals', () => {
 
   it('must remove optional holidays for Version 2 of the API', () => {
 
@@ -92,7 +92,7 @@ describe('#optionalsV2', () => {
       ]
     }];
 
-    let result = optionalsV2(holidays);
+    let result = monthlyOptionals(holidays);
     expect(result).to.be.an('array');
     expect(result.length).to.be.equal(expected.length);
 

@@ -3,9 +3,9 @@ import chaiHttp from 'chai-http';
 
 import _ from 'lodash';
 
-import { holidaysV2 as reducer } from 'lib/reducers';
-import { holidaysV2 as loader } from 'lib/loaders';
-import { optionalsV2 as noOptionals } from 'lib/filters';
+import { monthly as reducer } from 'lib/reducers';
+import { monthly as loader } from 'lib/loaders';
+import { monthlyOptionals as noOptionals } from 'lib/filters';
 
 import holidays, { fijos, ref } from 'lib/data/holidays';
 

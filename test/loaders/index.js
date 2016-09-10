@@ -1,4 +1,4 @@
 describe('Loaders', () => {
   require('./holidaysV1');
-  require('./holidaysV2');
+  require('./monthly');
 });

@@ -1,9 +1,9 @@
 import chai from 'chai';
 import _ from 'lodash';
-import { holidaysV2 } from 'lib/reducers';
+import { monthly } from 'lib/reducers';
 const expect = chai.expect;
 
-describe('#holidaysV2', () => {
+describe('#monthly', () => {
 
   it('must translate an year for Version 2 of the API', () => {
     let base = [{
@@ -55,7 +55,7 @@ describe('#holidaysV2', () => {
       '7': { id: 'code08' }
     }];
 
-    let result = holidaysV2(base, holidays);
+    let result = monthly(base, holidays);
     expect(result).to.be.an('array');
     expect(result.length).to.be.equal(expected.length);
 
@@ -77,7 +77,7 @@ describe('#holidaysV2', () => {
       '3': { id: 'code03' }
     }];
 
-    let result = holidaysV2(base);
+    let result = monthly(base);
     expect(result).to.be.an('array');
     expect(result.length).to.be.equal(expected.length);
 

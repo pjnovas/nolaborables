@@ -1,9 +1,9 @@
 import chai from 'chai';
 import _ from 'lodash';
-import { holidaysV2 } from 'lib/loaders';
+import { monthly } from 'lib/loaders';
 const expect = chai.expect;
 
-describe('#holidaysV2', () => {
+describe('#monthly', () => {
 
   it('must load data of an year for Version 2 of the API', () => {
     let refs = {
@@ -84,7 +84,7 @@ describe('#holidaysV2', () => {
       '07': { id: 'code08', ...refs['code08'] }
     }];
 
-    let result = holidaysV2(holidays, refs);
+    let result = monthly(holidays, refs);
     expect(result).to.be.an('array');
     expect(result.length).to.be.equal(expected.length);
 
