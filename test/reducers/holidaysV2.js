@@ -39,23 +39,45 @@ describe('#holidaysV2', () => {
     }];
 
     let expected = [{
-      '01': [{ id: 'code01' }, { id: 'code02' }]
+      '1': [{ id: 'code01' }, { id: 'code02' }]
     }, {
-      '03': { id: 'code03' },
+      '3': { id: 'code03' },
       '12': { id: 'code04' }
     }, {
       '22': { id: 'code05' }
     }, {
-      '05': { id: 'code06' },
-      '06': { id: 'code06' },
-      '07': { id: 'code06' }
+      '5': { id: 'code06' },
+      '6': { id: 'code06' },
+      '7': { id: 'code06' }
     }, {
-      '05': { id: 'code08' },
-      '06': [{ id: 'code07' }, { id: 'code08' }],
-      '07': { id: 'code08' }
+      '5': { id: 'code08' },
+      '6': [{ id: 'code07' }, { id: 'code08' }],
+      '7': { id: 'code08' }
     }];
 
     let result = holidaysV2(base, holidays);
+    expect(result).to.be.an('array');
+    expect(result.length).to.be.equal(expected.length);
+
+    expect(_.isEqual(result, expected)).to.be.true;
+  });
+
+  it('must allow to reduce only one year', () => {
+    let base = [{
+      'mes': 'enero',
+      '01': 'code02'
+    }, {
+      'mes': 'febrero',
+      '03': 'code03'
+    }];
+
+    let expected = [{
+      '1': { id: 'code02' }
+    }, {
+      '3': { id: 'code03' }
+    }];
+
+    let result = holidaysV2(base);
     expect(result).to.be.an('array');
     expect(result.length).to.be.equal(expected.length);
 
