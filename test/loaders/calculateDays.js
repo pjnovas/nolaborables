@@ -6,18 +6,17 @@ const expect = chai.expect;
 describe('#calculateDays', () => {
 
   it('must calculate days and fill dynamic dates', () => {
-    // TODO: Check "third_thursday" > not working!
     const year = 2016;
     const from = [{},{},{},{
       // 'abril',
       'calculated': {
         'first_sunday': 'Día de la locura (primer domingo de abril)',
         'second_saturday': 'Día de la vida (segundo sabado de abril)',
-        'third_saturday': 'Día de la magía misma (tercer sabado de abril)'
+        'third_thursday': 'Día de la magía misma (tercer jueves de abril)'
       },
       '3': 'Día epico magico',
       '7': 'Día mundial de la fantasia',
-      '16': [
+      '14': [
         'Día A',
         'Día B'
       ]
@@ -30,10 +29,10 @@ describe('#calculateDays', () => {
       ],
       '7': 'Día mundial de la fantasia',
       '9': 'Día de la vida (segundo sabado de abril)',
-      '16': [
+      '14': [
         'Día A',
         'Día B',
-        'Día de la magía misma (tercer sabado de abril)'
+        'Día de la magía misma (tercer jueves de abril)'
       ]
     }];
 
