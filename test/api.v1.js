@@ -106,6 +106,10 @@ describe('API v1', function(){
       callByYear(2016, done);
     });
 
+    it('should return every holiday for year 2017', function(done){
+      callByYear(2017, done);
+    });
+
     it('should return fixed holiday for next year', function(done){
       callByYearFuture(new Date().getFullYear() + 1, done);
     });
