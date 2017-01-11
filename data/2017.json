@@ -1,0 +1,155 @@
+[{
+	"dia": 27,
+	"mes": 2,
+	"motivo": "Carnaval",
+	"tipo": "inamovible"
+},
+{
+	"dia": 28,
+	"mes": 2,
+	"motivo": "Carnaval",
+	"tipo": "inamovible"
+},
+{
+	"dia": 11,
+	"mes": 4,
+	"motivo": "Pascuas Judías",
+	"tipo": "nolaborable",
+	"opcional": {
+		"tipo": "religion",
+		"religion": "judaísmo"
+	}
+},
+{
+	"dia": 12,
+	"mes": 4,
+	"motivo": "Pascuas Judías",
+	"tipo": "nolaborable",
+	"opcional": {
+		"tipo": "religion",
+		"religion": "judaísmo"
+	}
+},
+{
+	"dia": 13,
+	"mes": 4,
+	"motivo": "Pascuas Judías",
+	"tipo": "nolaborable",
+	"opcional": {
+		"tipo": "religion",
+		"religion": "judaísmo"
+	}
+},
+{
+	"dia": 14,
+	"mes": 4,
+	"motivo": "Viernes Santo",
+	"tipo": "inamovible"
+},
+{
+	"dia": 17,
+	"mes": 4,
+	"motivo": "Pascuas Judías",
+	"tipo": "nolaborable",
+	"opcional": {
+		"tipo": "religion",
+		"religion": "judaísmo"
+	}
+},
+{
+	"dia": 18,
+	"mes": 4,
+	"motivo": "Pascuas Judías",
+	"tipo": "nolaborable",
+	"opcional": {
+		"tipo": "religion",
+		"religion": "judaísmo"
+	}
+},
+{
+	"dia": 17,
+	"mes": 6,
+	"motivo": "Paso a la Inmortalidad del Gral. Don Martín Güemes",
+	"tipo": "nolaborable"
+},
+{
+	"dia": 25,
+	"mes": 6,
+	"motivo": "Fiesta de la Ruptura del Ayuno del Sagrado Mes de Ramadán",
+	"tipo": "nolaborable",
+	"opcional": {
+		"tipo": "religion",
+		"religion": "musulman"
+	}
+},
+{
+	"dia": 17,
+	"mes": 8,
+	"motivo": "Paso a la Inmortalidad del General José de San Martín",
+	"tipo": "trasladable",
+	"traslado": 21
+},
+{
+	"dia": 1,
+	"mes": 9,
+	"motivo": "Fiesta del Sacrificio",
+	"tipo": "nolaborable",
+	"opcional": {
+		"tipo": "religion",
+		"religion": "musulman"
+	}
+},
+{
+	"dia": 21,
+	"mes": 9,
+	"motivo": "Año Nuevo Judío",
+	"tipo": "nolaborable",
+	"opcional": {
+		"tipo": "religion",
+		"religion": "judaísmo"
+	}
+},
+{
+	"dia": 22,
+	"mes": 9,
+	"motivo": "Año Nuevo Judío",
+	"tipo": "nolaborable",
+	"opcional": {
+		"tipo": "religion",
+		"religion": "judaísmo"
+	}
+},
+{
+	"dia": 30,
+	"mes": 9,
+	"motivo": "Día del Perdón",
+	"tipo": "nolaborable",
+	"opcional": {
+		"tipo": "religion",
+		"religion": "judaísmo"
+	}
+},
+{
+	"dia": 2,
+	"mes": 10,
+	"motivo": "Año Nuevo Islámico",
+	"tipo": "nolaborable",
+	"opcional": {
+		"tipo": "religion",
+		"religion": "musulman"
+	}
+},
+{
+	"dia": 12,
+	"mes": 10,
+	"motivo": "Día del Respeto a la Diversidad Cultural",
+	"tipo": "trasladable",
+	"traslado": 9
+},
+{
+	"dia": 20,
+	"mes": 11,
+	"motivo": "Día de la Soberanía Nacional",
+	"tipo": "trasladable",
+	"traslado": 27
+}]
