@@ -1,10 +1,6 @@
 ## No Laborables [![Build Status](https://secure.travis-ci.org/pjnovas/nolaborables.png?branch=master)](http://travis-ci.org/pjnovas/nolaborables)
 API REST para exponer los feriados de Argentina
 
----
-**Nuevo tipo de feriado `puente`**
----
-
 ### En que está desarrollado
 Sitio web en NodeJS con Express y vistas en Jade. Tests con Mocha y Expect.js
 
@@ -79,6 +75,7 @@ grunt
 ## Contribuidores ( Gracias! )
 * Bruno Cascio [@brunocascio](https://github.com/brunocascio)
 * Tomás Boccardo [@tomasboccardo](https://github.com/tomasboccardo)
+* Emiliano Fernandez [@emilianox](https://github.com/emilianox)
 
 ## License
 
