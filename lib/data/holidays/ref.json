@@ -68,7 +68,7 @@
   "san-martin": {
     "motivo": "Paso a la Inmortalidad del General José de San Martín",
   	"tipo": "trasladable",
-  	"original": "17-09"
+  	"original": "17-08"
   },
   "año-nuevo-judio": {
     "motivo": "Año Nuevo Judío",
@@ -111,5 +111,23 @@
   "martin-guemes": {
     "motivo": "Paso a la Inmortalidad del Gral. Don Martín Güemes",
     "tipo": "nolaborable"
+  },
+  "fiesta-ayuno-ramadan": {
+    "motivo": "Fiesta de la Ruptura del Ayuno del Sagrado Mes de Ramadán",
+    "tipo": "nolaborable",
+    "opcional": "religion",
+  	"religion": "musulman"
+  },
+  "fiesta-sacrificio": {
+    "motivo": "Fiesta del Sacrificio",
+    "tipo": "nolaborable",
+    "opcional": "religion",
+  	"religion": "musulman"
+  },
+  "año-nuevo-islamico": {
+    "motivo": "Año Nuevo Islámico",
+    "tipo": "nolaborable",
+    "opcional": "religion",
+  	"religion": "musulman"
   }
 }

@@ -67,13 +67,13 @@ const getWithOptionals = (year, list) => {
 describe('GET /{year}', () => {
 
   it('must return holidays by year', async () => {
-    for (var year=2011; year<=2016; year++) {
+    for (var year=2011; year<=2017; year++) {
       await tryYear(year);
     }
   });
 
   it('must return holidays with optionals', async () => {
-    for (var year=2011; year<=2016; year++) {
+    for (var year=2011; year<=2017; year++) {
       await tryYear(year, getWithOptionals(year, true), '?incluir=opcional');
     }
   });

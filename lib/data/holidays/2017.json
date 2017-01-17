@@ -1,0 +1,39 @@
+[{
+  "mes": "enero"
+},{
+  "mes": "febrero",
+  "27,28": "carnaval"
+},{
+  "mes": "marzo"
+},{
+  "mes": "abril",
+  "14": "viernes-santo",
+  "11,12,13,17,18": "pascuas-judias"
+},{
+  "mes": "mayo"
+},{
+  "mes": "junio",
+  "17": "martin-guemes",
+  "25": "fiesta-ayuno-ramadan"
+},{
+  "mes": "julio"
+},{
+  "mes": "agosto",
+  "21": "san-martin"
+},{
+  "mes": "septiembre",
+  "1": "fiesta-sacrificio",
+  "21": "año-nuevo-judio",
+  "22": "año-nuevo-judio",
+  "30": "dia-perdon-judio"
+},{
+  "mes": "octubre",
+  "2": "año-nuevo-islamico",
+  "9": "diversidad"
+},{
+  "mes": "noviembre",
+  "27": "soberania-nacional"
+},{
+  "mes": "diciembre",
+  "09": "puente-turistico"
+}]
