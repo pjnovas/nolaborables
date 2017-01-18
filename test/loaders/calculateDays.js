@@ -4,24 +4,22 @@ import { calculateDays } from 'lib/loaders';
 const expect = chai.expect;
 
 describe('#calculateDays', () => {
+  const from = [{},{},{},{
+    // 'abril',
+    'calculated': {
+      'first_sunday': 'Día de la locura (primer domingo de abril)',
+      'second_saturday': 'Día de la vida (segundo sabado de abril)',
+      'third_thursday': 'Día de la magía misma (tercer jueves de abril)'
+    },
+    '3': 'Día epico magico',
+    '7': 'Día mundial de la fantasia',
+    '14': [
+      'Día A',
+      'Día B'
+    ]
+  }];
 
-  it('must calculate days and fill dynamic dates', () => {
-    const year = 2016;
-    const from = [{},{},{},{
-      // 'abril',
-      'calculated': {
-        'first_sunday': 'Día de la locura (primer domingo de abril)',
-        'second_saturday': 'Día de la vida (segundo sabado de abril)',
-        'third_thursday': 'Día de la magía misma (tercer jueves de abril)'
-      },
-      '3': 'Día epico magico',
-      '7': 'Día mundial de la fantasia',
-      '14': [
-        'Día A',
-        'Día B'
-      ]
-    }];
-
+  it('must calculate days and fill dynamic dates [2016]', () => {
     const expected = [{},{},{},{
       '3': [
         'Día epico magico',
@@ -31,13 +29,32 @@ describe('#calculateDays', () => {
       '9': 'Día de la vida (segundo sabado de abril)',
       '14': [
         'Día A',
-        'Día B',
-        'Día de la magía misma (tercer jueves de abril)'
-      ]
+        'Día B'
+      ],
+      '21': 'Día de la magía misma (tercer jueves de abril)'
     }];
 
-    let result = calculateDays(from, year);
+    const result = calculateDays(from, 2016);
     expect(result.length).to.be.equal(expected.length);
     expect(_.isEqual(result, expected)).to.be.true;
+  })
+
+  it('must calculate days and fill dynamic dates [2017]', () => {
+    const expected = [{},{},{},{
+      '2': 'Día de la locura (primer domingo de abril)',
+      '3': 'Día epico magico',
+      '7': 'Día mundial de la fantasia',
+      '8': 'Día de la vida (segundo sabado de abril)',
+      '14': [
+        'Día A',
+        'Día B'
+      ],
+      '20': 'Día de la magía misma (tercer jueves de abril)'
+    }];
+
+    const result = calculateDays(from, 2017);
+    expect(result.length).to.be.equal(expected.length);
+    expect(_.isEqual(result, expected)).to.be.true
   });
+
 });

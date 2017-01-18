@@ -24,8 +24,10 @@
   "06": "Día del escultor en Argentina",
   "08": "Día Internacional de la Mujer",
   "12": "Día del escudo nacional argentino",
-  "14": "Día de las escuelas de fronteras",
-  "14": "Día del trabajador de la alimentación",
+  "14": [
+    "Día de las escuelas de fronteras",
+    "Día del trabajador de la alimentación"
+  ],
   "16": "Día de la seguridad",
   "17": "Día de San Patricio",
   "18": [
@@ -126,7 +128,7 @@
   ],
   "15": [
     "Día internacional de la familia",
-    "Día del docente universitario",
+    "Día del docente universitario"
   ],
   "17": [
     "Día mundial de las telecomunicaciones",
