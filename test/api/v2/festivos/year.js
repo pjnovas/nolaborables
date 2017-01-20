@@ -6,6 +6,7 @@ import _ from 'lodash';
 import {calculateDays} from 'lib/loaders';
 import {festive} from 'lib/reducers';
 import festiveData from 'lib/data/dias_festivos.json';
+import festiveAnualData from 'lib/data/dias_festivos_anuales.json';
 
 import server from 'lib/index';
 
@@ -18,7 +19,7 @@ const tryYear = (year, expected) => {
   return new Promise( resolve => {
 
     if (!expected){
-      expected = festive(calculateDays(festiveData, year));
+      expected = festive(calculateDays(festiveData, year, festiveAnualData));
     }
 
     chai.request(server.listener).get(`${baseURL}/${year}`).end((err, res) => {
@@ -34,7 +35,7 @@ const tryYear = (year, expected) => {
 
 describe('GET /{year}', () => {
 
-  it('must return festivos by year', async () => {
+  it('must return festive dates by year', async () => {
     for (var year=2011; year<=2017; year++) {
       await tryYear(year);
     }

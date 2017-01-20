@@ -57,4 +57,30 @@ describe('#calculateDays', () => {
     expect(_.isEqual(result, expected)).to.be.true
   });
 
+  it('must calculate days and fill dynamic dates for anual day numbers', () => {
+    const programmersDay = {'256': 'Día del Programador'}
+    const allMonth = _.times(8, _.constant({}))
+    const from = allMonth.concat([{ // 'september',
+      '12': 'Día epico magico'
+    }]);
+
+    const expectedLeap = allMonth.concat([{
+      '12': [
+        'Día epico magico',
+        'Día del Programador'
+      ]
+    }]);
+
+    const expectedNormal = allMonth.concat([{
+      '12': 'Día epico magico',
+      '13': 'Día del Programador'
+    }]);
+
+    let result = calculateDays(from, 2016, programmersDay);
+    expect(_.isEqual(result, expectedLeap)).to.be.true
+
+    result = calculateDays(from, 2017, programmersDay);
+    expect(_.isEqual(result, expectedNormal)).to.be.true
+  });
+
 });
