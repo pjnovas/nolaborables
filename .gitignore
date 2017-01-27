@@ -19,3 +19,4 @@ node_modules
 coverage
 .nyc_output
 cache
+pm2.json
