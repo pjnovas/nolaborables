@@ -46,7 +46,7 @@ describe('GET /proximo', () => {
     const clock = sinon.useFakeTimers(today.toDate().getTime());
 
     const expected = {
-      dia: 5,
+      dia: 1,
       mes: 5,
       motivo: 'Día del Trabajador',
       tipo: 'inamovible'

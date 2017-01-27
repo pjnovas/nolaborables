@@ -72,6 +72,10 @@ describe('#monthlyOptionals', () => {
         { id: 'code07', ...refs['code07'] },
         { id: 'code08', ...refs['code08'] }
       ]
+    }, {
+      '2': [
+        { id: 'code08', ...refs['code08'] }
+      ]
     }];
 
     let expected = [{
@@ -90,6 +94,8 @@ describe('#monthlyOptionals', () => {
         { id: 'code06', ...refs['code06'] },
         { id: 'code07', ...refs['code07'] }
       ]
+    }, {
+
     }];
 
     let result = monthlyOptionals(holidays);

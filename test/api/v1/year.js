@@ -6,7 +6,7 @@ import _ from 'lodash';
 import { holidaysV1 as reducer } from 'lib/reducers';
 import { holidaysV1 as loader } from 'lib/loaders';
 
-import holidays, { fijos, ref } from 'lib/data/holidays';
+import holidays, {ref} from 'lib/data/holidays';
 
 import server from 'lib/index';
 
@@ -20,7 +20,7 @@ const tryYear = (year, expected, query) => {
   return new Promise( resolve => {
 
     if (!expected){
-      const plain = reducer(fijos, holidays[`h${year}`]);
+      const plain = reducer(holidays[`h${year}`]);
       expected = loader(plain, ref);
     }
 
@@ -35,7 +35,7 @@ const tryYear = (year, expected, query) => {
 };
 
 const getWithoutOptionals = year => {
-  const plain = reducer(fijos, holidays[`h${year}`]);
+  const plain = reducer(holidays[`h${year}`]);
   return loader(plain, ref).filter( h => !h.opcional);
 };
 
@@ -52,22 +52,5 @@ describe('GET /{year}', () => {
       await tryYear(year, getWithoutOptionals(year), '?excluir=opcional');
     }
   });
-
-  it('must return fixed holidays for a future year', async () => {
-    const plain = reducer(fijos);
-    const expected = loader(plain, ref);
-
-    const nextYear = new Date().getFullYear() + 1;
-    await tryYear(nextYear, expected);
-  });
-
-  it('must return fixed holidays without optionals for a future year', async () => {
-    const plain = reducer(fijos);
-    const expected = loader(plain, ref).filter( h => !h.opcional);
-
-    const nextYear = new Date().getFullYear() + 1;
-    await tryYear(nextYear, expected, '?excluir=opcional');
-  });
-
 
 });

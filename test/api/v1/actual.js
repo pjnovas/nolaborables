@@ -6,7 +6,7 @@ import _ from 'lodash';
 import { holidaysV1 as reducer } from 'lib/reducers';
 import { holidaysV1 as loader } from 'lib/loaders';
 
-import holidays, { fijos, ref } from 'lib/data/holidays';
+import holidays, { ref } from 'lib/data/holidays';
 
 import server from 'lib/index';
 
@@ -19,7 +19,7 @@ describe('GET /actual', () => {
   const actualYear = new Date().getFullYear();
 
   it('must return holidays for the current year', done => {
-    const plain = reducer(fijos, holidays[`h${actualYear}`]);
+    const plain = reducer(holidays[`h${actualYear}`]);
     const expected = loader(plain, ref);
 
     chai
@@ -34,7 +34,7 @@ describe('GET /actual', () => {
   });
 
   it('must NOT return optional holidays when filter "excluir" is opcional', done => {
-    const plain = reducer(fijos, holidays[`h${actualYear}`]);
+    const plain = reducer(holidays[`h${actualYear}`]);
     const result = loader(plain, ref);
 
     const expected = result.filter( holiday => !holiday.opcional);

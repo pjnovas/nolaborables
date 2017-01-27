@@ -18,7 +18,7 @@ import {
   listOptionals as noOptionalsList
 } from 'lib/filters';
 
-import holidays, { fijos, ref } from 'lib/data/holidays';
+import holidays, { ref } from 'lib/data/holidays';
 
 import server from 'lib/index';
 
@@ -34,11 +34,11 @@ const tryYear = (year, expected, query) => {
     if (!expected){
       // Default holidays are List and without optionals
       if (query.indexOf('formato=mensual') > -1){
-        const plain = reduceMonthly(fijos, holidays[`h${year}`]);
+        const plain = reduceMonthly(holidays[`h${year}`]);
         expected = noOptionalsMonthly(loadMonthly(plain, ref));
       }
       else {
-        const plain = reduceList(fijos, holidays[`h${year}`]);
+        const plain = reduceList(holidays[`h${year}`]);
         expected = noOptionalsList(loadList(plain, ref));
       }
     }
@@ -56,11 +56,11 @@ const tryYear = (year, expected, query) => {
 
 const getWithOptionals = (year, list) => {
   if (list){
-    const plain = reduceList(fijos, holidays[`h${year}`]);
+    const plain = reduceList(holidays[`h${year}`]);
     return loadList(plain, ref);
   }
 
-  const plain = reduceMonthly(fijos, holidays[`h${year}`]);
+  const plain = reduceMonthly(holidays[`h${year}`]);
   return loadMonthly(plain, ref);
 };
 
@@ -78,22 +78,6 @@ describe('GET /{year}', () => {
     }
   });
 
-  it('must return fixed holidays for a future year', async () => {
-    const plain = reduceList(fijos);
-    const expected = noOptionalsList(loadList(plain, ref));
-
-    const nextYear = new Date().getFullYear() + 1;
-    await tryYear(nextYear, expected);
-  });
-
-  it('must return fixed holidays with optionals for a future year', async () => {
-    const plain = reduceList(fijos);
-    const expected = loadList(plain, ref);
-
-    const nextYear = new Date().getFullYear() + 1;
-    await tryYear(nextYear, expected, '?incluir=opcional');
-  });
-
   describe('?formato=mensual', () => {
 
     it('must return holidays by year', async () => {
@@ -106,22 +90,6 @@ describe('GET /{year}', () => {
       for (var year=2011; year<=2016; year++) {
         await tryYear(year, getWithOptionals(year), '?formato=mensual&incluir=opcional');
       }
-    });
-
-    it('must return fixed holidays for a future year', async () => {
-      const plain = reduceMonthly(fijos);
-      const expected = noOptionalsMonthly(loadMonthly(plain, ref));
-
-      const nextYear = new Date().getFullYear() + 1;
-      await tryYear(nextYear, expected, '?formato=mensual');
-    });
-
-    it('must return fixed holidays with optionals for a future year', async () => {
-      const plain = reduceMonthly(fijos);
-      const expected = loadMonthly(plain, ref);
-
-      const nextYear = new Date().getFullYear() + 1;
-      await tryYear(nextYear, expected, '?formato=mensual&incluir=opcional');
     });
 
   });

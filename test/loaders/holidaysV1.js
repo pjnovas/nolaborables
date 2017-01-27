@@ -41,6 +41,10 @@ describe('#holidaysV1', () => {
         'motivo': 'Feriado 6',
         'tipo': 'trasladable',
       	'original': '08-04'
+      },
+      'code07': {
+        'motivo': 'Feriado 7',
+        'tipo': 'inamovible'
       }
     };
 
@@ -53,7 +57,8 @@ describe('#holidaysV1', () => {
 
       { dia: 22, mes: 3, id: 'code05', override: 100 },
 
-      { dia: 5, mes: 4, id: 'code06'}
+      { dia: 5, mes: 4, id: 'code06'},
+      { dia: 10, mes: 4, id: 'code07', tipo: 'trasladable', original: '15-04'}
     ];
 
     let expected = [{
@@ -77,6 +82,12 @@ describe('#holidaysV1', () => {
       motivo: 'Feriado 6',
       tipo: 'trasladable',
       traslado: 5
+    }, {
+      dia: 15,
+      mes: 4,
+      motivo: 'Feriado 7',
+      tipo: 'trasladable',
+      traslado: 10
     }];
 
     expected.forEach( h => { delete h.id } );

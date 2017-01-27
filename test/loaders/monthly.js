@@ -47,6 +47,10 @@ describe('#monthly', () => {
         'motivo': 'Feriado 8',
         'tipo': 'trasladable',
       	'original': '08-04'
+      },
+      'code09': {
+        'motivo': 'Feriado 9',
+        'tipo': 'inamovible'
       }
     };
 
@@ -56,6 +60,7 @@ describe('#monthly', () => {
       '3': { id: 'code03' },
       '12': { id: 'code04' }
     }, {
+      '10': { id: 'code09', tipo: 'trasladable', original: '15-03'},
       '22': { id: 'code05' }
     }, {
       '5': { id: 'code06' },
@@ -73,6 +78,7 @@ describe('#monthly', () => {
       '3': { id: 'code03', ...refs['code03'] },
       '12': { id: 'code04', ...refs['code04'] }
     }, {
+      '10': { id: 'code09', motivo: 'Feriado 9', tipo: 'trasladable', original: '15-03' },
       '22': { id: 'code05', ...refs['code05'] }
     }, {
       '5': { id: 'code06', ...refs['code06'] },
