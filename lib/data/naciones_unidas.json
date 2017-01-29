@@ -1,0 +1,597 @@
+// > //www.un.org/es/${info}/
+// > //www.un.org/es/events/${event}/
+// > //www.un.org/es/comun/docs/?symbol=${symbol}
+[{
+  "mes": "enero",
+  "27": {
+    "title": "Día Internacional de Conmemoración anual en memoria de las víctimas del Holocausto",
+    "info": "holocaustremembrance",
+    "symbol": "A/RES/60/7"
+  }
+}, {
+  "mes": "febrero",
+  "04": {
+    "title": "Día Mundial contra el Cáncer",
+    "event": "cancerday"
+  },
+  "06": {
+    "title": "Día Internacional de Tolerancia Cero con la Mutilación Genital Femenina",
+    "event": "femalegenitalmutilationday",
+    "symbol": "A/RES/67/146"
+  },
+  "11": {
+    "title": "Día Internacional de la Mujer y la Niña en la Ciencia",
+    "event": "women-and-girls-in-science-day",
+    "symbol": "A/70/474/Add.2"
+  },
+  "20": {
+    "title": "Día Mundial de la Justicia Social",
+    "event": "socialjusticeday",
+    "symbol": "A/RES/62/10"
+  },
+  "20": {
+    "title": "Día Internacional de la Lengua Materna",
+    "event": "motherlanguageday",
+    "symbol": "A/RES/61/266"
+  }
+}, {
+  "mes": "marzo",
+  "03": {
+    "title": "Día Mundial de la Vida Silvestre",
+    "event": "wildlifeday",
+    "symbol": "A/RES/68/205"
+  },
+  "08": {
+    "title": "Día Internacional de la Mujer",
+    "event": "womensday",
+    "symbol": "A/RES/32/142"
+  },
+  "20": {
+    "title": "Día Internacional de la Felicidad",
+    "event": "happinessday",
+    "symbol": "A/RES/66/281"
+  },
+  "21": [{
+    "title": "Día Internacional de la Eliminación de la Discriminación Racial",
+    "event": "racialdiscriminationday",
+    "symbol": "A/RES/2142(XXI)"
+  }, {
+    "title": "Día Mundial de la Poesía",
+    "event": "poetryday"
+  }, {
+    "title": "Día Internacional del Nowruz",
+    "event": "nowruzday",
+    "symbol": "A/RES/64/253"
+  }, {
+    "title": "Día Mundial del Síndrome de Down",
+    "event": "downsyndromeday",
+    "symbol": "A/RES/66/149"
+  }, {
+    "title": "Día Internacional de los Bosques",
+    "event": "forestsday",
+    "symbol": "A/67/437"
+  }],
+  "22": {
+    "title": "Día Mundial del Agua",
+    "event": "waterday",
+    "symbol": "A/RES/47/193"
+  },
+  "24": {
+    "title": "Día Internacional del Derecho a la Verdad en relación con Violaciones Graves de los Derechos Humanos y de la Dignidad de las Víctimas",
+    "event": "righttotruthday",
+    "symbol": "A/RES/65/196"
+  },
+  "25": [{
+    "title": "Día internacional de Solidaridad con los miembros del personal detenidos o desaparecidos",
+    "event": "detainedstaffday"
+  }, {
+    "title": "Día Internacional de Recuerdo de las Víctimas de la Esclavitud y la Trata Transatlántica de Esclavos",
+    "event": "slaveryremembranceday",
+    "symbol": "A/RES/62/122"
+  }]
+}, {
+  "mes": "abril",
+  "02": {
+    "title": "Día Mundial de Concienciación sobre el Autismo",
+    "event": "autismday",
+    "symbol": "A/RES/62/139"
+  },
+  "04": {
+    "title": "Día Internacional de información sobre el peligro de las minas y de asistencia para las actividades relativas a las minas",
+    "event": "mineawarenessday",
+    "symbol": "A/RES/60/97"
+  },
+  "06": {
+    "title": "Día Internacional del Deporte para el Desarrollo y la Paz",
+    "event": "sportday",
+    "symbol": "A/RES/67/296"
+  },
+  "07": {
+    "title": "Día Internacional de Reflexión sobre el Genocidio cometido en Rwanda",
+    "url": "//www.un.org/es/preventgenocide/rwanda/commemoration/annualcommemoration.shtml",
+    "symbol": "A/RES/58/234"
+  },
+  "12": {
+    "title": "Día Internacional de los Vuelos Espaciales Tripulados",
+    "event": "humanspaceflightday",
+    "symbol": "A/RES/65/271"
+  },
+  "22": {
+    "title": "Día Internacional de la Madre Tierra",
+    "event": "motherearthday",
+    "symbol": "A/RES/63/278"
+  },
+  "23": {
+    "title": "Día Mundial del Libro y del Derecho de Autor",
+    "event": "bookday"
+  },
+  "28": {
+    "title": "Día Mundial de la Seguridad y Salud en el Trabajo",
+    "event": "safeworkday"
+  },
+  "29": {
+    "title": "Día de Conmemoración de todas las víctimas de la guerra química",
+    "event": "chemwarfareday"
+  },
+  "30": {
+    "title": "Día Internacional del Jazz",
+    "event": "jazzday"
+  }
+}, {
+  "mes": "mayo",
+  "calculated": {
+    "fullmoon": {
+      "title": "Día de Vesak (Día del plenilunio del mes de mayo)",
+      "event": "vesakday",
+      "symbol": "A/RES/54/115"
+    }
+  },
+  "03": {
+    "title": "Día Mundial de la Libertad de Prensa",
+    "event": "pressfreedomday"
+  },
+  "08": {
+    "title": "Días del Recuerdo y la Reconciliación, Conmemoración de la Segunda Guerra Mundial",
+    "event": "remembranceday",
+    "symbol": "A/RES/59/26"
+  },
+  "09": {
+    "title": "Días del Recuerdo y la Reconciliación, Conmemoración de la Segunda Guerra Mundial",
+    "event": "remembranceday",
+    "symbol": "A/RES/59/26"
+  },
+  "15": {
+    "title": "Día Internacional de las Familias",
+    "event": "familyday",
+    "symbol": "A/RES/47/237"
+  },
+  "17": {
+    "title": "Día Mundial de las Telecomunicaciones y la Sociedad de la Información",
+    "event": "telecommunicationday"
+  },
+  "21": {
+    "title": "Día Mundial de la Diversidad Cultural para el Diálogo y el Desarrollo",
+    "event": "culturaldiversityday",
+    "symbol": "A/RES/57/249"
+  },
+  "22": {
+    "title": "Día Internacional de la Diversidad Biológica",
+    "event": "biodiversityday",
+    "symbol": "A/RES/55/201"
+  },
+  "23": {
+    "title": "Día Internacional para la Erradicación de la Fístula Obstétrica",
+    "event": "endfistuladay",
+    "symbol": "A/RES/67/147"
+  },
+  "29": {
+    "title": "Día Internacional del Personal de Paz de las Naciones Unidas",
+    "event": "peacekeepersday",
+    "symbol": "A/RES/57/129"
+  }
+}, {
+  "mes": "junio",
+  "01": {
+    "title": "Día Mundial de las Madres y los Padres",
+    "event": "parentsday",
+    "symbol": "A/RES/66/292"
+  },
+  "04": {
+    "title": "Día internacional de los Niños Víctimas Inocentes de Agresión",
+    "event": "childvictimday",
+    "symbol": "A/RES/ES-7/8"
+  },
+  "05": {
+    "title": "Día Mundial del Medio Ambiente",
+    "event": "environmentday",
+    "symbol": "A/RES/2994"
+  },
+  "08": {
+    "title": "Día Mundial de los Océanos",
+    "event": "oceansday",
+    "symbol": "A/RES/63/111"
+  },
+  "12": {
+    "title": "Día Mundial contra el Trabajo Infantil",
+    "event": "childlabourday"
+  },
+  "13": {
+    "title": "Día Internacional de Sensibilización sobre el Albinismo",
+    "event": "albinismday",
+    "symbol": "A/RES/69/170"
+  },
+  "15": {
+    "title": "Día Mundial de Toma de Conciencia de Abuso y Maltrato en la Vejez",
+    "event": "elderabuse"
+  },
+  "17": {
+    "title": "Día Mundial de Lucha contra la Desertificación",
+    "event": "desertificationday",
+    "symbol": "A/RES/49/115"
+  },
+  "19": {
+    "title": "Día Internacional para la Eliminación de la Violencia Sexual en los Conflictos",
+    "event": "elimination-of-sexual-violence-in-conflict",
+    "symbol": "A/RES/69/293"
+  },
+  "20": {
+    "title": "Día Mundial de los Refugiados",
+    "event": "refugeeday",
+    "symbol": "A/RES/55/76"
+  },
+  "21": {
+    "title": "Día Internacional del Yoga",
+    "event": "yogaday",
+    "symbol": "A/RES/69/131"
+  },
+  "23": [{
+    "title": "Día de las Naciones Unidas para la Administración Pública",
+    "event": "publicserviceday",
+    "symbol": "A/RES/57/277"
+  }, {
+    "title": "Día Internacional de las Viudas",
+    "event": "widowsday",
+    "symbol": "A/RES/65/189"
+  }],
+  "26": [{
+    "title": "Día Internacional en Apoyo de las Víctimas de la Tortura",
+    "event": "torturevictimsday",
+    "symbol": "A/RES/52/149"
+  },{
+    "title": "Día Internacional de la Lucha contra el Uso Indebido y el Tráfico Ilícito de Drogas",
+    "event": "drugabuseday",
+    "symbol": "A/RES/42/112"
+  }]
+}, {
+  "mes": "julio",
+  "calculated": {
+    "first_saturday": {
+      "title": "Día Internacional de las Cooperativas (primer sábado de julio)",
+      "event": "cooperativesday",
+      "symbol": "A/RES/49/155"
+    }
+  },
+  "11": {
+    "title": "Día Mundial de la Población",
+    "event": "populationday",
+    "symbol": "A/RES/45/216"
+  },
+  "15": {
+    "title": "Día Mundial de las Habilidades de la Juventud",
+    "event": "youthskillsday",
+    "symbol": "A/RES/69/145"
+  },
+  "18": {
+    "title": "Día Internacional de Nelson Mandela",
+    "event": "mandeladay",
+    "symbol": "A/RES/64/13"
+  },
+  "30": [{
+    "title": "Día Internacional de la Amistad",
+    "event": "friendshipday",
+    "symbol": "A/RES/65/275"
+  }, {
+    "title": "Día Mundial contra la Trata",
+    "event": "humantrafficking",
+    "symbol": "A/RES/68/192"
+  }]
+}, {
+  "mes": "agosto",
+  "09": {
+    "title": "Día Internacional de los Pueblos Indígenas",
+    "event": "indigenousday"
+  },
+  "12": {
+    "title": "Día Internacional de la Juventud",
+    "event": "youthday",
+    "symbol": "A/RES/54/120"
+  },
+  "19": {
+    "title": "Día Mundial de la Asistencia Humanitaria",
+    "event": "humanitarianday",
+    "symbol": "A/RES/63/139"
+  },
+  "23": {
+    "title": "Día Internacional del Recuerdo de la Trata de Esclavos y de su Abolición",
+    "url": "//www.unesco.org/new/es/social-and-human-sciences/themes/slave-route/right-box/related-information/23-august-international-day-for-the-remembrance-of-the-slave-trade-and-its-abolition/#.V8yRrborInQ",
+    "symbol": "A/54/137"
+  },
+  "29": {
+    "title": "Día Internacional contra los Ensayos Nucleares",
+    "event": "againstnucleartestsday",
+    "symbol": "A/RES/64/35"
+  },
+  "30": {
+    "title": "Día Internacional de las Víctimas de Desapariciones Forzadas",
+    "event": "disappearancesday",
+    "symbol": "A/RES/65/209"
+  }
+}, {
+  "mes": "septiembre",
+  "05": {
+    "title": "Día Internacional de la Beneficencia",
+    "event": "charityday",
+    "symbol": "A/RES/67/105"
+  },
+  "08": {
+    "title": "Día Internacional de la Alfabetización",
+    "url": "http://www.unesco.org/new/es/unesco/events/prizes-and-celebrations/celebrations/international-days/literacy-day/",
+    "symbol": "A/RES/56/116"
+  },
+  "10": {
+    "title": "Día Mundial para la Prevención del Suicidio",
+    "url": "http://www.who.int/mental_health/prevention/suicide/wspd/en/"
+  },
+  "12": {
+    "title": "Día de las Naciones Unidas para la Cooperación Sur-Sur",
+    "event": "southcooperationday",
+    "symbol": "A/RES/58/220"
+  },
+  "15": {
+    "title": "Día Internacional de la Democracia",
+    "event": "democracyday",
+    "symbol": "A/RES/62/7"
+  },
+  "16": {
+    "title": "Día Internacional de la Preservación de la Capa de Ozono",
+    "event": "ozoneday",
+    "symbol": "A/RES/49/114"
+  },
+  "21": {
+    "title": "Día Internacional de la Paz",
+    "event": "peaceday",
+    "symbol": "A/RES/36/67"
+  },
+  "26": {
+    "title": "Día Internacional para la Eliminación Total de las Armas Nucleares",
+    "event": "nuclearweaponelimination",
+    "symbol": "A/RES/68/32"
+  },
+  "27": {
+    "title": "Día Mundial del Turismo",
+    "event": "tourismday",
+    "symbol": "A/RES/68/32"
+  },
+  "28": {
+    "title": "Día Mundial contra la Rabia",
+    "url": "http://www.who.int/mediacentre/factsheets/fs099/es/"
+  },
+  "29": {
+    "title": "Día Marítimo Mundial",
+    "event": "maritimeday"
+  }
+}, {
+  "mes": "octubre",
+  "calculated": {
+    "first_monday": {
+      "title": "Día Mundial del Hábitat (primer lunes de octubre)",
+      "event": "habitatday"
+    }
+  },
+  "01": {
+    "title": "Día Internacional de las Personas de Edad",
+    "event": "olderpersonsday",
+    "symbol": "A/RES/45/106"
+  },
+  "02": {
+    "title": "Día Internacional de la No Violencia",
+    "event": "nonviolenceday",
+    "symbol": "A/RES/61/271"
+  },
+  "05": {
+    "title": "Día Mundial de los Docentes",
+    "url": "http://www.unesco.org/new/es/unesco/events/prizes-and-celebrations/celebrations/international-days/world-teachersday-2015/#.V8yU77orInR"
+  },
+  "09": {
+    "title": "Día Mundial del Correo",
+    "event": "postday"
+  },
+  "10": {
+    "title": "Día Mundial de la Salud Mental",
+    "url": "http://www.who.int/mental_health/world-mental-health-day/en/#"
+  },
+  "11": [{
+    "title": "Día Internacional de la Niña",
+    "event": "girlchild",
+    "symbol": "A/RES/66/170"
+  }, {
+    "title": "Día de la Solidaridad con los Presos Políticos de Sudáfrica",
+    "symbol": "A/RES/31/6"
+  }],
+  "12": {
+    "title": "Día del idioma español",
+    "event": "spanishlanguageday"
+  },
+  "13": {
+    "title": "Día Internacional para la Reducción de los Desastres",
+    "event": "disasterreductionday",
+    "symbol": "A/RES/44/236"
+  },
+  "15": {
+    "title": "Día Internacional de las Mujeres Rurales",
+    "event": "ruralwomenday"
+  },
+  "16": {
+    "title": "Día Mundial de la Alimentación",
+    "url": "http://www.fao.org/world-food-day/home/es/",
+    "symbol": "A/RES/35/70"
+  },
+  "17": {
+    "title": "Día Internacional para la Erradicación de la Pobreza",
+    "event": "povertyday",
+    "symbol": "A/RES/47/196"
+  },
+  "20": {
+    "title": "Día Mundial de la Estadística",
+    "event": "statisticsday",
+    "symbol": "A/RES/69/282"
+  },
+  "24": [{
+    "title": "Día de las Naciones Unidas",
+    "event": "unday",
+    "symbol": "A/RES/168 (II)"
+  }, {
+    "title": "Día Mundial de Información sobre el Desarrollo",
+    "event": "devinfoday",
+    "symbol": "A/RES/3038(XXVII)"
+  }],
+  "27": {
+    "title": "Día Mundial del Patrimonio Audiovisual",
+    "event": "audiovisualday"
+  },
+  "31": {
+    "title": "Día Mundial de las Ciudades",
+    "event": "citiesday"
+  }
+}, {
+  "mes": "noviembre",
+  "calculated": {
+    "third_thursday": {
+      "title": "Día Mundial de la Filosofía (tercer jueves de noviembre)",
+      "event": "philosophyday"
+    },
+    "third_sunday": {
+      "title": "Día mundial en recuerdo de las víctimas de los accidentes de tráfico (tercer domingo de noviembre)",
+      "url": "http://www.un.org/es/roadsafety/remembrance.shtml"
+    }
+  },
+  "02": {
+    "title": "Día Internacional para Poner Fin a la Impunidad de los Crímenes contra Periodistas",
+    "event": "journalists",
+    "symbol": "A/RES/68/163"
+  },
+  "05": {
+    "title": "Día Mundial de Concienciación sobre los Sunamis",
+    "symbol": "A/RES/70/203"
+  },
+  "06": {
+    "title": "Día Internacional para la Prevención de la Explotación del Medio Ambiente en la Guerra y los Conflictos Armados",
+    "event": "environmentconflictday",
+    "symbol": "A/RES/56/4"
+  },
+  "10": {
+    "title": "Día Mundial de la Ciencia para la Paz y el Desarrollo",
+    "event": "scienceday"
+  },
+  "14": {
+    "title": "Día Mundial de la Diabetes",
+    "symbol": "A/RES/61/225"
+  },
+  "16": {
+    "title": "Día Internacional para la Tolerancia",
+    "event": "toleranceday",
+    "symbol": "A/RES/51/95"
+  },
+  "19": {
+    "title": "Día Mundial del Retrete",
+    "event": "toiletday",
+    "symbol": "A/RES/67/291"
+  },
+  "20": [{
+    "title": "Día de la Industrialización de África",
+    "event": "africaday",
+    "symbol": "A/RES/44/237"
+  }, {
+    "title": "Día Universal del Niño",
+    "event": "childrenday",
+    "symbol": "A/RES/836 (IX)"
+  }],
+  "21": {
+    "title": "Día Mundial de la Televisión",
+    "event": "televisionday",
+    "symbol": "A/RES/44/237"
+  },
+  "25": {
+    "title": "Día Internacional de la Eliminación de la Violencia contra la Mujer",
+    "event": "endviolenceday",
+    "symbol": "A/RES/54/134"
+  },
+  "29": {
+    "title": "Día Internacional de Solidaridad con el Pueblo Palestino",
+    "event": "palestinianday",
+    "symbol": "A/RES/32/40"
+  }
+}, {
+  "mes": "diciembre",
+  "01": {
+    "title": "Día Mundial de la lucha contra el SIDA",
+    "event": "aidsday",
+    "symbol": "A/RES/43/15"
+  },
+  "02": {
+    "title": "Día Internacional para la Abolición de la Esclavitud",
+    "event": "slaveryabolitionday",
+    "symbol": "A/RES/57/195"
+  },
+  "03": {
+    "title": "Día Internacional de las Personas con Discapacidad",
+    "event": "disabilitiesday",
+    "symbol": "A/RES/47/3"
+  },
+  "05": [{
+    "title": "Día Internacional de los Voluntarios",
+    "event": "volunteerday",
+    "symbol": "A/RES/40/212"
+  }, {
+    "title": "Día Mundial del Suelo",
+    "event": "soilday",
+    "symbol": "A/RES/68/232"
+  }],
+  "07": {
+    "title": "Día de la Aviación Civil Internacional",
+    "url": "http://www.icao.int/secretariat/SecretaryGeneral/AviationDay/Pages/ES/default_ES.aspx",
+    "symbol": "A/RES/51/33"
+  },
+  "09": [{
+    "title": "Día Internacional para la Conmemoración y Dignificación de las Víctimas del Crimen de Genocidio y para la Prevención de ese Crimen",
+    "event": "genocidepreventionday",
+    "symbol": "A/RES/69/323"
+  }, {
+    "title": "Día Internacional contra la Corrupción",
+    "event": "anticorruptionday",
+    "symbol": "A/RES/58/4"
+  }],
+  "10": {
+    "title": "Día de los Derechos Humanos",
+    "event": "humanrightsday",
+    "symbol": "A/RES/423 (V)"
+  },
+  "11": {
+    "title": "Día Internacional de las Montañas",
+    "event": "mountainday",
+    "symbol": "A/RES/57/245"
+  },
+  "18": [{
+    "title": "Día Internacional del Migrante",
+    "event": "migrantsday",
+    "symbol": "A/RES/55/93"
+  }, {
+    "title": "Día de la lengua árabe",
+    "event": "languageday"
+  }],
+  "20": {
+    "title": "Día Internacional de la Solidaridad Humana",
+    "event": "humansolidarityday",
+    "symbol": "A/RES/57/265"
+  }
+}]

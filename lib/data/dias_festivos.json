@@ -1,0 +1,448 @@
+[{
+  "mes": "enero",
+  "01": "Año Nuevo",
+  "06": "Día de Reyes",
+  "07": "Día del coleccionista",
+  "10": "Día de los trabajadores del transporte",
+  "21": "Santa Inés",
+  "28": "Santo Tomás de Aquino"
+}, {
+  "mes": "febrero",
+  "04": "Día del guardavidas",
+  "05": "Día del trabajador deportivo",
+  "06": "Día del guardabosque",
+  "11": "Nuestra Sra. de Lourdes",
+  "14": "Día de San Valentín",
+  "15": "Día del redactor publicitario",
+  "21": "Día internacional de la lengua materna",
+  "22": "Día de la Antártida Argentina",
+  "24": "Día del mecánico automotor"
+}, {
+  "mes": "marzo",
+  "01": "Día del transporte",
+  "04": "Día del campo (1er sábado)",
+  "06": "Día del escultor en Argentina",
+  "08": "Día Internacional de la Mujer",
+  "12": "Día del escudo nacional argentino",
+  "14": [
+    "Día de las escuelas de fronteras",
+    "Día del trabajador de la alimentación"
+  ],
+  "16": "Día de la seguridad",
+  "17": "Día de San Patricio",
+  "18": [
+    "Día del ruralista en Argentina",
+    "Día del trabajador telefónico"
+  ],
+  "19": [
+    "Día del artesano",
+    "Día del carpintero",
+    "San José"
+  ],
+  "20": "Día de la energía eléctrica",
+  "21": [
+    "Día forestal mundial",
+    "Comienza el Otoño en el Hemisferio Sur",
+    "Día mundial de la poesía",
+    "Día internacional contra la discriminación"
+  ],
+  "22": "Día mundial del agua",
+  "23": [
+    "Día mundial de la rehabilitación",
+    "Día mundial de la meteorología"
+  ],
+  "24": [
+    "Día del diplomático",
+    "Día Nacional de la Memoria",
+    "San Gabriel"
+  ],
+  "25": "Día del niño por nacer",
+  "26": "Día del Mercosur",
+  "27": [
+    "Día del trabajador aeronáutico",
+    "Día mundial del teatro"
+  ],
+  "31": "La hora del planeta"
+}, {
+  "mes": "abril",
+  "calculated": {
+    "first_sunday": "Día de la Novia (primer domingo de abril)"
+  },
+  "02": [
+    "Día del papelero",
+    "Día internacional del libro infantil"
+  ],
+  "03": "Día del modelo y de la modelo",
+  "07": "Día mundial de la salud",
+  "10": "Día del investigador científico",
+  "12": "Día del decorador",
+  "13": "Día del kinesiólogo",
+  "14": "Día de las Américas",
+  "15": "Día mundial de las artes",
+  "21": "Día del traductor en Argentina",
+  "22": [
+    "Día mundial de la tierra",
+    "Día del trabajador de la construcción"
+  ],
+  "23": [
+    "Día del matrimonio",
+    "Día mundial del idioma español",
+    "Día mundial del libro y del derecho de autor"
+  ],
+  "26": "Día del librero",
+  "27": "Día del agente de viajes",
+  "29": [
+    "Día internacional de la danza",
+    "Día del animal"
+  ]
+}, {
+  "mes": "mayo",
+  "01": [
+    "Día Internacional del Trabajo",
+    "Día de la Constitución Argentina"
+  ],
+  "03": [
+    "Día mundial de la libertad de prensa",
+    "Santos Felipe y Santiago, apóstoles"
+  ],
+  "06": "Día mundial del filatelista",
+  "07": "Día del taxista",
+  "08": [
+    "Día Internacional de la Cruz Roja",
+    "Día nacional del actor en Argentina"
+  ],
+  "11": [
+    "Día del autor y del compositor",
+    "Día del Himno Nacional Argentino"
+  ],
+  "12": [
+    "Día del fonoaudiólogo",
+    "Día internacional de la enfermera"
+  ],
+  "14": [
+    "Día del dirigente de fútbol",
+    "Día del ahijado",
+    "Día del nieto en Argentina"
+  ],
+  "15": [
+    "Día internacional de la familia",
+    "Día del docente universitario"
+  ],
+  "17": [
+    "Día mundial de las telecomunicaciones",
+    "Día internacional de Internet"
+  ],
+  "18": [
+    "Día internacional de los museos",
+    "Día de la escarapela en Argentina"
+  ],
+  "20": "Día del futbolista",
+  "21": "Día mundial de la diversidad cultural",
+  "25": "Aniversario de la Revolución de 1810",
+  "26": "Día del visitador médico",
+  "28": [
+    "Día mundial de acción por la salud de la mujer",
+    "Día de la maestra jardinera"
+  ],
+  "31": "Día mundial sin tabaco"
+},{
+  "mes": "junio",
+  "calculated": {
+    "third_sunday": "Día del Padre (tercer domingo de junio)"
+  },
+  "01": "Día del trabajador aduanero",
+  "02": [
+    "Día del graduado de Ciencias Económicas argentino",
+    "Día del bombero voluntario en Argentina"
+  ],
+  "05": "Día mundial del Medio Ambiente",
+  "06": "Día de la ingeniería argentina",
+  "07": "Día del periodista en Argentina",
+  "08": "Día mundial de los océanos",
+  "10": "Día de la Afirmación de los Derechos Argentinos sobre las Malvinas",
+  "12": "Día mundial contra el trabajo infantil",
+  "13": [
+    "Día del escritor argentino",
+    "San Antonio de Padua"
+  ],
+  "15": [
+    "Día del bioquímico en Argentina",
+    "Día del libro en Argentina"
+  ],
+  "16": "Día del ingeniero en Argentina",
+  "19": "Día del banquero",
+  "20": [
+    "Día mundial de los refugiados",
+    "Día de la Bandera Nacional Argentina"
+  ],
+  "21": "Día mundial del Yoga",
+  "22": [
+    "Día de la Unidad Latinoamericana y Caribeña",
+    "Santo Tomás Moro, patrono de los políticos"
+  ],
+  "23": "Día de las Naciones Unidas para la administración",
+  "24": [
+    "San Juan Bautista",
+    "Día del cantor nacional argentino"
+  ],
+  "25": "Día de la gente de mar",
+  "26": "Día mundial contra el uso y el tráfico de drogas",
+  "29": "San Pedro y San Pablo, Solemnidad"
+}, {
+  "mes": "julio",
+  "01": [
+    "Día universal de la cooperación",
+    "Día del arquitecto en Argentina"
+  ],
+  "02": [
+    "Día de la agricultura nacional argentina",
+    "Día del asistente social en Argentina"
+  ],
+  "03": "Día del locutor en Argentina",
+  "05": "Día de la empleada del hogar",
+  "07": "Día del agente de policía",
+  "08": [
+    "Día del guardacostas en Argentina",
+    "Día del inventor"
+  ],
+  "09": "Día de la independencia Argentina",
+  "10": "Día del comerciante",
+  "11": "Día mundial de la población",
+  "15": "Día del consejo nacional de educación",
+  "16": "Nuestra Sra. del Carmen",
+  "17": "Día del automovilismo deportivo",
+  "18": "Día internacional de Nelson Mandela",
+  "19": "Día del químico industrial",
+  "20": "Día internacional del Amigo",
+  "23": "Día del Payador",
+  "24": "San Francisco Solano",
+  "25": "Día de Santiago, Apóstol",
+  "26": "Día del antropólogo",
+  "27": "Día del transporte automotor",
+  "28": "Día de la gendarmería nacional",
+  "29": "Día de la cultura nacional"
+}, {
+  "mes": "agosto",
+  "calculated": {
+    "third_sunday": [
+      "Día del Niño (tercer domingo de agosto)",
+      "Día del Abuelo (tercer domingo de agosto)"
+    ]
+  },
+  "01": "Comienza la semana mundial de la lactancia",
+  "02": "Día del trabajador gastronómico",
+  "04": "Día del Párroco",
+  "06": [
+    "Día del agrónomo en Argentina",
+    "Día del veterinario en Argentina"
+  ],
+  "07": "San Cayetano",
+  "09": "Día de las poblaciones indígenas del mundo (ONU)",
+  "11": [
+    "Día del nutricionista",
+    "Día del dentista"
+  ],
+  "12": "Día Internacional de la Juventud",
+  "14": "Día del empleado judicial",
+  "15": "Asunción de la Virgen",
+  "17": "Aniversario de José de San Martín",
+  "19": [
+    "Día Mundial de la Asistencia Humanitaria",
+    "Día internacional de los animales sin hogar"
+  ],
+  "20": "Día del abuelo en Argentina",
+  "22": "Día mundial del folklore",
+  "25": "Día del peluquero",
+  "26": [
+    "Día de la Medicina",
+    "Día de la Solidaridad (Madre Teresa de Calcuta)",
+    "Día Internacional de la solidaridad",
+    "Día internacional del actor"
+  ],
+  "28": "San Agustín",
+  "29": "Día del Abogado en Argentina",
+  "30": "Santa Rosa",
+  "31": "Día internacional de la obstetricia"
+}, {
+  "mes": "septiembre",
+  "02": "Día de la industria argentina",
+  "03": "Día de la tía en Argentina",
+  "04": [
+    "Día de la Secretaria en Argentina",
+    "Día del Inmigrante"
+  ],
+  "05": "Día Internacional de la Beneficencia",
+  "07": "Día del trabajador metalúrgico",
+  "08": [
+    "Día del agricultor y productor agrario",
+    "Natividad de Santa María",
+    "Día Internacional de la Alfabetización"
+  ],
+  "11": "Día del maestro en Argentina",
+  "13": [
+    "Día del trabajador del calzado",
+    "Día del bibliotecario en Argentina"
+  ],
+  "14": "Día del cartero",
+  "15": "Día Internacional de la Democracia",
+  "16": "Día mundial para la protección de la capa de ozono",
+  "17": [
+    "Día del psicopedagogo en Argentina",
+    "Día del profesor"
+  ],
+  "20": "Día del jubilado",
+  "21": [
+    "Día de los artistas plásticos",
+    "Día del economista",
+    "Día del fotógrafo",
+    "Día Internacional de la paz",
+    "Día de la Primavera",
+    "Día del estudiante"
+  ],
+  "24": [
+    "Día del novio en Argentina",
+    "Día del colectivero",
+    "Día del trabajador de la industria química"
+  ],
+  "25": "Día del farmacéutico mundial",
+  "26": "Día del empleado de comercio",
+  "27": "Día mundial del turismo",
+  "28": "Día del rector",
+  "29": [
+    "Día del diplomático argentino",
+    "Día mundial del corazón",
+    "San Gabriel, San Miguel y San Rafael"
+  ],
+  "30": "Día Internacional del traductor"
+}, {
+  "mes": "octubre",
+  "calculated": {
+    "third_sunday": "Día de la Madre (tercer domingo de octubre)"
+  },
+  "01": [
+    "Día del vendedor",
+    "Día Internacional de la Música",
+    "Día internacional de las personas mayores"
+  ],
+  "02": [
+    "Día del trabajador de edificios",
+    "Día internacional de la no violencia"
+  ],
+  "03": [
+    "Día de la Odontología Latinoamericana",
+    "Día mundial del hábitat"
+  ],
+  "04": [
+    "Día del meteorólogo",
+    "San Francisco de Asís",
+    "Día mundial de los animales"
+  ],
+  "05": [
+    "Día del turista",
+    "Día mundial de los docentes"
+  ],
+  "07": [
+    "Día mundial de la sonrisa",
+    "Día del Rosario"
+  ],
+  "08": "Día del trabajador rural",
+  "09": "Día mundial del correo",
+  "10": "Día del panadero",
+  "11": [
+    "Día del martillero público",
+    "Día del árbitro de fútbol"
+  ],
+  "12": [
+    "Día del descubrimiento de América",
+    "Día del farmacéutico argentino",
+    "Día de la diversidad cultural"
+  ],
+  "13": [
+    "Día del psicólogo",
+    "Día mundial de la vista",
+    "Día para la reducción de los desastres naturales"
+  ],
+  "15": [
+    "Día universal de la danza",
+    "Día internacional de las mujeres rurales",
+    "Santa Teresa de Jesús"
+  ],
+  "16": [
+    "Día mundial de la alimentación"
+  ],
+  "17": "Día mundial de erradicación de la pobreza",
+  "18": "San Lucas",
+  "20": "Día de la pediatría",
+  "21": "Día del trabajador de seguros",
+  "24": [
+    "Día de las Naciones Unidas",
+    "Día del diseñador gráfico e industrial"
+  ],
+  "31": [
+    "Halloween",
+    "Día mundial del ahorro"
+  ]
+}, {
+  "mes": "noviembre",
+  "calculated": {
+    "second_sunday": "Día del Abuela (segundo domingo de noviembre)"
+  },
+  "01": "Conmemoración de todos los santos",
+  "03": "Día del joyero y relojero",
+  "06": [
+    "Día Nacional del Comercio",
+    "Día del bancario"
+  ],
+  "07": "Día del periodista deportivo",
+  "08": [
+    "Día del técnico radiólogo",
+    "Día mundial del urbanismo",
+    "Día mundial de la radiología"
+  ],
+  "09": "Día internacional del inventor",
+  "10": "Día del dibujante",
+  "16": "Día del deportista",
+  "17": "Día mundial de la filosofía",
+  "20": "Día universal del niño",
+  "21": "Día mundial de la televisión",
+  "22": [
+    "Santa Cecilia, patrona de los músicos",
+    "Día Mundial de la Música"
+  ],
+  "24": "Día del trabajador del plástico",
+  "25": [
+    "Día mundial contra la violencia hacia la mujer",
+    "Día del empresario hotelero"
+  ],
+  "26": "Día del químico",
+  "30": [
+    "San Andrés",
+    "Día del Teatro Nacional",
+    "Día de las librerías"
+  ]
+}, {
+  "mes": "diciembre",
+  "01": "Día de la ama de casa",
+  "02": "Día del legislador",
+  "03": "Día del médico",
+  "04": "Día de la publicidad",
+  "05": "Día internacional del voluntariado",
+  "07": [
+    "Día del agente bursátil",
+    "Día internacional de la aviación civil"
+  ],
+  "08": "Inmaculada Concepción",
+  "10": "Día universal de los derechos humanos",
+  "11": "Día Nacional del Tango",
+  "12": "Nuestra Señora de Guadalupe",
+  "15": "Día del camionero",
+  "16": "Día del óptico",
+  "17": "Día del contador",
+  "18": "Día internacional del emigrante",
+  "20": "Día del reportero gráfico",
+  "21": "Comienza el verano - Hemisferio sur",
+  "24": "Nochebuena",
+  "25": "Navidad",
+  "28": "Día de los Santos Inocentes",
+  "31": "Fin de Año"
+}]

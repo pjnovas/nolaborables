@@ -1,0 +1,52 @@
+[{
+  "mes": "enero",
+  "01": "año-nuevo"
+},{
+  "mes": "febrero",
+  "27,28": "carnaval"
+},{
+  "mes": "marzo",
+  "27": {
+    "id": "memoria-verdad-justicia",
+    "tipo": "trasladable",
+    "original": "24-03"
+  }
+},{
+  "mes": "abril",
+  "02": "veteranos-malvinas",
+  "13": "jueves-santo",
+  "14": "viernes-santo",
+  "11,12,17,18": "pascuas-judias",
+  "24": "armenia"
+},{
+  "mes": "mayo",
+  "01": "trabajador",
+  "25": "revolucion-mayo"
+},{
+  "mes": "junio",
+  "17": "martin-guemes",
+  "20": "belgrano",
+  "25": "fiesta-ayuno-ramadan"
+},{
+  "mes": "julio",
+  "09": "independencia"
+},{
+  "mes": "agosto",
+  "21": "san-martin"
+},{
+  "mes": "septiembre",
+  "1": "fiesta-sacrificio",
+  "21, 22": "año-nuevo-judio",
+  "30": "dia-perdon-judio"
+},{
+  "mes": "octubre",
+  "2": "año-nuevo-islamico",
+  "16": "diversidad"
+},{
+  "mes": "noviembre",
+  "20": "soberania-nacional"
+},{
+  "mes": "diciembre",
+  "08": "inmaculada-maria",
+  "25": "navidad"
+}]

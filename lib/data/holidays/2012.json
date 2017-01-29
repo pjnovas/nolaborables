@@ -1,0 +1,47 @@
+[{
+  "mes": "enero",
+  "01": "año-nuevo"
+},{
+  "mes": "febrero",
+  "20,21": "carnaval",
+  "27": "bicentenario-bandera"
+},{
+  "mes": "marzo",
+  "24": "memoria-verdad-justicia"
+},{
+  "mes": "abril",
+  "02": "veteranos-malvinas",
+  "05": "jueves-santo",
+  "06": "viernes-santo",
+  "07,08,12,13,14": "pascuas-judias",
+  "24": "armenia"
+},{
+  "mes": "mayo",
+  "01": "trabajador",
+  "25": "revolucion-mayo"
+},{
+  "mes": "junio",
+  "20": "belgrano"
+},{
+  "mes": "julio",
+  "09": "independencia"
+},{
+  "mes": "agosto",
+  "20": "san-martin"
+},{
+  "mes": "septiembre",
+  "16": "año-nuevo-judio",
+  "24": "bicentenario-tucuman",
+  "25": "dia-perdon-judio"
+},{
+  "mes": "octubre",
+  "08": "diversidad"
+},{
+  "mes": "noviembre",
+  "26": "soberania-nacional"
+},{
+  "mes": "diciembre",
+  "08": "inmaculada-maria",
+  "24": "puente-turistico",
+  "25": "navidad"
+}]
