@@ -6,11 +6,7 @@
   "27,28": "carnaval"
 },{
   "mes": "marzo",
-  "27": {
-    "id": "memoria-verdad-justicia",
-    "tipo": "trasladable",
-    "original": "24-03"
-  }
+  "24": "memoria-verdad-justicia"
 },{
   "mes": "abril",
   "02": "veteranos-malvinas",
