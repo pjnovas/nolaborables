@@ -22,6 +22,10 @@ describe('#list', () => {
     }, {
       'mes': 'mayo',
       '05,06,07': 'code08'
+    }, {
+      'mes': 'junio',
+      '30': 'same',
+      '30,31': 'same2'
     }];
 
     let expected = [
@@ -36,7 +40,11 @@ describe('#list', () => {
 
       { dia: 5, mes: 5, id: 'code08'},
       { dia: 6, mes: 5, id: 'code08'},
-      { dia: 7, mes: 5, id: 'code08'}
+      { dia: 7, mes: 5, id: 'code08'},
+
+      { dia: 30, mes: 6, id: 'same'},
+      { dia: 30, mes: 6, id: 'same2'},
+      { dia: 31, mes: 6, id: 'same2'}
     ];
 
     let result = list(holidays);
