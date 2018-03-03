@@ -1,7 +1,7 @@
 import chai from 'chai';
 import chaiHttp from 'chai-http';
 
-import _ from 'lodash';
+import {isEqual, isNumber} from 'lodash';
 
 import {
   monthly as reduceMonthly,
@@ -29,7 +29,17 @@ const baseURL = '/api/v2/feriados';
 
 const tryYear = (year, expected, query) => {
   query = query || '';
+  let url = `${baseURL}/${year}${query}`
   return new Promise( resolve => {
+
+    if (isNumber(expected)) {
+      chai.request(server.listener).get(url).end((err, res) => {
+        expect(res.status).to.be.equal(expected);
+        resolve();
+      });
+
+      return;
+    }
 
     if (!expected){
       // Default holidays are List and without optionals
@@ -43,11 +53,11 @@ const tryYear = (year, expected, query) => {
       }
     }
 
-    chai.request(server.listener).get(`${baseURL}/${year}${query}`).end((err, res) => {
+    chai.request(server.listener).get(url).end((err, res) => {
       expect(res.status).to.be.equal(200);
       expect(res.body).to.be.an('array');
       expect(res.body.length).to.be.greaterThan(0);
-      expect(_.isEqual(res.body, expected)).to.be.true;
+      expect(isEqual(res.body, expected)).to.be.true;
       resolve();
     });
 
@@ -67,15 +77,19 @@ const getWithOptionals = (year, list) => {
 describe('GET /{year}', () => {
 
   it('must return holidays by year', async () => {
-    for (var year=2011; year<=2017; year++) {
+    for (var year=2011; year<=2019; year++) {
       await tryYear(year);
     }
   });
 
   it('must return holidays with optionals', async () => {
-    for (var year=2011; year<=2017; year++) {
+    for (var year=2011; year<=2019; year++) {
       await tryYear(year, getWithOptionals(year, true), '?incluir=opcional');
     }
+  });
+
+  it('must return 404 on not filled future holidays', async () => {
+    await tryYear(2080, 404);
   });
 
   describe('?formato=mensual', () => {
