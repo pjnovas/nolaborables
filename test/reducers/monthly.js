@@ -22,6 +22,10 @@ describe('#monthly', () => {
     }, {
       'mes': 'mayo',
       '05,06,07': 'code08'
+    }, {
+      'mes': 'junio',
+      '30': 'same',
+      '30,31': {id: 'same2'}
     }];
 
     let expected = [{
@@ -40,6 +44,9 @@ describe('#monthly', () => {
       '5': { id: 'code08' },
       '6': { id: 'code08' },
       '7': { id: 'code08' }
+    }, {
+      '30': [{ id: 'same' }, { id: 'same2' }],
+      '31': { id: 'same2' }
     }];
 
     let result = monthly( holidays);
