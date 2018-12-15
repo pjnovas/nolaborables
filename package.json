@@ -28,12 +28,12 @@
     "babel-register": "^6.11.6",
     "blipp": "^2.2.1",
     "bluebird": "^3.4.1",
+    "boom": "^3.2.2",
     "hapi": "^14.1.0",
     "hapi-next": "^0.7.0",
     "install": "^0.8.1",
     "joi": "^9.0.4",
-    "lodash": "^4.15.0",
-    "boom": "^3.2.2"
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
@@ -43,9 +43,9 @@
     "coveralls": "^2.11.12",
     "eslint": "^3.2.2",
     "mocha": "^3.0.2",
+    "moment": "^2.23.0",
     "nyc": "^8.1.0",
     "sinon": "^1.17.5",
-    "sinon-chai": "^2.8.0",
-    "moment": "^2.14.1"
+    "sinon-chai": "^2.8.0"
   }
 }

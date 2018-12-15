@@ -34,6 +34,7 @@ npm test
 * Bruno Cascio [@brunocascio](https://github.com/brunocascio)
 * Tomás Boccardo [@tomasboccardo](https://github.com/tomasboccardo)
 * Emiliano Fernandez [@emilianox](https://github.com/emilianox)
+* Nahuel Ambrosini [@Ambro17](https://github.com/Ambro17)
 
 ## License
 BSD-Clause 2 - Ver archivo LICENCE
