@@ -110,7 +110,8 @@
   },
   "martin-guemes": {
     "motivo": "Paso a la Inmortalidad del Gral. Don Martín Güemes",
-    "tipo": "trasladable"
+    "tipo": "trasladable",
+  	"original": "17-06"
   },
   "fiesta-ayuno-ramadan": {
     "motivo": "Fiesta de la Ruptura del Ayuno del Sagrado Mes de Ramadán",
