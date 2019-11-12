@@ -13,7 +13,7 @@
   "02": "veteranos-malvinas",
   "09": "jueves-santo",
   "10": "viernes-santo",
-  "8,9,10,14,15,16": "pascuas-judias",
+  "9,10,15,16": "pascuas-judias",
   "24": "armenia"
 },{
   "mes": "mayo",
@@ -35,8 +35,8 @@
   "20": "año-nuevo-islamico"
 },{
   "mes": "septiembre",
-  "18,19,20": "año-nuevo-judio",
-  "27,28": "dia-perdon-judio"
+  "19,20": "año-nuevo-judio",
+  "28": "dia-perdon-judio"
 },{
   "mes": "octubre",
   "12": "diversidad"

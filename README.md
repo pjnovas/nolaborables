@@ -7,7 +7,7 @@ API REST para exponer los feriados de Argentina
 Sitio web en NodeJS con HapiJS. Tests con Mocha y Chai.
 
 ### Como instalar
-Primero instalar NodeJS (v4.5+) y luego instalar las dependecias con NPM e iniciar el servicio web
+Primero instalar NodeJS (v10+) y luego instalar las dependecias con NPM e iniciar el servicio web
 
 ```bash
 npm install --production
@@ -35,6 +35,7 @@ npm test
 * Tomás Boccardo [@tomasboccardo](https://github.com/tomasboccardo)
 * Emiliano Fernandez [@emilianox](https://github.com/emilianox)
 * Nahuel Ambrosini [@Ambro17](https://github.com/Ambro17)
+* Pablo Bendersky [@pbendersky](https://github.com/pbendersky)
 
 ## License
 BSD-Clause 2 - Ver archivo LICENCE

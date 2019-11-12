@@ -1,11 +1,11 @@
 {
   "name": "nolaborables",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "description": "API pública y gratuita para consultar los feriados y días festivos.",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_PATH=. node index.js",
-    "test": "NODE_PATH=. NODE_ENV=test node_modules/.bin/nyc --require babel-core/register node_modules/.bin/mocha",
+    "start": "cross-env NODE_PATH=. node index.js",
+    "test": "cross-env NODE_PATH=. NODE_ENV=test node_modules/.bin/nyc --require babel-core/register node_modules/.bin/mocha",
     "report": "node_modules/.bin/nyc report --reporter=lcov",
     "coverage": "node_modules/.bin/nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint lib/**/*"
@@ -17,7 +17,7 @@
   "license": "BSD-2-Clause",
   "author": "Pablo Novas <pjnovas@gmail.com>",
   "engines": {
-    "node": "4.5.x"
+    "node": ">=10"
   },
   "dependencies": {
     "babel-core": "^6.13.2",
@@ -41,6 +41,7 @@
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
     "coveralls": "^2.11.12",
+    "cross-env": "^6.0.3",
     "eslint": "^3.2.2",
     "mocha": "^3.0.2",
     "moment": "^2.23.0",
