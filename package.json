@@ -1,6 +1,6 @@
 {
   "name": "nolaborables",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "API pública y gratuita para consultar los feriados y días festivos.",
   "main": "index.js",
   "scripts": {
