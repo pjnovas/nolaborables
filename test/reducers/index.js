@@ -3,4 +3,5 @@ describe('Reducers', () => {
   require('./monthly');
   require('./list');
   require('./festive');
+  require('./holidays');
 });

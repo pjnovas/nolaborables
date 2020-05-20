@@ -5,7 +5,8 @@ import {isEqual, isNumber} from 'lodash';
 
 import {
   monthly as reduceMonthly,
-  list as reduceList
+  list as reduceList,
+  holidays as reduceHolidays
 } from 'lib/reducers';
 
 import {
@@ -41,14 +42,16 @@ const tryYear = (year, expected, query) => {
       return;
     }
 
+    const holidaysToTest = reduceHolidays(holidays, year);
+
     if (!expected){
       // Default holidays are List and without optionals
       if (query.indexOf('formato=mensual') > -1){
-        const plain = reduceMonthly(holidays[`h${year}`]);
+        const plain = reduceMonthly(holidaysToTest);
         expected = noOptionalsMonthly(loadMonthly(plain, ref));
       }
       else {
-        const plain = reduceList(holidays[`h${year}`]);
+        const plain = reduceList(holidaysToTest);
         expected = noOptionalsList(loadList(plain, ref));
       }
     }
@@ -65,12 +68,13 @@ const tryYear = (year, expected, query) => {
 };
 
 const getWithOptionals = (year, list) => {
+  const holidaysToTest = reduceHolidays(holidays, year);
   if (list){
-    const plain = reduceList(holidays[`h${year}`]);
+    const plain = reduceList(holidaysToTest);
     return loadList(plain, ref);
   }
 
-  const plain = reduceMonthly(holidays[`h${year}`]);
+  const plain = reduceMonthly(holidaysToTest);
   return loadMonthly(plain, ref);
 };
 
@@ -88,8 +92,9 @@ describe('GET /{year}', () => {
     }
   });
 
-  it('must return 404 on not filled future holidays', async () => {
-    await tryYear(2080, 404);
+  it('must return common holidays for future years', async () => {
+    const futureYear = new Date().getFullYear() + 10;
+    await tryYear(futureYear);
   });
 
   describe('?formato=mensual', () => {
@@ -104,6 +109,11 @@ describe('GET /{year}', () => {
       for (var year=2011; year<=2016; year++) {
         await tryYear(year, getWithOptionals(year), '?formato=mensual&incluir=opcional');
       }
+    });
+
+    it('must return common holidays for future years', async () => {
+      const futureYear = new Date().getFullYear() + 10;
+      await tryYear(futureYear, getWithOptionals(futureYear), '?formato=mensual&incluir=opcional');
     });
 
   });

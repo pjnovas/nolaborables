@@ -1,0 +1,39 @@
+[{
+  "mes": "enero",
+  "01": "año-nuevo"
+},{
+  "mes": "febrero"
+},{
+  "mes": "marzo",
+  "24": "memoria-verdad-justicia"
+},{
+  "mes": "abril",
+  "02": "veteranos-malvinas",
+  "24": "armenia"
+},{
+  "mes": "mayo",
+  "01": "trabajador",
+  "25": "revolucion-mayo"
+},{
+  "mes": "junio",
+  "17": "martin-guemes",
+  "20": "belgrano"
+},{
+  "mes": "julio",
+  "09": "independencia"
+},{
+  "mes": "agosto",
+  "17": "san-martin"
+},{
+  "mes": "septiembre"
+},{
+  "mes": "octubre",
+  "12": "diversidad"
+},{
+  "mes": "noviembre",
+  "20": "soberania-nacional"
+},{
+  "mes": "diciembre",
+  "08": "inmaculada-maria",
+  "25": "navidad"
+}]
