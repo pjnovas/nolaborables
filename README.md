@@ -49,6 +49,7 @@ npm test
 - Emiliano Fernandez [@emilianox](https://github.com/emilianox)
 - Nahuel Ambrosini [@Ambro17](https://github.com/Ambro17)
 - Pablo Bendersky [@pbendersky](https://github.com/pbendersky)
+- Guille Paz [@pazguille](https://github.com/pazguille)
 
 ## License
 
