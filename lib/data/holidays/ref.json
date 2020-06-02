@@ -1,134 +1,162 @@
 {
   "año-nuevo": {
     "motivo": "Año Nuevo",
-    "tipo": "inamovible"
+    "tipo": "inamovible",
+    "info": "https://es.wikipedia.org/wiki/A%C3%B1o_Nuevo"
   },
   "memoria-verdad-justicia": {
     "motivo": "Día Nacional de la Memoria por la Verdad y la Justicia",
-    "tipo": "inamovible"
+    "tipo": "inamovible",
+    "info": "https://es.wikipedia.org/wiki/D%C3%ADa_Nacional_de_la_Memoria_por_la_Verdad_y_la_Justicia"
   },
   "veteranos-malvinas": {
     "motivo": "Día del Veterano y de los Caídos en la Guerra de Malvinas",
-    "tipo": "inamovible"
+    "tipo": "inamovible",
+    "info":  "https://es.wikipedia.org/wiki/D%C3%ADa_del_Veterano_y_de_los_Ca%C3%ADdos_en_la_Guerra_de_Malvinas"
   },
   "armenia": {
     "motivo": "Día de acción por la tolerancia y el respeto entre los pueblos",
     "tipo": "nolaborable",
     "opcional": "origen",
-    "origen": "armenia"
+    "origen": "armenia",
+    "info": "https://es.wikipedia.org/wiki/D%C3%ADa_de_conmemoraci%C3%B3n_del_genocidio_armenio"
   },
   "trabajador": {
     "motivo": "Día del Trabajador",
-  	"tipo": "inamovible"
+    "tipo": "inamovible",
+    "info": "https://es.wikipedia.org/wiki/D%C3%ADa_Internacional_de_los_Trabajadores"
   },
   "revolucion-mayo": {
     "motivo": "Día de la Revolución de Mayo",
-  	"tipo": "inamovible"
+  	"tipo": "inamovible",
+    "info": "https://es.wikipedia.org/wiki/Revoluci%C3%B3n_de_Mayo"
   },
   "belgrano": {
     "motivo": "Paso a la Inmortalidad del General Manuel Belgrano",
-  	"tipo": "inamovible"
+  	"tipo": "inamovible",
+    "info": "https://es.wikipedia.org/wiki/D%C3%ADa_de_la_Bandera_(Argentina)"
   },
   "independencia": {
     "motivo": "Día de la Independencia",
-  	"tipo": "inamovible"
+  	"tipo": "inamovible",
+    "info": "https://es.wikipedia.org/wiki/Declaraci%C3%B3n_de_independencia_de_la_Argentina"
   },
   "inmaculada-maria": {
     "motivo": "Inmaculada Concepción de María",
-    "tipo": "inamovible"
+    "tipo": "inamovible",
+    "info": "https://es.wikipedia.org/wiki/Inmaculada_Concepci%C3%B3n"
   },
   "navidad": {
     "motivo": "Navidad",
-  	"tipo": "inamovible"
+  	"tipo": "inamovible",
+    "info": "https://es.wikipedia.org/wiki/Navidad"
   },
   "carnaval": {
     "motivo": "Carnaval",
-  	"tipo": "inamovible"
+  	"tipo": "inamovible",
+    "info": "https://es.wikipedia.org/wiki/Carnaval"
   },
   "puente-turistico": {
     "motivo": "Feriado Puente Turístico",
-  	"tipo": "puente"
+  	"tipo": "puente",
+    "info": "https://es.wikipedia.org/wiki/Puente_festivo"
   },
   "jueves-santo": {
     "motivo": "Jueves Santo Festividad Cristiana",
   	"tipo": "nolaborable",
     "opcional": "religion",
-    "religion": "cristianismo"
+    "religion": "cristianismo",
+    "info": "https://es.wikipedia.org/wiki/Jueves_Santo"
   },
   "viernes-santo": {
     "motivo": "Viernes Santo Festividad Cristiana",
-  	"tipo": "inamovible"
+  	"tipo": "inamovible",
+    "info": "https://es.wikipedia.org/wiki/Viernes_Santo"
   },
   "pascuas-judias": {
   	"motivo": "Pascuas Judías",
   	"tipo": "nolaborable",
   	"opcional": "religion",
-  	"religion": "judaísmo"
+  	"religion": "judaísmo",
+    "info": "https://es.wikipedia.org/wiki/P%C3%A9saj"
   },
   "san-martin": {
     "motivo": "Paso a la Inmortalidad del General José de San Martín",
   	"tipo": "trasladable",
-  	"original": "17-08"
+  	"original": "17-08",
+    "info": "https://es.wikipedia.org/wiki/Jos%C3%A9_de_San_Mart%C3%ADn"
   },
   "año-nuevo-judio": {
     "motivo": "Año Nuevo Judío",
   	"tipo": "nolaborable",
     "opcional": "religion",
-  	"religion": "judaísmo"
+  	"religion": "judaísmo",
+    "info": "https://es.wikipedia.org/wiki/Rosh_Hashan%C3%A1"
   },
   "dia-perdon-judio": {
     "motivo": "Día del Perdón",
   	"tipo": "nolaborable",
     "opcional": "religion",
-  	"religion": "judaísmo"
+  	"religion": "judaísmo",
+    "info": "https://es.wikipedia.org/wiki/Yom_Kipur"
   },
   "diversidad": {
     "motivo": "Día del Respeto a la Diversidad Cultural",
   	"tipo": "trasladable",
-    "original": "12-10"
+    "original": "12-10",
+    "info": "https://es.wikipedia.org/wiki/D%C3%ADa_del_Respeto_a_la_Diversidad_Cultural_(Argentina)"
   },
   "soberania-nacional": {
     "motivo": "Día de la Soberanía Nacional",
   	"tipo": "trasladable",
-    "original": "20-11"
+    "original": "20-11",
+    "info": "https://es.wikipedia.org/wiki/D%C3%ADa_de_la_Soberan%C3%ADa_Nacional"
   },
   "bicentenario-bandera": {
     "motivo": "Día del Bicentenario de la Creación y Primera Jura de la Bandera Argentina",
-  	"tipo": "inamovible"
+  	"tipo": "inamovible",
+    "info": "https://es.wikipedia.org/wiki/D%C3%ADa_de_la_Bandera_(Argentina)"
   },
   "bicentenario-tucuman": {
     "motivo": "Bicentenario de la Batalla de Tucumán",
-  	"tipo": "nolaborable"
+  	"tipo": "nolaborable",
+    "info": "https://es.wikipedia.org/wiki/Batalla_de_Tucum%C3%A1n"
   },
   "bicentenario-asamblea-gral": {
     "motivo": "Año del Bicentenario de la Asamblea General Constituyente de 1813",
-  	"tipo": "nolaborable"
+  	"tipo": "nolaborable",
+    "info": "https://es.wikipedia.org/wiki/Asamblea_del_A%C3%B1o_XIII"
   },
   "bicentenario-salta": {
     "motivo": "Bicentenario de la Batalla de Salta",
-  	"tipo": "nolaborable"
+  	"tipo": "nolaborable",
+    "info": "https://es.wikipedia.org/wiki/Batalla_de_Salta"
   },
   "martin-guemes": {
     "motivo": "Paso a la Inmortalidad del Gral. Don Martín Güemes",
     "tipo": "trasladable",
-  	"original": "17-06"
+  	"original": "17-06",
+    "info": "https://es.wikipedia.org/wiki/Mart%C3%ADn_Miguel_de_G%C3%BCemes"
   },
   "fiesta-ayuno-ramadan": {
     "motivo": "Fiesta de la Ruptura del Ayuno del Sagrado Mes de Ramadán",
     "tipo": "nolaborable",
     "opcional": "religion",
-  	"religion": "musulman"
+  	"religion": "musulman",
+    "info": "https://es.wikipedia.org/wiki/Eid_al-Fitr"
   },
   "fiesta-sacrificio": {
     "motivo": "Fiesta del Sacrificio",
     "tipo": "nolaborable",
     "opcional": "religion",
-  	"religion": "musulman"
+  	"religion": "musulman",
+    "info": "https://es.wikipedia.org/wiki/Eid_al-Adha"
   },
   "año-nuevo-islamico": {
     "motivo": "Año Nuevo Islámico",
     "tipo": "nolaborable",
     "opcional": "religion",
-  	"religion": "musulman"
+  	"religion": "musulman",
+    "info": "https://es.wikipedia.org/wiki/A%C3%B1o_nuevo_musulm%C3%A1n"
   }
 }

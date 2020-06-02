@@ -26,7 +26,8 @@ describe('GET /proximo', () => {
       motivo: 'Pascuas Judías',
       tipo: 'nolaborable',
       opcional: 'religion',
-      religion: 'judaísmo'
+      religion: 'judaísmo',
+      info: 'https://es.wikipedia.org/wiki/P%C3%A9saj'
     };
 
     chai
@@ -49,7 +50,8 @@ describe('GET /proximo', () => {
       dia: 1,
       mes: 5,
       motivo: 'Día del Trabajador',
-      tipo: 'inamovible'
+      tipo: 'inamovible',
+      info: 'https://es.wikipedia.org/wiki/D%C3%ADa_Internacional_de_los_Trabajadores'
     };
 
     chai
@@ -72,7 +74,8 @@ describe('GET /proximo', () => {
       dia: 1,
       mes: 1,
       motivo: 'Año Nuevo',
-      tipo: 'inamovible'
+      tipo: 'inamovible',
+      info: 'https://es.wikipedia.org/wiki/A%C3%B1o_Nuevo'
     };
 
     chai
