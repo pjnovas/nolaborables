@@ -1,63 +1,50 @@
-[
-  {
-    "mes": "enero",
-    "01": "año-nuevo"
-  },
-  {
-    "mes": "febrero",
-    "15,16": "carnaval"
-  },
-  {
-    "mes": "marzo",
-    "24": "memoria-verdad-justicia",
-    "28,29,30,31": "pascuas-judias"
-  },
-  {
-    "mes": "abril",
-    "01": ["jueves-santo", "pascuas-judias"],
-    "02": ["viernes-santo", "veteranos-malvinas", "pascuas-judias"],
-    "03,04": "pascuas-judias",
-    "24": "armenia"
-  },
-  {
-    "mes": "mayo",
-    "01": "trabajador",
-    "24": ["fiesta-ayuno-ramadan", "puente-turistico"],
-    "25": "revolucion-mayo"
-  },
-  {
-    "mes": "junio",
-    "20": "belgrano",
-    "21": "martin-guemes"
-  },
-  {
-    "mes": "julio",
-    "09": "independencia",
-    "31": "fiesta-sacrificio"
-  },
-  {
-    "mes": "agosto",
-    "16": "san-martin",
-    "20": "año-nuevo-islamico"
-  },
-  {
-    "mes": "septiembre",
-    "19,20": "año-nuevo-judio",
-    "28": "dia-perdon-judio"
-  },
-  {
-    "mes": "octubre",
-    "08": "puente-turistico",
-    "11": "diversidad"
-  },
-  {
-    "mes": "noviembre",
-    "20": "soberania-nacional",
-    "22": "puente-turistico"
-  },
-  {
-    "mes": "diciembre",
-    "08": "inmaculada-maria",
-    "25": "navidad"
-  }
-]
+[{
+  "mes": "enero",
+  "01": "año-nuevo"
+},{
+  "mes": "febrero",
+  "15,16": "carnaval"
+},{
+  "mes": "marzo",
+  "24": "memoria-verdad-justicia",
+  "28,29,30,31": "pascuas-judias"
+},{
+  "mes": "abril",
+  "01": ["jueves-santo", "pascuas-judias"],
+  "02": ["viernes-santo", "veteranos-malvinas", "pascuas-judias"],
+  "03,04": "pascuas-judias",
+  "24": "armenia"
+},{
+  "mes": "mayo",
+  "01": "trabajador",
+  "24": ["fiesta-ayuno-ramadan", "puente-turistico"],
+  "25": "revolucion-mayo"
+},{
+  "mes": "junio",
+  "20": "belgrano",
+  "21": "martin-guemes"
+},{
+  "mes": "julio",
+  "09": "independencia",
+  "31": "fiesta-sacrificio"
+},{
+  "mes": "agosto",
+  "16": "san-martin",
+  "20": "año-nuevo-islamico"
+},{
+  "mes": "septiembre",
+  "19,20": "año-nuevo-judio",
+  "28": "dia-perdon-judio"
+},{
+  "mes": "octubre",
+  "08": "puente-turistico",
+  "11": "diversidad"
+},{
+  "mes": "noviembre",
+  "20": "soberania-nacional",
+  "22": "puente-turistico"
+},{
+  "mes": "diciembre",
+  "08": "inmaculada-maria",
+  "25": "navidad"
+}]
