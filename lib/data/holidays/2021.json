@@ -17,6 +17,7 @@
 },{
   "mes": "mayo",
   "01": "trabajador",
+  "24": ["fiesta-ayuno-ramadan", "puente-turistico"],
   "25": "revolucion-mayo"
 },{
   "mes": "junio",
