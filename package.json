@@ -40,12 +40,12 @@
     "babel-runtime": "^6.11.6",
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
-    "coveralls": "^2.11.12",
+    "coveralls": "^3.1.1",
     "cross-env": "^6.0.3",
     "eslint": "^3.2.2",
-    "mocha": "^3.0.2",
+    "mocha": "^10.2.0",
     "moment": "^2.23.0",
-    "nyc": "^8.1.0",
+    "nyc": "^15.1.0",
     "sinon": "^1.17.5",
     "sinon-chai": "^2.8.0"
   }
