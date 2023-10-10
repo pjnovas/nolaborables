@@ -1,3 +1,7 @@
+[BAJA DE SERVICIO A FIN DE AÑO](https://github.com/pjnovas/nolaborables/issues/48)
+
+---
+
 ## No Laborables [![Build Status](https://secure.travis-ci.org/pjnovas/nolaborables.png?branch=master)](http://travis-ci.org/pjnovas/nolaborables) [![Coverage Status](https://coveralls.io/repos/github/pjnovas/nolaborables/badge.svg?branch=master)](https://coveralls.io/github/pjnovas/nolaborables?branch=master)
 
 API REST para exponer los feriados de Argentina
