@@ -1,6 +1,6 @@
-FROM node:10-slim
+FROM node:12-slim
 
-RUN npm i npm@latest -g
+RUN npm i npm@^6 -g
 RUN npm install pm2 -g
 
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
